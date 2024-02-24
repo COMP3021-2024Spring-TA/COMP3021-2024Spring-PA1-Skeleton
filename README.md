@@ -244,13 +244,9 @@ Hints: you can use the four fields `lineno`, `colOffset`, `endLineNo` and `endCo
 The class `ASTManager` is the main class of our system, which wraps an `ASTManagerEngine` inside. We provide the major workflow of `ASTManager` shown below in the skeleton:
 
 1. Initially, the system loads all the XML files in the default XML files directory, which depends on the `ASTParser` you implemented. 
-
 2. Later, all the ASTs should be stored in the Tables you designed instead of managed in Memory.
-
 3. Finally, method `userInterface` processes the following analysis commands from the console and invokes corresponding handlers.
-
    - Given AST ID, parse AST from XML files
-
    - Print all functions with # arguments greater than user-specified N
    - Find the most commonly used operators in all ASTs
    - Print all function names and the functions invoked by each function
@@ -275,7 +271,7 @@ We have marked the methods you need to implement using `TODO` in the skeleton. S
 
 You need to follow the comments on the methods to be implemented in the provided skeleton. We have provided detailed descriptions and even several hints for these methods. To convenience the testing and debugging, you can just run the `main` method of `ASTManager` to interact with the system.
 
-We use JUnit test to verify the functionalities of all methods you implement. Please do not modify the type signatures of these functions.
+We use the JUnit test to verify the functionalities of all methods you implement. Please do not modify the type signatures of these functions.
 
 ### Submission Policy
 
@@ -299,7 +295,7 @@ Before submission, please make sure that:
 
 1. Your code can be complied with successfully. Please try to compile your code with `./gradlew build` before submission. You will not get any marks for public/hidden test cases if your code cannot be successfully compiled.
 
-2. Your implementation can pass the public test cases we provided in `src/test` (We will provide test case one week later).
+2. Your implementation can pass the public test cases we provided in `src/test` (We will provide test cases one week later).
 
 3. Your implementation should not yield too many errors when running `./gradlew checkstyleMain`.
 
