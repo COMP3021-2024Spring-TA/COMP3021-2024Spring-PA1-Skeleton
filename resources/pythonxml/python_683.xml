@@ -1,0 +1,76 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="1" col_offset="0" end_lineno="1" end_col_offset="55">
+        <targets>
+          <Name id="arrays" lineno="1" col_offset="0" end_lineno="1" end_col_offset="6">
+            <Store/>
+          </Name>
+        </targets>
+        <List lineno="1" col_offset="9" end_lineno="1" end_col_offset="55">
+          <elts>
+            <List lineno="1" col_offset="10" end_lineno="1" end_col_offset="22">
+              <elts>
+                <Constant value="1" kind="None" lineno="1" col_offset="11" end_lineno="1" end_col_offset="12"/>
+                <Constant value="1" kind="None" lineno="1" col_offset="14" end_lineno="1" end_col_offset="15"/>
+                <Constant value="2" kind="None" lineno="1" col_offset="17" end_lineno="1" end_col_offset="18"/>
+                <Constant value="2" kind="None" lineno="1" col_offset="20" end_lineno="1" end_col_offset="21"/>
+              </elts>
+              <Load/>
+            </List>
+            <List lineno="1" col_offset="24" end_lineno="1" end_col_offset="54">
+              <elts>
+                <Constant value="red" kind="None" lineno="1" col_offset="25" end_lineno="1" end_col_offset="30"/>
+                <Constant value="blue" kind="None" lineno="1" col_offset="32" end_lineno="1" end_col_offset="38"/>
+                <Constant value="red" kind="None" lineno="1" col_offset="40" end_lineno="1" end_col_offset="45"/>
+                <Constant value="blue" kind="None" lineno="1" col_offset="47" end_lineno="1" end_col_offset="53"/>
+              </elts>
+              <Load/>
+            </List>
+          </elts>
+          <Load/>
+        </List>
+      </Assign>
+      <Assign type_comment="None" lineno="2" col_offset="0" end_lineno="2" end_col_offset="64">
+        <targets>
+          <Name id="index" lineno="2" col_offset="0" end_lineno="2" end_col_offset="5">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="2" col_offset="8" end_lineno="2" end_col_offset="64">
+          <Attribute attr="from_arrays" lineno="2" col_offset="8" end_lineno="2" end_col_offset="33">
+            <Attribute attr="MultiIndex" lineno="2" col_offset="8" end_lineno="2" end_col_offset="21">
+              <Name id="pd" lineno="2" col_offset="8" end_lineno="2" end_col_offset="10">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+            <Load/>
+          </Attribute>
+          <args>
+            <Name id="arrays" lineno="2" col_offset="34" end_lineno="2" end_col_offset="40">
+              <Load/>
+            </Name>
+          </args>
+          <keywords>
+            <keyword arg="names" lineno="2" col_offset="42" end_lineno="2" end_col_offset="63">
+              <List lineno="2" col_offset="48" end_lineno="2" end_col_offset="63">
+                <elts>
+                  <Constant value="no" kind="None" lineno="2" col_offset="49" end_lineno="2" end_col_offset="53"/>
+                  <Constant value="color" kind="None" lineno="2" col_offset="55" end_lineno="2" end_col_offset="62"/>
+                </elts>
+                <Load/>
+              </List>
+            </keyword>
+          </keywords>
+        </Call>
+      </Assign>
+      <Expr lineno="3" col_offset="0" end_lineno="3" end_col_offset="5">
+        <Name id="index" lineno="3" col_offset="0" end_lineno="3" end_col_offset="5">
+          <Load/>
+        </Name>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

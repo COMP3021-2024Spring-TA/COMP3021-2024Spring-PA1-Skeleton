@@ -1,0 +1,35 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="1" col_offset="0" end_lineno="1" end_col_offset="77">
+        <targets>
+          <Name id="df3" lineno="1" col_offset="0" end_lineno="1" end_col_offset="3">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="1" col_offset="6" end_lineno="1" end_col_offset="77">
+          <Attribute attr="read_csv" lineno="1" col_offset="6" end_lineno="1" end_col_offset="17">
+            <Name id="pd" lineno="1" col_offset="6" end_lineno="1" end_col_offset="8">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <Constant value="data/2018年北京积分落户数据.csv" kind="None" lineno="1" col_offset="18" end_lineno="1" end_col_offset="60"/>
+          </args>
+          <keywords>
+            <keyword arg="index_col" lineno="1" col_offset="62" end_lineno="1" end_col_offset="76">
+              <Constant value="id" kind="None" lineno="1" col_offset="72" end_lineno="1" end_col_offset="76"/>
+            </keyword>
+          </keywords>
+        </Call>
+      </Assign>
+      <Expr lineno="2" col_offset="0" end_lineno="2" end_col_offset="3">
+        <Name id="df3" lineno="2" col_offset="0" end_lineno="2" end_col_offset="3">
+          <Load/>
+        </Name>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

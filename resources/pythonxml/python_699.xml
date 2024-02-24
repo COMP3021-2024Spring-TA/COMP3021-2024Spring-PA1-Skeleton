@@ -1,0 +1,219 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="1" col_offset="0" end_lineno="1" end_col_offset="23">
+        <targets>
+          <Name id="u" lineno="1" col_offset="0" end_lineno="1" end_col_offset="1">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="1" col_offset="4" end_lineno="1" end_col_offset="23">
+          <Attribute attr="array" lineno="1" col_offset="4" end_lineno="1" end_col_offset="12">
+            <Name id="np" lineno="1" col_offset="4" end_lineno="1" end_col_offset="6">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <List lineno="1" col_offset="13" end_lineno="1" end_col_offset="22">
+              <elts>
+                <Constant value="5" kind="None" lineno="1" col_offset="14" end_lineno="1" end_col_offset="15"/>
+                <Constant value="1" kind="None" lineno="1" col_offset="17" end_lineno="1" end_col_offset="18"/>
+                <Constant value="3" kind="None" lineno="1" col_offset="20" end_lineno="1" end_col_offset="21"/>
+              </elts>
+              <Load/>
+            </List>
+          </args>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Assign type_comment="None" lineno="2" col_offset="0" end_lineno="2" end_col_offset="24">
+        <targets>
+          <Name id="m1" lineno="2" col_offset="0" end_lineno="2" end_col_offset="2">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="2" col_offset="5" end_lineno="2" end_col_offset="24">
+          <Attribute attr="array" lineno="2" col_offset="5" end_lineno="2" end_col_offset="13">
+            <Name id="np" lineno="2" col_offset="5" end_lineno="2" end_col_offset="7">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <List lineno="2" col_offset="14" end_lineno="2" end_col_offset="23">
+              <elts>
+                <Constant value="4" kind="None" lineno="2" col_offset="15" end_lineno="2" end_col_offset="16"/>
+                <Constant value="5" kind="None" lineno="2" col_offset="18" end_lineno="2" end_col_offset="19"/>
+                <Constant value="1" kind="None" lineno="2" col_offset="21" end_lineno="2" end_col_offset="22"/>
+              </elts>
+              <Load/>
+            </List>
+          </args>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Assign type_comment="None" lineno="3" col_offset="0" end_lineno="3" end_col_offset="24">
+        <targets>
+          <Name id="m2" lineno="3" col_offset="0" end_lineno="3" end_col_offset="2">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="3" col_offset="5" end_lineno="3" end_col_offset="24">
+          <Attribute attr="array" lineno="3" col_offset="5" end_lineno="3" end_col_offset="13">
+            <Name id="np" lineno="3" col_offset="5" end_lineno="3" end_col_offset="7">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <List lineno="3" col_offset="14" end_lineno="3" end_col_offset="23">
+              <elts>
+                <Constant value="5" kind="None" lineno="3" col_offset="15" end_lineno="3" end_col_offset="16"/>
+                <Constant value="1" kind="None" lineno="3" col_offset="18" end_lineno="3" end_col_offset="19"/>
+                <Constant value="5" kind="None" lineno="3" col_offset="21" end_lineno="3" end_col_offset="22"/>
+              </elts>
+              <Load/>
+            </List>
+          </args>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Expr lineno="4" col_offset="0" end_lineno="4" end_col_offset="63">
+        <Call lineno="4" col_offset="0" end_lineno="4" end_col_offset="63">
+          <Name id="print" lineno="4" col_offset="0" end_lineno="4" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <BinOp lineno="4" col_offset="6" end_lineno="4" end_col_offset="62">
+              <Call lineno="4" col_offset="6" end_lineno="4" end_col_offset="19">
+                <Attribute attr="dot" lineno="4" col_offset="6" end_lineno="4" end_col_offset="12">
+                  <Name id="np" lineno="4" col_offset="6" end_lineno="4" end_col_offset="8">
+                    <Load/>
+                  </Name>
+                  <Load/>
+                </Attribute>
+                <args>
+                  <Name id="u" lineno="4" col_offset="13" end_lineno="4" end_col_offset="14">
+                    <Load/>
+                  </Name>
+                  <Name id="m1" lineno="4" col_offset="16" end_lineno="4" end_col_offset="18">
+                    <Load/>
+                  </Name>
+                </args>
+                <keywords/>
+              </Call>
+              <Div/>
+              <BinOp lineno="4" col_offset="23" end_lineno="4" end_col_offset="61">
+                <Call lineno="4" col_offset="23" end_lineno="4" end_col_offset="40">
+                  <Attribute attr="norm" lineno="4" col_offset="23" end_lineno="4" end_col_offset="37">
+                    <Attribute attr="linalg" lineno="4" col_offset="23" end_lineno="4" end_col_offset="32">
+                      <Name id="np" lineno="4" col_offset="23" end_lineno="4" end_col_offset="25">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Attribute>
+                    <Load/>
+                  </Attribute>
+                  <args>
+                    <Name id="u" lineno="4" col_offset="38" end_lineno="4" end_col_offset="39">
+                      <Load/>
+                    </Name>
+                  </args>
+                  <keywords/>
+                </Call>
+                <Mult/>
+                <Call lineno="4" col_offset="43" end_lineno="4" end_col_offset="61">
+                  <Attribute attr="norm" lineno="4" col_offset="43" end_lineno="4" end_col_offset="57">
+                    <Attribute attr="linalg" lineno="4" col_offset="43" end_lineno="4" end_col_offset="52">
+                      <Name id="np" lineno="4" col_offset="43" end_lineno="4" end_col_offset="45">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Attribute>
+                    <Load/>
+                  </Attribute>
+                  <args>
+                    <Name id="m1" lineno="4" col_offset="58" end_lineno="4" end_col_offset="60">
+                      <Load/>
+                    </Name>
+                  </args>
+                  <keywords/>
+                </Call>
+              </BinOp>
+            </BinOp>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="5" col_offset="0" end_lineno="5" end_col_offset="63">
+        <Call lineno="5" col_offset="0" end_lineno="5" end_col_offset="63">
+          <Name id="print" lineno="5" col_offset="0" end_lineno="5" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <BinOp lineno="5" col_offset="6" end_lineno="5" end_col_offset="62">
+              <Call lineno="5" col_offset="6" end_lineno="5" end_col_offset="19">
+                <Attribute attr="dot" lineno="5" col_offset="6" end_lineno="5" end_col_offset="12">
+                  <Name id="np" lineno="5" col_offset="6" end_lineno="5" end_col_offset="8">
+                    <Load/>
+                  </Name>
+                  <Load/>
+                </Attribute>
+                <args>
+                  <Name id="u" lineno="5" col_offset="13" end_lineno="5" end_col_offset="14">
+                    <Load/>
+                  </Name>
+                  <Name id="m2" lineno="5" col_offset="16" end_lineno="5" end_col_offset="18">
+                    <Load/>
+                  </Name>
+                </args>
+                <keywords/>
+              </Call>
+              <Div/>
+              <BinOp lineno="5" col_offset="23" end_lineno="5" end_col_offset="61">
+                <Call lineno="5" col_offset="23" end_lineno="5" end_col_offset="40">
+                  <Attribute attr="norm" lineno="5" col_offset="23" end_lineno="5" end_col_offset="37">
+                    <Attribute attr="linalg" lineno="5" col_offset="23" end_lineno="5" end_col_offset="32">
+                      <Name id="np" lineno="5" col_offset="23" end_lineno="5" end_col_offset="25">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Attribute>
+                    <Load/>
+                  </Attribute>
+                  <args>
+                    <Name id="u" lineno="5" col_offset="38" end_lineno="5" end_col_offset="39">
+                      <Load/>
+                    </Name>
+                  </args>
+                  <keywords/>
+                </Call>
+                <Mult/>
+                <Call lineno="5" col_offset="43" end_lineno="5" end_col_offset="61">
+                  <Attribute attr="norm" lineno="5" col_offset="43" end_lineno="5" end_col_offset="57">
+                    <Attribute attr="linalg" lineno="5" col_offset="43" end_lineno="5" end_col_offset="52">
+                      <Name id="np" lineno="5" col_offset="43" end_lineno="5" end_col_offset="45">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Attribute>
+                    <Load/>
+                  </Attribute>
+                  <args>
+                    <Name id="m2" lineno="5" col_offset="58" end_lineno="5" end_col_offset="60">
+                      <Load/>
+                    </Name>
+                  </args>
+                  <keywords/>
+                </Call>
+              </BinOp>
+            </BinOp>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

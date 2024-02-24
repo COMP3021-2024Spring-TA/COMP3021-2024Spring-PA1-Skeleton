@@ -1,0 +1,1 @@
+np.repeat(array1, 3)

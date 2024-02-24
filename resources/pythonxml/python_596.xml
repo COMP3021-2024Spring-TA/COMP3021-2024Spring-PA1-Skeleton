@@ -1,0 +1,279 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="Solution" lineno="1" col_offset="0" end_lineno="22" end_col_offset="19">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="insert" type_comment="None" lineno="2" col_offset="4" end_lineno="22" end_col_offset="19">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="2" col_offset="15" end_lineno="2" end_col_offset="19"/>
+                <arg arg="head" type_comment="None" lineno="2" col_offset="21" end_lineno="2" end_col_offset="33">
+                  <Constant value="Node" kind="None" lineno="2" col_offset="27" end_lineno="2" end_col_offset="33"/>
+                </arg>
+                <arg arg="insertVal" type_comment="None" lineno="2" col_offset="35" end_lineno="2" end_col_offset="49">
+                  <Name id="int" lineno="2" col_offset="46" end_lineno="2" end_col_offset="49">
+                    <Load/>
+                  </Name>
+                </arg>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <If lineno="3" col_offset="8" end_lineno="6" end_col_offset="23">
+                <UnaryOp lineno="3" col_offset="11" end_lineno="3" end_col_offset="19">
+                  <Not/>
+                  <Name id="head" lineno="3" col_offset="15" end_lineno="3" end_col_offset="19">
+                    <Load/>
+                  </Name>
+                </UnaryOp>
+                <body>
+                  <Assign type_comment="None" lineno="4" col_offset="12" end_lineno="4" end_col_offset="34">
+                    <targets>
+                      <Name id="node" lineno="4" col_offset="12" end_lineno="4" end_col_offset="16">
+                        <Store/>
+                      </Name>
+                    </targets>
+                    <Call lineno="4" col_offset="19" end_lineno="4" end_col_offset="34">
+                      <Name id="Node" lineno="4" col_offset="19" end_lineno="4" end_col_offset="23">
+                        <Load/>
+                      </Name>
+                      <args>
+                        <Name id="insertVal" lineno="4" col_offset="24" end_lineno="4" end_col_offset="33">
+                          <Load/>
+                        </Name>
+                      </args>
+                      <keywords/>
+                    </Call>
+                  </Assign>
+                  <Assign type_comment="None" lineno="5" col_offset="12" end_lineno="5" end_col_offset="28">
+                    <targets>
+                      <Attribute attr="next" lineno="5" col_offset="12" end_lineno="5" end_col_offset="21">
+                        <Name id="node" lineno="5" col_offset="12" end_lineno="5" end_col_offset="16">
+                          <Load/>
+                        </Name>
+                        <Store/>
+                      </Attribute>
+                    </targets>
+                    <Name id="node" lineno="5" col_offset="24" end_lineno="5" end_col_offset="28">
+                      <Load/>
+                    </Name>
+                  </Assign>
+                  <Return lineno="6" col_offset="12" end_lineno="6" end_col_offset="23">
+                    <Name id="node" lineno="6" col_offset="19" end_lineno="6" end_col_offset="23">
+                      <Load/>
+                    </Name>
+                  </Return>
+                </body>
+                <orelse/>
+              </If>
+              <Assign type_comment="None" lineno="8" col_offset="8" end_lineno="8" end_col_offset="19">
+                <targets>
+                  <Name id="node" lineno="8" col_offset="8" end_lineno="8" end_col_offset="12">
+                    <Store/>
+                  </Name>
+                </targets>
+                <Name id="head" lineno="8" col_offset="15" end_lineno="8" end_col_offset="19">
+                  <Load/>
+                </Name>
+              </Assign>
+              <While lineno="9" col_offset="8" end_lineno="17" end_col_offset="32">
+                <Compare lineno="9" col_offset="14" end_lineno="9" end_col_offset="31">
+                  <Attribute attr="next" lineno="9" col_offset="14" end_lineno="9" end_col_offset="23">
+                    <Name id="node" lineno="9" col_offset="14" end_lineno="9" end_col_offset="18">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Attribute>
+                  <ops>
+                    <NotEq/>
+                  </ops>
+                  <comparators>
+                    <Name id="head" lineno="9" col_offset="27" end_lineno="9" end_col_offset="31">
+                      <Load/>
+                    </Name>
+                  </comparators>
+                </Compare>
+                <body>
+                  <If lineno="10" col_offset="12" end_lineno="17" end_col_offset="32">
+                    <Compare lineno="10" col_offset="15" end_lineno="10" end_col_offset="53">
+                      <Attribute attr="val" lineno="10" col_offset="15" end_lineno="10" end_col_offset="23">
+                        <Name id="node" lineno="10" col_offset="15" end_lineno="10" end_col_offset="19">
+                          <Load/>
+                        </Name>
+                        <Load/>
+                      </Attribute>
+                      <ops>
+                        <LtE/>
+                        <LtE/>
+                      </ops>
+                      <comparators>
+                        <Name id="insertVal" lineno="10" col_offset="27" end_lineno="10" end_col_offset="36">
+                          <Load/>
+                        </Name>
+                        <Attribute attr="val" lineno="10" col_offset="40" end_lineno="10" end_col_offset="53">
+                          <Attribute attr="next" lineno="10" col_offset="40" end_lineno="10" end_col_offset="49">
+                            <Name id="node" lineno="10" col_offset="40" end_lineno="10" end_col_offset="44">
+                              <Load/>
+                            </Name>
+                            <Load/>
+                          </Attribute>
+                          <Load/>
+                        </Attribute>
+                      </comparators>
+                    </Compare>
+                    <body>
+                      <Break lineno="11" col_offset="16" end_lineno="11" end_col_offset="21"/>
+                    </body>
+                    <orelse>
+                      <If lineno="12" col_offset="12" end_lineno="17" end_col_offset="32">
+                        <Compare lineno="12" col_offset="17" end_lineno="12" end_col_offset="54">
+                          <Attribute attr="val" lineno="12" col_offset="17" end_lineno="12" end_col_offset="30">
+                            <Attribute attr="next" lineno="12" col_offset="17" end_lineno="12" end_col_offset="26">
+                              <Name id="node" lineno="12" col_offset="17" end_lineno="12" end_col_offset="21">
+                                <Load/>
+                              </Name>
+                              <Load/>
+                            </Attribute>
+                            <Load/>
+                          </Attribute>
+                          <ops>
+                            <Lt/>
+                            <LtE/>
+                          </ops>
+                          <comparators>
+                            <Attribute attr="val" lineno="12" col_offset="33" end_lineno="12" end_col_offset="41">
+                              <Name id="node" lineno="12" col_offset="33" end_lineno="12" end_col_offset="37">
+                                <Load/>
+                              </Name>
+                              <Load/>
+                            </Attribute>
+                            <Name id="insertVal" lineno="12" col_offset="45" end_lineno="12" end_col_offset="54">
+                              <Load/>
+                            </Name>
+                          </comparators>
+                        </Compare>
+                        <body>
+                          <Break lineno="13" col_offset="16" end_lineno="13" end_col_offset="21"/>
+                        </body>
+                        <orelse>
+                          <If lineno="14" col_offset="12" end_lineno="17" end_col_offset="32">
+                            <Compare lineno="14" col_offset="17" end_lineno="14" end_col_offset="53">
+                              <Name id="insertVal" lineno="14" col_offset="17" end_lineno="14" end_col_offset="26">
+                                <Load/>
+                              </Name>
+                              <ops>
+                                <Lt/>
+                                <Lt/>
+                              </ops>
+                              <comparators>
+                                <Attribute attr="val" lineno="14" col_offset="29" end_lineno="14" end_col_offset="42">
+                                  <Attribute attr="next" lineno="14" col_offset="29" end_lineno="14" end_col_offset="38">
+                                    <Name id="node" lineno="14" col_offset="29" end_lineno="14" end_col_offset="33">
+                                      <Load/>
+                                    </Name>
+                                    <Load/>
+                                  </Attribute>
+                                  <Load/>
+                                </Attribute>
+                                <Attribute attr="val" lineno="14" col_offset="45" end_lineno="14" end_col_offset="53">
+                                  <Name id="node" lineno="14" col_offset="45" end_lineno="14" end_col_offset="49">
+                                    <Load/>
+                                  </Name>
+                                  <Load/>
+                                </Attribute>
+                              </comparators>
+                            </Compare>
+                            <body>
+                              <Break lineno="15" col_offset="16" end_lineno="15" end_col_offset="21"/>
+                            </body>
+                            <orelse>
+                              <Assign type_comment="None" lineno="17" col_offset="16" end_lineno="17" end_col_offset="32">
+                                <targets>
+                                  <Name id="node" lineno="17" col_offset="16" end_lineno="17" end_col_offset="20">
+                                    <Store/>
+                                  </Name>
+                                </targets>
+                                <Attribute attr="next" lineno="17" col_offset="23" end_lineno="17" end_col_offset="32">
+                                  <Name id="node" lineno="17" col_offset="23" end_lineno="17" end_col_offset="27">
+                                    <Load/>
+                                  </Name>
+                                  <Load/>
+                                </Attribute>
+                              </Assign>
+                            </orelse>
+                          </If>
+                        </orelse>
+                      </If>
+                    </orelse>
+                  </If>
+                </body>
+                <orelse/>
+              </While>
+              <Assign type_comment="None" lineno="19" col_offset="8" end_lineno="19" end_col_offset="37">
+                <targets>
+                  <Name id="insert_node" lineno="19" col_offset="8" end_lineno="19" end_col_offset="19">
+                    <Store/>
+                  </Name>
+                </targets>
+                <Call lineno="19" col_offset="22" end_lineno="19" end_col_offset="37">
+                  <Name id="Node" lineno="19" col_offset="22" end_lineno="19" end_col_offset="26">
+                    <Load/>
+                  </Name>
+                  <args>
+                    <Name id="insertVal" lineno="19" col_offset="27" end_lineno="19" end_col_offset="36">
+                      <Load/>
+                    </Name>
+                  </args>
+                  <keywords/>
+                </Call>
+              </Assign>
+              <Assign type_comment="None" lineno="20" col_offset="8" end_lineno="20" end_col_offset="36">
+                <targets>
+                  <Attribute attr="next" lineno="20" col_offset="8" end_lineno="20" end_col_offset="24">
+                    <Name id="insert_node" lineno="20" col_offset="8" end_lineno="20" end_col_offset="19">
+                      <Load/>
+                    </Name>
+                    <Store/>
+                  </Attribute>
+                </targets>
+                <Attribute attr="next" lineno="20" col_offset="27" end_lineno="20" end_col_offset="36">
+                  <Name id="node" lineno="20" col_offset="27" end_lineno="20" end_col_offset="31">
+                    <Load/>
+                  </Name>
+                  <Load/>
+                </Attribute>
+              </Assign>
+              <Assign type_comment="None" lineno="21" col_offset="8" end_lineno="21" end_col_offset="31">
+                <targets>
+                  <Attribute attr="next" lineno="21" col_offset="8" end_lineno="21" end_col_offset="17">
+                    <Name id="node" lineno="21" col_offset="8" end_lineno="21" end_col_offset="12">
+                      <Load/>
+                    </Name>
+                    <Store/>
+                  </Attribute>
+                </targets>
+                <Name id="insert_node" lineno="21" col_offset="20" end_lineno="21" end_col_offset="31">
+                  <Load/>
+                </Name>
+              </Assign>
+              <Return lineno="22" col_offset="8" end_lineno="22" end_col_offset="19">
+                <Name id="head" lineno="22" col_offset="15" end_lineno="22" end_col_offset="19">
+                  <Load/>
+                </Name>
+              </Return>
+            </body>
+            <decorator_list/>
+            <Constant value="Node" kind="None" lineno="2" col_offset="54" end_lineno="2" end_col_offset="60"/>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

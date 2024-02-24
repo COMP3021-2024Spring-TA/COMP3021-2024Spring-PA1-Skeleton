@@ -1,0 +1,144 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="32" col_offset="0" end_lineno="32" end_col_offset="24">
+        <targets>
+          <Name id="testCases" lineno="32" col_offset="0" end_lineno="32" end_col_offset="9">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="32" col_offset="12" end_lineno="32" end_col_offset="24">
+          <Name id="int" lineno="32" col_offset="12" end_lineno="32" end_col_offset="15">
+            <Load/>
+          </Name>
+          <args>
+            <Call lineno="32" col_offset="16" end_lineno="32" end_col_offset="23">
+              <Name id="input" lineno="32" col_offset="16" end_lineno="32" end_col_offset="21">
+                <Load/>
+              </Name>
+              <args/>
+              <keywords/>
+            </Call>
+          </args>
+          <keywords/>
+        </Call>
+      </Assign>
+      <For type_comment="None" lineno="33" col_offset="0" end_lineno="39" end_col_offset="63">
+        <Name id="_" lineno="33" col_offset="4" end_lineno="33" end_col_offset="5">
+          <Store/>
+        </Name>
+        <Call lineno="33" col_offset="9" end_lineno="33" end_col_offset="25">
+          <Name id="range" lineno="33" col_offset="9" end_lineno="33" end_col_offset="14">
+            <Load/>
+          </Name>
+          <args>
+            <Name id="testCases" lineno="33" col_offset="15" end_lineno="33" end_col_offset="24">
+              <Load/>
+            </Name>
+          </args>
+          <keywords/>
+        </Call>
+        <body>
+          <Assign type_comment="None" lineno="34" col_offset="4" end_lineno="34" end_col_offset="15">
+            <targets>
+              <Name id="suvojit" lineno="34" col_offset="4" end_lineno="34" end_col_offset="11">
+                <Store/>
+              </Name>
+            </targets>
+            <Constant value="0" kind="None" lineno="34" col_offset="14" end_lineno="34" end_col_offset="15"/>
+          </Assign>
+          <Assign type_comment="None" lineno="35" col_offset="4" end_lineno="35" end_col_offset="12">
+            <targets>
+              <Name id="suvo" lineno="35" col_offset="4" end_lineno="35" end_col_offset="8">
+                <Store/>
+              </Name>
+            </targets>
+            <Constant value="0" kind="None" lineno="35" col_offset="11" end_lineno="35" end_col_offset="12"/>
+          </Assign>
+          <Assign type_comment="None" lineno="36" col_offset="4" end_lineno="36" end_col_offset="15">
+            <targets>
+              <Name id="s" lineno="36" col_offset="4" end_lineno="36" end_col_offset="5">
+                <Store/>
+              </Name>
+            </targets>
+            <Call lineno="36" col_offset="8" end_lineno="36" end_col_offset="15">
+              <Name id="input" lineno="36" col_offset="8" end_lineno="36" end_col_offset="13">
+                <Load/>
+              </Name>
+              <args/>
+              <keywords/>
+            </Call>
+          </Assign>
+          <Assign type_comment="None" lineno="37" col_offset="4" end_lineno="37" end_col_offset="32">
+            <targets>
+              <Name id="suvojit" lineno="37" col_offset="4" end_lineno="37" end_col_offset="11">
+                <Store/>
+              </Name>
+            </targets>
+            <Call lineno="37" col_offset="14" end_lineno="37" end_col_offset="32">
+              <Attribute attr="count" lineno="37" col_offset="14" end_lineno="37" end_col_offset="21">
+                <Name id="s" lineno="37" col_offset="14" end_lineno="37" end_col_offset="15">
+                  <Load/>
+                </Name>
+                <Load/>
+              </Attribute>
+              <args>
+                <Constant value="SUVOJIT" kind="None" lineno="37" col_offset="22" end_lineno="37" end_col_offset="31"/>
+              </args>
+              <keywords/>
+            </Call>
+          </Assign>
+          <Assign type_comment="None" lineno="38" col_offset="4" end_lineno="38" end_col_offset="26">
+            <targets>
+              <Name id="suvo" lineno="38" col_offset="4" end_lineno="38" end_col_offset="8">
+                <Store/>
+              </Name>
+            </targets>
+            <Call lineno="38" col_offset="11" end_lineno="38" end_col_offset="26">
+              <Attribute attr="count" lineno="38" col_offset="11" end_lineno="38" end_col_offset="18">
+                <Name id="s" lineno="38" col_offset="11" end_lineno="38" end_col_offset="12">
+                  <Load/>
+                </Name>
+                <Load/>
+              </Attribute>
+              <args>
+                <Constant value="SUVO" kind="None" lineno="38" col_offset="19" end_lineno="38" end_col_offset="25"/>
+              </args>
+              <keywords/>
+            </Call>
+          </Assign>
+          <Expr lineno="39" col_offset="4" end_lineno="39" end_col_offset="63">
+            <Call lineno="39" col_offset="4" end_lineno="39" end_col_offset="63">
+              <Name id="print" lineno="39" col_offset="4" end_lineno="39" end_col_offset="9">
+                <Load/>
+              </Name>
+              <args>
+                <Constant value="SUVO = " kind="None" lineno="39" col_offset="10" end_lineno="39" end_col_offset="19"/>
+                <BinOp lineno="39" col_offset="20" end_lineno="39" end_col_offset="32">
+                  <Name id="suvo" lineno="39" col_offset="20" end_lineno="39" end_col_offset="24">
+                    <Load/>
+                  </Name>
+                  <Sub/>
+                  <Name id="suvojit" lineno="39" col_offset="25" end_lineno="39" end_col_offset="32">
+                    <Load/>
+                  </Name>
+                </BinOp>
+                <Constant value=", SUVOJIT = " kind="None" lineno="39" col_offset="33" end_lineno="39" end_col_offset="47"/>
+                <Name id="suvojit" lineno="39" col_offset="48" end_lineno="39" end_col_offset="55">
+                  <Load/>
+                </Name>
+              </args>
+              <keywords>
+                <keyword arg="sep" lineno="39" col_offset="56" end_lineno="39" end_col_offset="62">
+                  <Constant value="" kind="None" lineno="39" col_offset="60" end_lineno="39" end_col_offset="62"/>
+                </keyword>
+              </keywords>
+            </Call>
+          </Expr>
+        </body>
+        <orelse/>
+      </For>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

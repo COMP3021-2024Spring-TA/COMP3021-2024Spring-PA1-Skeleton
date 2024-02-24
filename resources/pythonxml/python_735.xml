@@ -1,0 +1,301 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="BankAccount" lineno="7" col_offset="0" end_lineno="11" end_col_offset="78">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="__init__" returns="None" type_comment="None" lineno="8" col_offset="4" end_lineno="11" end_col_offset="78">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="8" col_offset="17" end_lineno="8" end_col_offset="21"/>
+                <arg arg="name" annotation="None" type_comment="None" lineno="8" col_offset="22" end_lineno="8" end_col_offset="26"/>
+                <arg arg="balance" annotation="None" type_comment="None" lineno="8" col_offset="27" end_lineno="8" end_col_offset="34"/>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Assign type_comment="None" lineno="9" col_offset="8" end_lineno="9" end_col_offset="22">
+                <targets>
+                  <Attribute attr="name" lineno="9" col_offset="8" end_lineno="9" end_col_offset="17">
+                    <Name id="self" lineno="9" col_offset="8" end_lineno="9" end_col_offset="12">
+                      <Load/>
+                    </Name>
+                    <Store/>
+                  </Attribute>
+                </targets>
+                <Name id="name" lineno="9" col_offset="18" end_lineno="9" end_col_offset="22">
+                  <Load/>
+                </Name>
+              </Assign>
+              <Assign type_comment="None" lineno="10" col_offset="8" end_lineno="10" end_col_offset="28">
+                <targets>
+                  <Attribute attr="balance" lineno="10" col_offset="8" end_lineno="10" end_col_offset="20">
+                    <Name id="self" lineno="10" col_offset="8" end_lineno="10" end_col_offset="12">
+                      <Load/>
+                    </Name>
+                    <Store/>
+                  </Attribute>
+                </targets>
+                <Name id="balance" lineno="10" col_offset="21" end_lineno="10" end_col_offset="28">
+                  <Load/>
+                </Name>
+              </Assign>
+              <Assign type_comment="None" lineno="11" col_offset="8" end_lineno="11" end_col_offset="78">
+                <targets>
+                  <Attribute attr="total" lineno="11" col_offset="8" end_lineno="11" end_col_offset="18">
+                    <Name id="self" lineno="11" col_offset="8" end_lineno="11" end_col_offset="12">
+                      <Load/>
+                    </Name>
+                    <Store/>
+                  </Attribute>
+                </targets>
+                <BinOp lineno="11" col_offset="20" end_lineno="11" end_col_offset="78">
+                  <BinOp lineno="11" col_offset="20" end_lineno="11" end_col_offset="51">
+                    <BinOp lineno="11" col_offset="20" end_lineno="11" end_col_offset="38">
+                      <Attribute attr="name" lineno="11" col_offset="20" end_lineno="11" end_col_offset="29">
+                        <Name id="self" lineno="11" col_offset="20" end_lineno="11" end_col_offset="24">
+                          <Load/>
+                        </Name>
+                        <Load/>
+                      </Attribute>
+                      <Add/>
+                      <Constant value=" has " kind="None" lineno="11" col_offset="31" end_lineno="11" end_col_offset="38"/>
+                    </BinOp>
+                    <Add/>
+                    <Attribute attr="balance" lineno="11" col_offset="39" end_lineno="11" end_col_offset="51">
+                      <Name id="self" lineno="11" col_offset="39" end_lineno="11" end_col_offset="43">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Attribute>
+                  </BinOp>
+                  <Add/>
+                  <Constant value=" dollars in the account" kind="None" lineno="11" col_offset="53" end_lineno="11" end_col_offset="78"/>
+                </BinOp>
+              </Assign>
+            </body>
+            <decorator_list/>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+      <Assign type_comment="None" lineno="13" col_offset="0" end_lineno="13" end_col_offset="38">
+        <targets>
+          <Name id="user1" lineno="13" col_offset="0" end_lineno="13" end_col_offset="5">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="13" col_offset="6" end_lineno="13" end_col_offset="38">
+          <Name id="BankAccount" lineno="13" col_offset="6" end_lineno="13" end_col_offset="17">
+            <Load/>
+          </Name>
+          <args>
+            <Constant value="Elon Musk" kind="None" lineno="13" col_offset="18" end_lineno="13" end_col_offset="29"/>
+            <Constant value="10000" kind="None" lineno="13" col_offset="30" end_lineno="13" end_col_offset="37"/>
+          </args>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Assign type_comment="None" lineno="14" col_offset="0" end_lineno="14" end_col_offset="21">
+        <targets>
+          <Attribute attr="name" lineno="14" col_offset="0" end_lineno="14" end_col_offset="10">
+            <Name id="user1" lineno="14" col_offset="0" end_lineno="14" end_col_offset="5">
+              <Load/>
+            </Name>
+            <Store/>
+          </Attribute>
+        </targets>
+        <Constant value="Tim cook" kind="None" lineno="14" col_offset="11" end_lineno="14" end_col_offset="21"/>
+      </Assign>
+      <Expr lineno="15" col_offset="0" end_lineno="15" end_col_offset="17">
+        <Call lineno="15" col_offset="0" end_lineno="15" end_col_offset="17">
+          <Name id="print" lineno="15" col_offset="0" end_lineno="15" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Attribute attr="name" lineno="15" col_offset="6" end_lineno="15" end_col_offset="16">
+              <Name id="user1" lineno="15" col_offset="6" end_lineno="15" end_col_offset="11">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="16" col_offset="0" end_lineno="16" end_col_offset="18">
+        <Call lineno="16" col_offset="0" end_lineno="16" end_col_offset="18">
+          <Name id="print" lineno="16" col_offset="0" end_lineno="16" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Attribute attr="total" lineno="16" col_offset="6" end_lineno="16" end_col_offset="17">
+              <Name id="user1" lineno="16" col_offset="6" end_lineno="16" end_col_offset="11">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <ClassDef name="BankAccount" lineno="24" col_offset="0" end_lineno="30" end_col_offset="73">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="__init__" returns="None" type_comment="None" lineno="25" col_offset="4" end_lineno="27" end_col_offset="28">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="25" col_offset="17" end_lineno="25" end_col_offset="21"/>
+                <arg arg="name" annotation="None" type_comment="None" lineno="25" col_offset="22" end_lineno="25" end_col_offset="26"/>
+                <arg arg="balance" annotation="None" type_comment="None" lineno="25" col_offset="27" end_lineno="25" end_col_offset="34"/>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Assign type_comment="None" lineno="26" col_offset="8" end_lineno="26" end_col_offset="22">
+                <targets>
+                  <Attribute attr="name" lineno="26" col_offset="8" end_lineno="26" end_col_offset="17">
+                    <Name id="self" lineno="26" col_offset="8" end_lineno="26" end_col_offset="12">
+                      <Load/>
+                    </Name>
+                    <Store/>
+                  </Attribute>
+                </targets>
+                <Name id="name" lineno="26" col_offset="18" end_lineno="26" end_col_offset="22">
+                  <Load/>
+                </Name>
+              </Assign>
+              <Assign type_comment="None" lineno="27" col_offset="8" end_lineno="27" end_col_offset="28">
+                <targets>
+                  <Attribute attr="balance" lineno="27" col_offset="8" end_lineno="27" end_col_offset="20">
+                    <Name id="self" lineno="27" col_offset="8" end_lineno="27" end_col_offset="12">
+                      <Load/>
+                    </Name>
+                    <Store/>
+                  </Attribute>
+                </targets>
+                <Name id="balance" lineno="27" col_offset="21" end_lineno="27" end_col_offset="28">
+                  <Load/>
+                </Name>
+              </Assign>
+            </body>
+            <decorator_list/>
+          </FunctionDef>
+          <FunctionDef name="total" returns="None" type_comment="None" lineno="29" col_offset="4" end_lineno="30" end_col_offset="73">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="29" col_offset="14" end_lineno="29" end_col_offset="18"/>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Return lineno="30" col_offset="8" end_lineno="30" end_col_offset="73">
+                <BinOp lineno="30" col_offset="15" end_lineno="30" end_col_offset="73">
+                  <BinOp lineno="30" col_offset="15" end_lineno="30" end_col_offset="46">
+                    <BinOp lineno="30" col_offset="15" end_lineno="30" end_col_offset="33">
+                      <Attribute attr="name" lineno="30" col_offset="15" end_lineno="30" end_col_offset="24">
+                        <Name id="self" lineno="30" col_offset="15" end_lineno="30" end_col_offset="19">
+                          <Load/>
+                        </Name>
+                        <Load/>
+                      </Attribute>
+                      <Add/>
+                      <Constant value=" has " kind="None" lineno="30" col_offset="26" end_lineno="30" end_col_offset="33"/>
+                    </BinOp>
+                    <Add/>
+                    <Attribute attr="balance" lineno="30" col_offset="34" end_lineno="30" end_col_offset="46">
+                      <Name id="self" lineno="30" col_offset="34" end_lineno="30" end_col_offset="38">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Attribute>
+                  </BinOp>
+                  <Add/>
+                  <Constant value=" dollars in the account" kind="None" lineno="30" col_offset="48" end_lineno="30" end_col_offset="73"/>
+                </BinOp>
+              </Return>
+            </body>
+            <decorator_list>
+              <Name id="property" lineno="28" col_offset="5" end_lineno="28" end_col_offset="13">
+                <Load/>
+              </Name>
+            </decorator_list>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+      <Assign type_comment="None" lineno="32" col_offset="0" end_lineno="32" end_col_offset="38">
+        <targets>
+          <Name id="user1" lineno="32" col_offset="0" end_lineno="32" end_col_offset="5">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="32" col_offset="6" end_lineno="32" end_col_offset="38">
+          <Name id="BankAccount" lineno="32" col_offset="6" end_lineno="32" end_col_offset="17">
+            <Load/>
+          </Name>
+          <args>
+            <Constant value="Elon Musk" kind="None" lineno="32" col_offset="18" end_lineno="32" end_col_offset="29"/>
+            <Constant value="10000" kind="None" lineno="32" col_offset="30" end_lineno="32" end_col_offset="37"/>
+          </args>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Assign type_comment="None" lineno="33" col_offset="0" end_lineno="33" end_col_offset="21">
+        <targets>
+          <Attribute attr="name" lineno="33" col_offset="0" end_lineno="33" end_col_offset="10">
+            <Name id="user1" lineno="33" col_offset="0" end_lineno="33" end_col_offset="5">
+              <Load/>
+            </Name>
+            <Store/>
+          </Attribute>
+        </targets>
+        <Constant value="Tim cook" kind="None" lineno="33" col_offset="11" end_lineno="33" end_col_offset="21"/>
+      </Assign>
+      <Expr lineno="34" col_offset="0" end_lineno="34" end_col_offset="17">
+        <Call lineno="34" col_offset="0" end_lineno="34" end_col_offset="17">
+          <Name id="print" lineno="34" col_offset="0" end_lineno="34" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Attribute attr="name" lineno="34" col_offset="6" end_lineno="34" end_col_offset="16">
+              <Name id="user1" lineno="34" col_offset="6" end_lineno="34" end_col_offset="11">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="35" col_offset="0" end_lineno="35" end_col_offset="18">
+        <Call lineno="35" col_offset="0" end_lineno="35" end_col_offset="18">
+          <Name id="print" lineno="35" col_offset="0" end_lineno="35" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Attribute attr="total" lineno="35" col_offset="6" end_lineno="35" end_col_offset="17">
+              <Name id="user1" lineno="35" col_offset="6" end_lineno="35" end_col_offset="11">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

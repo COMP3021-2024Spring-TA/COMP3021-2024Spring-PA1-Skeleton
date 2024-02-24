@@ -1,0 +1,81 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="1" col_offset="0" end_lineno="1" end_col_offset="5">
+        <targets>
+          <Name id="sum" lineno="1" col_offset="0" end_lineno="1" end_col_offset="3">
+            <Store/>
+          </Name>
+        </targets>
+        <Constant value="0" kind="None" lineno="1" col_offset="4" end_lineno="1" end_col_offset="5"/>
+      </Assign>
+      <For type_comment="None" lineno="2" col_offset="0" end_lineno="4" end_col_offset="7">
+        <Name id="i" lineno="2" col_offset="4" end_lineno="2" end_col_offset="5">
+          <Store/>
+        </Name>
+        <Call lineno="2" col_offset="9" end_lineno="2" end_col_offset="20">
+          <Name id="range" lineno="2" col_offset="9" end_lineno="2" end_col_offset="14">
+            <Load/>
+          </Name>
+          <args>
+            <Constant value="0" kind="None" lineno="2" col_offset="16" end_lineno="2" end_col_offset="17"/>
+            <Constant value="6" kind="None" lineno="2" col_offset="18" end_lineno="2" end_col_offset="19"/>
+          </args>
+          <keywords/>
+        </Call>
+        <body>
+          <Assign type_comment="None" lineno="3" col_offset="1" end_lineno="3" end_col_offset="15">
+            <targets>
+              <Name id="a" lineno="3" col_offset="1" end_lineno="3" end_col_offset="2">
+                <Store/>
+              </Name>
+            </targets>
+            <Call lineno="3" col_offset="3" end_lineno="3" end_col_offset="15">
+              <Name id="int" lineno="3" col_offset="3" end_lineno="3" end_col_offset="6">
+                <Load/>
+              </Name>
+              <args>
+                <Call lineno="3" col_offset="7" end_lineno="3" end_col_offset="14">
+                  <Name id="input" lineno="3" col_offset="7" end_lineno="3" end_col_offset="12">
+                    <Load/>
+                  </Name>
+                  <args/>
+                  <keywords/>
+                </Call>
+              </args>
+              <keywords/>
+            </Call>
+          </Assign>
+          <AugAssign lineno="4" col_offset="1" end_lineno="4" end_col_offset="7">
+            <Name id="sum" lineno="4" col_offset="1" end_lineno="4" end_col_offset="4">
+              <Store/>
+            </Name>
+            <Add/>
+            <Name id="a" lineno="4" col_offset="6" end_lineno="4" end_col_offset="7">
+              <Load/>
+            </Name>
+          </AugAssign>
+        </body>
+        <orelse/>
+      </For>
+      <Expr lineno="5" col_offset="0" end_lineno="5" end_col_offset="12">
+        <Call lineno="5" col_offset="0" end_lineno="5" end_col_offset="12">
+          <Name id="print" lineno="5" col_offset="0" end_lineno="5" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <BinOp lineno="5" col_offset="6" end_lineno="5" end_col_offset="11">
+              <Name id="sum" lineno="5" col_offset="6" end_lineno="5" end_col_offset="9">
+                <Load/>
+              </Name>
+              <Div/>
+              <Constant value="6" kind="None" lineno="5" col_offset="10" end_lineno="5" end_col_offset="11"/>
+            </BinOp>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

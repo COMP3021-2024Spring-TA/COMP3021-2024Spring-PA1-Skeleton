@@ -1,0 +1,180 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="24" col_offset="0" end_lineno="24" end_col_offset="24">
+        <targets>
+          <Name id="testCases" lineno="24" col_offset="0" end_lineno="24" end_col_offset="9">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="24" col_offset="12" end_lineno="24" end_col_offset="24">
+          <Name id="int" lineno="24" col_offset="12" end_lineno="24" end_col_offset="15">
+            <Load/>
+          </Name>
+          <args>
+            <Call lineno="24" col_offset="16" end_lineno="24" end_col_offset="23">
+              <Name id="input" lineno="24" col_offset="16" end_lineno="24" end_col_offset="21">
+                <Load/>
+              </Name>
+              <args/>
+              <keywords/>
+            </Call>
+          </args>
+          <keywords/>
+        </Call>
+      </Assign>
+      <For type_comment="None" lineno="25" col_offset="0" end_lineno="30" end_col_offset="11">
+        <Name id="_" lineno="25" col_offset="4" end_lineno="25" end_col_offset="5">
+          <Store/>
+        </Name>
+        <Call lineno="25" col_offset="9" end_lineno="25" end_col_offset="25">
+          <Name id="range" lineno="25" col_offset="9" end_lineno="25" end_col_offset="14">
+            <Load/>
+          </Name>
+          <args>
+            <Name id="testCases" lineno="25" col_offset="15" end_lineno="25" end_col_offset="24">
+              <Load/>
+            </Name>
+          </args>
+          <keywords/>
+        </Call>
+        <body>
+          <Assign type_comment="None" lineno="26" col_offset="4" end_lineno="26" end_col_offset="39">
+            <targets>
+              <Tuple lineno="26" col_offset="4" end_lineno="26" end_col_offset="11">
+                <elts>
+                  <Name id="n" lineno="26" col_offset="4" end_lineno="26" end_col_offset="5">
+                    <Store/>
+                  </Name>
+                  <Name id="x" lineno="26" col_offset="7" end_lineno="26" end_col_offset="8">
+                    <Store/>
+                  </Name>
+                  <Name id="y" lineno="26" col_offset="10" end_lineno="26" end_col_offset="11">
+                    <Store/>
+                  </Name>
+                </elts>
+                <Store/>
+              </Tuple>
+            </targets>
+            <Call lineno="26" col_offset="14" end_lineno="26" end_col_offset="39">
+              <Name id="map" lineno="26" col_offset="14" end_lineno="26" end_col_offset="17">
+                <Load/>
+              </Name>
+              <args>
+                <Name id="int" lineno="26" col_offset="18" end_lineno="26" end_col_offset="21">
+                  <Load/>
+                </Name>
+                <Call lineno="26" col_offset="23" end_lineno="26" end_col_offset="38">
+                  <Attribute attr="split" lineno="26" col_offset="23" end_lineno="26" end_col_offset="36">
+                    <Call lineno="26" col_offset="23" end_lineno="26" end_col_offset="30">
+                      <Name id="input" lineno="26" col_offset="23" end_lineno="26" end_col_offset="28">
+                        <Load/>
+                      </Name>
+                      <args/>
+                      <keywords/>
+                    </Call>
+                    <Load/>
+                  </Attribute>
+                  <args/>
+                  <keywords/>
+                </Call>
+              </args>
+              <keywords/>
+            </Call>
+          </Assign>
+          <For type_comment="None" lineno="27" col_offset="4" end_lineno="29" end_col_offset="31">
+            <Name id="i" lineno="27" col_offset="8" end_lineno="27" end_col_offset="9">
+              <Store/>
+            </Name>
+            <Call lineno="27" col_offset="13" end_lineno="27" end_col_offset="21">
+              <Name id="range" lineno="27" col_offset="13" end_lineno="27" end_col_offset="18">
+                <Load/>
+              </Name>
+              <args>
+                <Name id="n" lineno="27" col_offset="19" end_lineno="27" end_col_offset="20">
+                  <Load/>
+                </Name>
+              </args>
+              <keywords/>
+            </Call>
+            <body>
+              <If lineno="28" col_offset="8" end_lineno="29" end_col_offset="31">
+                <BoolOp lineno="28" col_offset="11" end_lineno="28" end_col_offset="36">
+                  <And/>
+                  <values>
+                    <Compare lineno="28" col_offset="11" end_lineno="28" end_col_offset="21">
+                      <BinOp lineno="28" col_offset="11" end_lineno="28" end_col_offset="16">
+                        <Name id="i" lineno="28" col_offset="11" end_lineno="28" end_col_offset="12">
+                          <Load/>
+                        </Name>
+                        <Mod/>
+                        <Name id="x" lineno="28" col_offset="15" end_lineno="28" end_col_offset="16">
+                          <Load/>
+                        </Name>
+                      </BinOp>
+                      <ops>
+                        <Eq/>
+                      </ops>
+                      <comparators>
+                        <Constant value="0" kind="None" lineno="28" col_offset="20" end_lineno="28" end_col_offset="21"/>
+                      </comparators>
+                    </Compare>
+                    <Compare lineno="28" col_offset="26" end_lineno="28" end_col_offset="36">
+                      <BinOp lineno="28" col_offset="26" end_lineno="28" end_col_offset="31">
+                        <Name id="i" lineno="28" col_offset="26" end_lineno="28" end_col_offset="27">
+                          <Load/>
+                        </Name>
+                        <Mod/>
+                        <Name id="y" lineno="28" col_offset="30" end_lineno="28" end_col_offset="31">
+                          <Load/>
+                        </Name>
+                      </BinOp>
+                      <ops>
+                        <NotEq/>
+                      </ops>
+                      <comparators>
+                        <Constant value="0" kind="None" lineno="28" col_offset="35" end_lineno="28" end_col_offset="36"/>
+                      </comparators>
+                    </Compare>
+                  </values>
+                </BoolOp>
+                <body>
+                  <Expr lineno="29" col_offset="12" end_lineno="29" end_col_offset="31">
+                    <Call lineno="29" col_offset="12" end_lineno="29" end_col_offset="31">
+                      <Name id="print" lineno="29" col_offset="12" end_lineno="29" end_col_offset="17">
+                        <Load/>
+                      </Name>
+                      <args>
+                        <Name id="i" lineno="29" col_offset="18" end_lineno="29" end_col_offset="19">
+                          <Load/>
+                        </Name>
+                      </args>
+                      <keywords>
+                        <keyword arg="end" lineno="29" col_offset="21" end_lineno="29" end_col_offset="30">
+                          <Constant value=" " kind="None" lineno="29" col_offset="27" end_lineno="29" end_col_offset="30"/>
+                        </keyword>
+                      </keywords>
+                    </Call>
+                  </Expr>
+                </body>
+                <orelse/>
+              </If>
+            </body>
+            <orelse/>
+          </For>
+          <Expr lineno="30" col_offset="4" end_lineno="30" end_col_offset="11">
+            <Call lineno="30" col_offset="4" end_lineno="30" end_col_offset="11">
+              <Name id="print" lineno="30" col_offset="4" end_lineno="30" end_col_offset="9">
+                <Load/>
+              </Name>
+              <args/>
+              <keywords/>
+            </Call>
+          </Expr>
+        </body>
+        <orelse/>
+      </For>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

@@ -1,0 +1,33 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="1" col_offset="0" end_lineno="1" end_col_offset="44">
+        <targets>
+          <Subscript lineno="1" col_offset="0" end_lineno="1" end_col_offset="19">
+            <Name id="result_df" lineno="1" col_offset="0" end_lineno="1" end_col_offset="9">
+              <Load/>
+            </Name>
+            <Constant value="环比" kind="None" lineno="1" col_offset="10" end_lineno="1" end_col_offset="18"/>
+            <Store/>
+          </Subscript>
+        </targets>
+        <Call lineno="1" col_offset="22" end_lineno="1" end_col_offset="44">
+          <Attribute attr="pct_change" lineno="1" col_offset="22" end_lineno="1" end_col_offset="42">
+            <Name id="result_df" lineno="1" col_offset="22" end_lineno="1" end_col_offset="31">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args/>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Expr lineno="2" col_offset="0" end_lineno="2" end_col_offset="9">
+        <Name id="result_df" lineno="2" col_offset="0" end_lineno="2" end_col_offset="9">
+          <Load/>
+        </Name>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

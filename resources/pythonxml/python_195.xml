@@ -1,0 +1,218 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="Solution" lineno="1" col_offset="0" end_lineno="19" end_col_offset="18">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="numOfSubarrays" type_comment="None" lineno="2" col_offset="4" end_lineno="19" end_col_offset="18">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="2" col_offset="23" end_lineno="2" end_col_offset="27"/>
+                <arg arg="arr" type_comment="None" lineno="2" col_offset="29" end_lineno="2" end_col_offset="43">
+                  <Subscript lineno="2" col_offset="34" end_lineno="2" end_col_offset="43">
+                    <Name id="List" lineno="2" col_offset="34" end_lineno="2" end_col_offset="38">
+                      <Load/>
+                    </Name>
+                    <Name id="int" lineno="2" col_offset="39" end_lineno="2" end_col_offset="42">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Subscript>
+                </arg>
+                <arg arg="k" type_comment="None" lineno="2" col_offset="45" end_lineno="2" end_col_offset="51">
+                  <Name id="int" lineno="2" col_offset="48" end_lineno="2" end_col_offset="51">
+                    <Load/>
+                  </Name>
+                </arg>
+                <arg arg="threshold" type_comment="None" lineno="2" col_offset="53" end_lineno="2" end_col_offset="67">
+                  <Name id="int" lineno="2" col_offset="64" end_lineno="2" end_col_offset="67">
+                    <Load/>
+                  </Name>
+                </arg>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Assign type_comment="None" lineno="3" col_offset="8" end_lineno="3" end_col_offset="16">
+                <targets>
+                  <Name id="left" lineno="3" col_offset="8" end_lineno="3" end_col_offset="12">
+                    <Store/>
+                  </Name>
+                </targets>
+                <Constant value="0" kind="None" lineno="3" col_offset="15" end_lineno="3" end_col_offset="16"/>
+              </Assign>
+              <Assign type_comment="None" lineno="4" col_offset="8" end_lineno="4" end_col_offset="17">
+                <targets>
+                  <Name id="right" lineno="4" col_offset="8" end_lineno="4" end_col_offset="13">
+                    <Store/>
+                  </Name>
+                </targets>
+                <Constant value="0" kind="None" lineno="4" col_offset="16" end_lineno="4" end_col_offset="17"/>
+              </Assign>
+              <Assign type_comment="None" lineno="5" col_offset="8" end_lineno="5" end_col_offset="22">
+                <targets>
+                  <Name id="window_sum" lineno="5" col_offset="8" end_lineno="5" end_col_offset="18">
+                    <Store/>
+                  </Name>
+                </targets>
+                <Constant value="0" kind="None" lineno="5" col_offset="21" end_lineno="5" end_col_offset="22"/>
+              </Assign>
+              <Assign type_comment="None" lineno="6" col_offset="8" end_lineno="6" end_col_offset="15">
+                <targets>
+                  <Name id="ans" lineno="6" col_offset="8" end_lineno="6" end_col_offset="11">
+                    <Store/>
+                  </Name>
+                </targets>
+                <Constant value="0" kind="None" lineno="6" col_offset="14" end_lineno="6" end_col_offset="15"/>
+              </Assign>
+              <While lineno="8" col_offset="8" end_lineno="17" end_col_offset="22">
+                <Compare lineno="8" col_offset="14" end_lineno="8" end_col_offset="30">
+                  <Name id="right" lineno="8" col_offset="14" end_lineno="8" end_col_offset="19">
+                    <Load/>
+                  </Name>
+                  <ops>
+                    <Lt/>
+                  </ops>
+                  <comparators>
+                    <Call lineno="8" col_offset="22" end_lineno="8" end_col_offset="30">
+                      <Name id="len" lineno="8" col_offset="22" end_lineno="8" end_col_offset="25">
+                        <Load/>
+                      </Name>
+                      <args>
+                        <Name id="arr" lineno="8" col_offset="26" end_lineno="8" end_col_offset="29">
+                          <Load/>
+                        </Name>
+                      </args>
+                      <keywords/>
+                    </Call>
+                  </comparators>
+                </Compare>
+                <body>
+                  <AugAssign lineno="9" col_offset="12" end_lineno="9" end_col_offset="36">
+                    <Name id="window_sum" lineno="9" col_offset="12" end_lineno="9" end_col_offset="22">
+                      <Store/>
+                    </Name>
+                    <Add/>
+                    <Subscript lineno="9" col_offset="26" end_lineno="9" end_col_offset="36">
+                      <Name id="arr" lineno="9" col_offset="26" end_lineno="9" end_col_offset="29">
+                        <Load/>
+                      </Name>
+                      <Name id="right" lineno="9" col_offset="30" end_lineno="9" end_col_offset="35">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Subscript>
+                  </AugAssign>
+                  <If lineno="11" col_offset="12" end_lineno="15" end_col_offset="25">
+                    <Compare lineno="11" col_offset="15" end_lineno="11" end_col_offset="36">
+                      <BinOp lineno="11" col_offset="15" end_lineno="11" end_col_offset="31">
+                        <BinOp lineno="11" col_offset="15" end_lineno="11" end_col_offset="27">
+                          <Name id="right" lineno="11" col_offset="15" end_lineno="11" end_col_offset="20">
+                            <Load/>
+                          </Name>
+                          <Sub/>
+                          <Name id="left" lineno="11" col_offset="23" end_lineno="11" end_col_offset="27">
+                            <Load/>
+                          </Name>
+                        </BinOp>
+                        <Add/>
+                        <Constant value="1" kind="None" lineno="11" col_offset="30" end_lineno="11" end_col_offset="31"/>
+                      </BinOp>
+                      <ops>
+                        <GtE/>
+                      </ops>
+                      <comparators>
+                        <Name id="k" lineno="11" col_offset="35" end_lineno="11" end_col_offset="36">
+                          <Load/>
+                        </Name>
+                      </comparators>
+                    </Compare>
+                    <body>
+                      <If lineno="12" col_offset="16" end_lineno="13" end_col_offset="28">
+                        <Compare lineno="12" col_offset="19" end_lineno="12" end_col_offset="46">
+                          <Name id="window_sum" lineno="12" col_offset="19" end_lineno="12" end_col_offset="29">
+                            <Load/>
+                          </Name>
+                          <ops>
+                            <GtE/>
+                          </ops>
+                          <comparators>
+                            <BinOp lineno="12" col_offset="33" end_lineno="12" end_col_offset="46">
+                              <Name id="k" lineno="12" col_offset="33" end_lineno="12" end_col_offset="34">
+                                <Load/>
+                              </Name>
+                              <Mult/>
+                              <Name id="threshold" lineno="12" col_offset="37" end_lineno="12" end_col_offset="46">
+                                <Load/>
+                              </Name>
+                            </BinOp>
+                          </comparators>
+                        </Compare>
+                        <body>
+                          <AugAssign lineno="13" col_offset="20" end_lineno="13" end_col_offset="28">
+                            <Name id="ans" lineno="13" col_offset="20" end_lineno="13" end_col_offset="23">
+                              <Store/>
+                            </Name>
+                            <Add/>
+                            <Constant value="1" kind="None" lineno="13" col_offset="27" end_lineno="13" end_col_offset="28"/>
+                          </AugAssign>
+                        </body>
+                        <orelse/>
+                      </If>
+                      <AugAssign lineno="14" col_offset="16" end_lineno="14" end_col_offset="39">
+                        <Name id="window_sum" lineno="14" col_offset="16" end_lineno="14" end_col_offset="26">
+                          <Store/>
+                        </Name>
+                        <Sub/>
+                        <Subscript lineno="14" col_offset="30" end_lineno="14" end_col_offset="39">
+                          <Name id="arr" lineno="14" col_offset="30" end_lineno="14" end_col_offset="33">
+                            <Load/>
+                          </Name>
+                          <Name id="left" lineno="14" col_offset="34" end_lineno="14" end_col_offset="38">
+                            <Load/>
+                          </Name>
+                          <Load/>
+                        </Subscript>
+                      </AugAssign>
+                      <AugAssign lineno="15" col_offset="16" end_lineno="15" end_col_offset="25">
+                        <Name id="left" lineno="15" col_offset="16" end_lineno="15" end_col_offset="20">
+                          <Store/>
+                        </Name>
+                        <Add/>
+                        <Constant value="1" kind="None" lineno="15" col_offset="24" end_lineno="15" end_col_offset="25"/>
+                      </AugAssign>
+                    </body>
+                    <orelse/>
+                  </If>
+                  <AugAssign lineno="17" col_offset="12" end_lineno="17" end_col_offset="22">
+                    <Name id="right" lineno="17" col_offset="12" end_lineno="17" end_col_offset="17">
+                      <Store/>
+                    </Name>
+                    <Add/>
+                    <Constant value="1" kind="None" lineno="17" col_offset="21" end_lineno="17" end_col_offset="22"/>
+                  </AugAssign>
+                </body>
+                <orelse/>
+              </While>
+              <Return lineno="19" col_offset="8" end_lineno="19" end_col_offset="18">
+                <Name id="ans" lineno="19" col_offset="15" end_lineno="19" end_col_offset="18">
+                  <Load/>
+                </Name>
+              </Return>
+            </body>
+            <decorator_list/>
+            <Name id="int" lineno="2" col_offset="72" end_lineno="2" end_col_offset="75">
+              <Load/>
+            </Name>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

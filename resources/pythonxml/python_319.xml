@@ -1,0 +1,190 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="Solution" lineno="1" col_offset="0" end_lineno="11" end_col_offset="32">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="dfs" returns="None" type_comment="None" lineno="2" col_offset="4" end_lineno="8" end_col_offset="71">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="2" col_offset="12" end_lineno="2" end_col_offset="16"/>
+                <arg arg="root" annotation="None" type_comment="None" lineno="2" col_offset="18" end_lineno="2" end_col_offset="22"/>
+                <arg arg="pre_total" annotation="None" type_comment="None" lineno="2" col_offset="24" end_lineno="2" end_col_offset="33"/>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <If lineno="3" col_offset="8" end_lineno="4" end_col_offset="20">
+                <UnaryOp lineno="3" col_offset="11" end_lineno="3" end_col_offset="19">
+                  <Not/>
+                  <Name id="root" lineno="3" col_offset="15" end_lineno="3" end_col_offset="19">
+                    <Load/>
+                  </Name>
+                </UnaryOp>
+                <body>
+                  <Return lineno="4" col_offset="12" end_lineno="4" end_col_offset="20">
+                    <Constant value="0" kind="None" lineno="4" col_offset="19" end_lineno="4" end_col_offset="20"/>
+                  </Return>
+                </body>
+                <orelse/>
+              </If>
+              <Assign type_comment="None" lineno="5" col_offset="8" end_lineno="5" end_col_offset="41">
+                <targets>
+                  <Name id="total" lineno="5" col_offset="8" end_lineno="5" end_col_offset="13">
+                    <Store/>
+                  </Name>
+                </targets>
+                <BinOp lineno="5" col_offset="16" end_lineno="5" end_col_offset="41">
+                  <BinOp lineno="5" col_offset="16" end_lineno="5" end_col_offset="30">
+                    <Name id="pre_total" lineno="5" col_offset="16" end_lineno="5" end_col_offset="25">
+                      <Load/>
+                    </Name>
+                    <Mult/>
+                    <Constant value="10" kind="None" lineno="5" col_offset="28" end_lineno="5" end_col_offset="30"/>
+                  </BinOp>
+                  <Add/>
+                  <Attribute attr="val" lineno="5" col_offset="33" end_lineno="5" end_col_offset="41">
+                    <Name id="root" lineno="5" col_offset="33" end_lineno="5" end_col_offset="37">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Attribute>
+                </BinOp>
+              </Assign>
+              <If lineno="6" col_offset="8" end_lineno="7" end_col_offset="24">
+                <BoolOp lineno="6" col_offset="11" end_lineno="6" end_col_offset="43">
+                  <And/>
+                  <values>
+                    <UnaryOp lineno="6" col_offset="11" end_lineno="6" end_col_offset="24">
+                      <Not/>
+                      <Attribute attr="left" lineno="6" col_offset="15" end_lineno="6" end_col_offset="24">
+                        <Name id="root" lineno="6" col_offset="15" end_lineno="6" end_col_offset="19">
+                          <Load/>
+                        </Name>
+                        <Load/>
+                      </Attribute>
+                    </UnaryOp>
+                    <UnaryOp lineno="6" col_offset="29" end_lineno="6" end_col_offset="43">
+                      <Not/>
+                      <Attribute attr="right" lineno="6" col_offset="33" end_lineno="6" end_col_offset="43">
+                        <Name id="root" lineno="6" col_offset="33" end_lineno="6" end_col_offset="37">
+                          <Load/>
+                        </Name>
+                        <Load/>
+                      </Attribute>
+                    </UnaryOp>
+                  </values>
+                </BoolOp>
+                <body>
+                  <Return lineno="7" col_offset="12" end_lineno="7" end_col_offset="24">
+                    <Name id="total" lineno="7" col_offset="19" end_lineno="7" end_col_offset="24">
+                      <Load/>
+                    </Name>
+                  </Return>
+                </body>
+                <orelse/>
+              </If>
+              <Return lineno="8" col_offset="8" end_lineno="8" end_col_offset="71">
+                <BinOp lineno="8" col_offset="15" end_lineno="8" end_col_offset="71">
+                  <Call lineno="8" col_offset="15" end_lineno="8" end_col_offset="41">
+                    <Attribute attr="dfs" lineno="8" col_offset="15" end_lineno="8" end_col_offset="23">
+                      <Name id="self" lineno="8" col_offset="15" end_lineno="8" end_col_offset="19">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Attribute>
+                    <args>
+                      <Attribute attr="left" lineno="8" col_offset="24" end_lineno="8" end_col_offset="33">
+                        <Name id="root" lineno="8" col_offset="24" end_lineno="8" end_col_offset="28">
+                          <Load/>
+                        </Name>
+                        <Load/>
+                      </Attribute>
+                      <Name id="total" lineno="8" col_offset="35" end_lineno="8" end_col_offset="40">
+                        <Load/>
+                      </Name>
+                    </args>
+                    <keywords/>
+                  </Call>
+                  <Add/>
+                  <Call lineno="8" col_offset="44" end_lineno="8" end_col_offset="71">
+                    <Attribute attr="dfs" lineno="8" col_offset="44" end_lineno="8" end_col_offset="52">
+                      <Name id="self" lineno="8" col_offset="44" end_lineno="8" end_col_offset="48">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Attribute>
+                    <args>
+                      <Attribute attr="right" lineno="8" col_offset="53" end_lineno="8" end_col_offset="63">
+                        <Name id="root" lineno="8" col_offset="53" end_lineno="8" end_col_offset="57">
+                          <Load/>
+                        </Name>
+                        <Load/>
+                      </Attribute>
+                      <Name id="total" lineno="8" col_offset="65" end_lineno="8" end_col_offset="70">
+                        <Load/>
+                      </Name>
+                    </args>
+                    <keywords/>
+                  </Call>
+                </BinOp>
+              </Return>
+            </body>
+            <decorator_list/>
+          </FunctionDef>
+          <FunctionDef name="sumNumbers" type_comment="None" lineno="10" col_offset="4" end_lineno="11" end_col_offset="32">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="10" col_offset="19" end_lineno="10" end_col_offset="23"/>
+                <arg arg="root" type_comment="None" lineno="10" col_offset="25" end_lineno="10" end_col_offset="49">
+                  <Subscript lineno="10" col_offset="31" end_lineno="10" end_col_offset="49">
+                    <Name id="Optional" lineno="10" col_offset="31" end_lineno="10" end_col_offset="39">
+                      <Load/>
+                    </Name>
+                    <Name id="TreeNode" lineno="10" col_offset="40" end_lineno="10" end_col_offset="48">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Subscript>
+                </arg>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Return lineno="11" col_offset="8" end_lineno="11" end_col_offset="32">
+                <Call lineno="11" col_offset="15" end_lineno="11" end_col_offset="32">
+                  <Attribute attr="dfs" lineno="11" col_offset="15" end_lineno="11" end_col_offset="23">
+                    <Name id="self" lineno="11" col_offset="15" end_lineno="11" end_col_offset="19">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Attribute>
+                  <args>
+                    <Name id="root" lineno="11" col_offset="24" end_lineno="11" end_col_offset="28">
+                      <Load/>
+                    </Name>
+                    <Constant value="0" kind="None" lineno="11" col_offset="30" end_lineno="11" end_col_offset="31"/>
+                  </args>
+                  <keywords/>
+                </Call>
+              </Return>
+            </body>
+            <decorator_list/>
+            <Name id="int" lineno="10" col_offset="54" end_lineno="10" end_col_offset="57">
+              <Load/>
+            </Name>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

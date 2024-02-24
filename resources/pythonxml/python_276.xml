@@ -1,0 +1,182 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="Solution" lineno="1" col_offset="0" end_lineno="10" end_col_offset="41">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="canVisitAllRooms" type_comment="None" lineno="2" col_offset="4" end_lineno="10" end_col_offset="41">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="2" col_offset="25" end_lineno="2" end_col_offset="29"/>
+                <arg arg="rooms" type_comment="None" lineno="2" col_offset="31" end_lineno="2" end_col_offset="53">
+                  <Subscript lineno="2" col_offset="38" end_lineno="2" end_col_offset="53">
+                    <Name id="List" lineno="2" col_offset="38" end_lineno="2" end_col_offset="42">
+                      <Load/>
+                    </Name>
+                    <Subscript lineno="2" col_offset="43" end_lineno="2" end_col_offset="52">
+                      <Name id="List" lineno="2" col_offset="43" end_lineno="2" end_col_offset="47">
+                        <Load/>
+                      </Name>
+                      <Name id="int" lineno="2" col_offset="48" end_lineno="2" end_col_offset="51">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Subscript>
+                    <Load/>
+                  </Subscript>
+                </arg>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <FunctionDef name="dfs" returns="None" type_comment="None" lineno="3" col_offset="8" end_lineno="7" end_col_offset="28">
+                <arguments vararg="None" kwarg="None">
+                  <posonlyargs/>
+                  <args>
+                    <arg arg="x" annotation="None" type_comment="None" lineno="3" col_offset="16" end_lineno="3" end_col_offset="17"/>
+                  </args>
+                  <kwonlyargs/>
+                  <kw_defaults/>
+                  <defaults/>
+                </arguments>
+                <body>
+                  <Expr lineno="4" col_offset="12" end_lineno="4" end_col_offset="26">
+                    <Call lineno="4" col_offset="12" end_lineno="4" end_col_offset="26">
+                      <Attribute attr="add" lineno="4" col_offset="12" end_lineno="4" end_col_offset="23">
+                        <Name id="visited" lineno="4" col_offset="12" end_lineno="4" end_col_offset="19">
+                          <Load/>
+                        </Name>
+                        <Load/>
+                      </Attribute>
+                      <args>
+                        <Name id="x" lineno="4" col_offset="24" end_lineno="4" end_col_offset="25">
+                          <Load/>
+                        </Name>
+                      </args>
+                      <keywords/>
+                    </Call>
+                  </Expr>
+                  <For type_comment="None" lineno="5" col_offset="12" end_lineno="7" end_col_offset="28">
+                    <Name id="key" lineno="5" col_offset="16" end_lineno="5" end_col_offset="19">
+                      <Store/>
+                    </Name>
+                    <Subscript lineno="5" col_offset="23" end_lineno="5" end_col_offset="31">
+                      <Name id="rooms" lineno="5" col_offset="23" end_lineno="5" end_col_offset="28">
+                        <Load/>
+                      </Name>
+                      <Name id="x" lineno="5" col_offset="29" end_lineno="5" end_col_offset="30">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Subscript>
+                    <body>
+                      <If lineno="6" col_offset="16" end_lineno="7" end_col_offset="28">
+                        <Compare lineno="6" col_offset="19" end_lineno="6" end_col_offset="37">
+                          <Name id="key" lineno="6" col_offset="19" end_lineno="6" end_col_offset="22">
+                            <Load/>
+                          </Name>
+                          <ops>
+                            <NotIn/>
+                          </ops>
+                          <comparators>
+                            <Name id="visited" lineno="6" col_offset="30" end_lineno="6" end_col_offset="37">
+                              <Load/>
+                            </Name>
+                          </comparators>
+                        </Compare>
+                        <body>
+                          <Expr lineno="7" col_offset="20" end_lineno="7" end_col_offset="28">
+                            <Call lineno="7" col_offset="20" end_lineno="7" end_col_offset="28">
+                              <Name id="dfs" lineno="7" col_offset="20" end_lineno="7" end_col_offset="23">
+                                <Load/>
+                              </Name>
+                              <args>
+                                <Name id="key" lineno="7" col_offset="24" end_lineno="7" end_col_offset="27">
+                                  <Load/>
+                                </Name>
+                              </args>
+                              <keywords/>
+                            </Call>
+                          </Expr>
+                        </body>
+                        <orelse/>
+                      </If>
+                    </body>
+                    <orelse/>
+                  </For>
+                </body>
+                <decorator_list/>
+              </FunctionDef>
+              <Assign type_comment="None" lineno="8" col_offset="8" end_lineno="8" end_col_offset="23">
+                <targets>
+                  <Name id="visited" lineno="8" col_offset="8" end_lineno="8" end_col_offset="15">
+                    <Store/>
+                  </Name>
+                </targets>
+                <Call lineno="8" col_offset="18" end_lineno="8" end_col_offset="23">
+                  <Name id="set" lineno="8" col_offset="18" end_lineno="8" end_col_offset="21">
+                    <Load/>
+                  </Name>
+                  <args/>
+                  <keywords/>
+                </Call>
+              </Assign>
+              <Expr lineno="9" col_offset="8" end_lineno="9" end_col_offset="14">
+                <Call lineno="9" col_offset="8" end_lineno="9" end_col_offset="14">
+                  <Name id="dfs" lineno="9" col_offset="8" end_lineno="9" end_col_offset="11">
+                    <Load/>
+                  </Name>
+                  <args>
+                    <Constant value="0" kind="None" lineno="9" col_offset="12" end_lineno="9" end_col_offset="13"/>
+                  </args>
+                  <keywords/>
+                </Call>
+              </Expr>
+              <Return lineno="10" col_offset="8" end_lineno="10" end_col_offset="41">
+                <Compare lineno="10" col_offset="15" end_lineno="10" end_col_offset="41">
+                  <Call lineno="10" col_offset="15" end_lineno="10" end_col_offset="27">
+                    <Name id="len" lineno="10" col_offset="15" end_lineno="10" end_col_offset="18">
+                      <Load/>
+                    </Name>
+                    <args>
+                      <Name id="visited" lineno="10" col_offset="19" end_lineno="10" end_col_offset="26">
+                        <Load/>
+                      </Name>
+                    </args>
+                    <keywords/>
+                  </Call>
+                  <ops>
+                    <Eq/>
+                  </ops>
+                  <comparators>
+                    <Call lineno="10" col_offset="31" end_lineno="10" end_col_offset="41">
+                      <Name id="len" lineno="10" col_offset="31" end_lineno="10" end_col_offset="34">
+                        <Load/>
+                      </Name>
+                      <args>
+                        <Name id="rooms" lineno="10" col_offset="35" end_lineno="10" end_col_offset="40">
+                          <Load/>
+                        </Name>
+                      </args>
+                      <keywords/>
+                    </Call>
+                  </comparators>
+                </Compare>
+              </Return>
+            </body>
+            <decorator_list/>
+            <Name id="bool" lineno="2" col_offset="58" end_lineno="2" end_col_offset="62">
+              <Load/>
+            </Name>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

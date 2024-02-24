@@ -1,0 +1,328 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="Solution" lineno="1" col_offset="0" end_lineno="7" end_col_offset="191">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="rotate" type_comment="None" lineno="2" col_offset="4" end_lineno="7" end_col_offset="191">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="2" col_offset="15" end_lineno="2" end_col_offset="19"/>
+                <arg arg="matrix" type_comment="None" lineno="2" col_offset="21" end_lineno="2" end_col_offset="44">
+                  <Subscript lineno="2" col_offset="29" end_lineno="2" end_col_offset="44">
+                    <Name id="List" lineno="2" col_offset="29" end_lineno="2" end_col_offset="33">
+                      <Load/>
+                    </Name>
+                    <Subscript lineno="2" col_offset="34" end_lineno="2" end_col_offset="43">
+                      <Name id="List" lineno="2" col_offset="34" end_lineno="2" end_col_offset="38">
+                        <Load/>
+                      </Name>
+                      <Name id="int" lineno="2" col_offset="39" end_lineno="2" end_col_offset="42">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Subscript>
+                    <Load/>
+                  </Subscript>
+                </arg>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Assign type_comment="None" lineno="3" col_offset="8" end_lineno="3" end_col_offset="23">
+                <targets>
+                  <Name id="n" lineno="3" col_offset="8" end_lineno="3" end_col_offset="9">
+                    <Store/>
+                  </Name>
+                </targets>
+                <Call lineno="3" col_offset="12" end_lineno="3" end_col_offset="23">
+                  <Name id="len" lineno="3" col_offset="12" end_lineno="3" end_col_offset="15">
+                    <Load/>
+                  </Name>
+                  <args>
+                    <Name id="matrix" lineno="3" col_offset="16" end_lineno="3" end_col_offset="22">
+                      <Load/>
+                    </Name>
+                  </args>
+                  <keywords/>
+                </Call>
+              </Assign>
+              <For type_comment="None" lineno="5" col_offset="8" end_lineno="7" end_col_offset="191">
+                <Name id="i" lineno="5" col_offset="12" end_lineno="5" end_col_offset="13">
+                  <Store/>
+                </Name>
+                <Call lineno="5" col_offset="17" end_lineno="5" end_col_offset="30">
+                  <Name id="range" lineno="5" col_offset="17" end_lineno="5" end_col_offset="22">
+                    <Load/>
+                  </Name>
+                  <args>
+                    <BinOp lineno="5" col_offset="23" end_lineno="5" end_col_offset="29">
+                      <Name id="n" lineno="5" col_offset="23" end_lineno="5" end_col_offset="24">
+                        <Load/>
+                      </Name>
+                      <FloorDiv/>
+                      <Constant value="2" kind="None" lineno="5" col_offset="28" end_lineno="5" end_col_offset="29"/>
+                    </BinOp>
+                  </args>
+                  <keywords/>
+                </Call>
+                <body>
+                  <For type_comment="None" lineno="6" col_offset="12" end_lineno="7" end_col_offset="191">
+                    <Name id="j" lineno="6" col_offset="16" end_lineno="6" end_col_offset="17">
+                      <Store/>
+                    </Name>
+                    <Call lineno="6" col_offset="21" end_lineno="6" end_col_offset="40">
+                      <Name id="range" lineno="6" col_offset="21" end_lineno="6" end_col_offset="26">
+                        <Load/>
+                      </Name>
+                      <args>
+                        <BinOp lineno="6" col_offset="27" end_lineno="6" end_col_offset="39">
+                          <BinOp lineno="6" col_offset="28" end_lineno="6" end_col_offset="33">
+                            <Name id="n" lineno="6" col_offset="28" end_lineno="6" end_col_offset="29">
+                              <Load/>
+                            </Name>
+                            <Add/>
+                            <Constant value="1" kind="None" lineno="6" col_offset="32" end_lineno="6" end_col_offset="33"/>
+                          </BinOp>
+                          <FloorDiv/>
+                          <Constant value="2" kind="None" lineno="6" col_offset="38" end_lineno="6" end_col_offset="39"/>
+                        </BinOp>
+                      </args>
+                      <keywords/>
+                    </Call>
+                    <body>
+                      <Assign type_comment="None" lineno="7" col_offset="16" end_lineno="7" end_col_offset="191">
+                        <targets>
+                          <Tuple lineno="7" col_offset="16" end_lineno="7" end_col_offset="102">
+                            <elts>
+                              <Subscript lineno="7" col_offset="16" end_lineno="7" end_col_offset="28">
+                                <Subscript lineno="7" col_offset="16" end_lineno="7" end_col_offset="25">
+                                  <Name id="matrix" lineno="7" col_offset="16" end_lineno="7" end_col_offset="22">
+                                    <Load/>
+                                  </Name>
+                                  <Name id="i" lineno="7" col_offset="23" end_lineno="7" end_col_offset="24">
+                                    <Load/>
+                                  </Name>
+                                  <Load/>
+                                </Subscript>
+                                <Name id="j" lineno="7" col_offset="26" end_lineno="7" end_col_offset="27">
+                                  <Load/>
+                                </Name>
+                                <Store/>
+                              </Subscript>
+                              <Subscript lineno="7" col_offset="30" end_lineno="7" end_col_offset="50">
+                                <Subscript lineno="7" col_offset="30" end_lineno="7" end_col_offset="47">
+                                  <Name id="matrix" lineno="7" col_offset="30" end_lineno="7" end_col_offset="36">
+                                    <Load/>
+                                  </Name>
+                                  <BinOp lineno="7" col_offset="37" end_lineno="7" end_col_offset="46">
+                                    <BinOp lineno="7" col_offset="37" end_lineno="7" end_col_offset="42">
+                                      <Name id="n" lineno="7" col_offset="37" end_lineno="7" end_col_offset="38">
+                                        <Load/>
+                                      </Name>
+                                      <Sub/>
+                                      <Name id="j" lineno="7" col_offset="41" end_lineno="7" end_col_offset="42">
+                                        <Load/>
+                                      </Name>
+                                    </BinOp>
+                                    <Sub/>
+                                    <Constant value="1" kind="None" lineno="7" col_offset="45" end_lineno="7" end_col_offset="46"/>
+                                  </BinOp>
+                                  <Load/>
+                                </Subscript>
+                                <Name id="i" lineno="7" col_offset="48" end_lineno="7" end_col_offset="49">
+                                  <Load/>
+                                </Name>
+                                <Store/>
+                              </Subscript>
+                              <Subscript lineno="7" col_offset="52" end_lineno="7" end_col_offset="80">
+                                <Subscript lineno="7" col_offset="52" end_lineno="7" end_col_offset="69">
+                                  <Name id="matrix" lineno="7" col_offset="52" end_lineno="7" end_col_offset="58">
+                                    <Load/>
+                                  </Name>
+                                  <BinOp lineno="7" col_offset="59" end_lineno="7" end_col_offset="68">
+                                    <BinOp lineno="7" col_offset="59" end_lineno="7" end_col_offset="64">
+                                      <Name id="n" lineno="7" col_offset="59" end_lineno="7" end_col_offset="60">
+                                        <Load/>
+                                      </Name>
+                                      <Sub/>
+                                      <Name id="i" lineno="7" col_offset="63" end_lineno="7" end_col_offset="64">
+                                        <Load/>
+                                      </Name>
+                                    </BinOp>
+                                    <Sub/>
+                                    <Constant value="1" kind="None" lineno="7" col_offset="67" end_lineno="7" end_col_offset="68"/>
+                                  </BinOp>
+                                  <Load/>
+                                </Subscript>
+                                <BinOp lineno="7" col_offset="70" end_lineno="7" end_col_offset="79">
+                                  <BinOp lineno="7" col_offset="70" end_lineno="7" end_col_offset="75">
+                                    <Name id="n" lineno="7" col_offset="70" end_lineno="7" end_col_offset="71">
+                                      <Load/>
+                                    </Name>
+                                    <Sub/>
+                                    <Name id="j" lineno="7" col_offset="74" end_lineno="7" end_col_offset="75">
+                                      <Load/>
+                                    </Name>
+                                  </BinOp>
+                                  <Sub/>
+                                  <Constant value="1" kind="None" lineno="7" col_offset="78" end_lineno="7" end_col_offset="79"/>
+                                </BinOp>
+                                <Store/>
+                              </Subscript>
+                              <Subscript lineno="7" col_offset="82" end_lineno="7" end_col_offset="102">
+                                <Subscript lineno="7" col_offset="82" end_lineno="7" end_col_offset="91">
+                                  <Name id="matrix" lineno="7" col_offset="82" end_lineno="7" end_col_offset="88">
+                                    <Load/>
+                                  </Name>
+                                  <Name id="j" lineno="7" col_offset="89" end_lineno="7" end_col_offset="90">
+                                    <Load/>
+                                  </Name>
+                                  <Load/>
+                                </Subscript>
+                                <BinOp lineno="7" col_offset="92" end_lineno="7" end_col_offset="101">
+                                  <BinOp lineno="7" col_offset="92" end_lineno="7" end_col_offset="97">
+                                    <Name id="n" lineno="7" col_offset="92" end_lineno="7" end_col_offset="93">
+                                      <Load/>
+                                    </Name>
+                                    <Sub/>
+                                    <Name id="i" lineno="7" col_offset="96" end_lineno="7" end_col_offset="97">
+                                      <Load/>
+                                    </Name>
+                                  </BinOp>
+                                  <Sub/>
+                                  <Constant value="1" kind="None" lineno="7" col_offset="100" end_lineno="7" end_col_offset="101"/>
+                                </BinOp>
+                                <Store/>
+                              </Subscript>
+                            </elts>
+                            <Store/>
+                          </Tuple>
+                        </targets>
+                        <Tuple lineno="7" col_offset="105" end_lineno="7" end_col_offset="191">
+                          <elts>
+                            <Subscript lineno="7" col_offset="105" end_lineno="7" end_col_offset="125">
+                              <Subscript lineno="7" col_offset="105" end_lineno="7" end_col_offset="122">
+                                <Name id="matrix" lineno="7" col_offset="105" end_lineno="7" end_col_offset="111">
+                                  <Load/>
+                                </Name>
+                                <BinOp lineno="7" col_offset="112" end_lineno="7" end_col_offset="121">
+                                  <BinOp lineno="7" col_offset="112" end_lineno="7" end_col_offset="117">
+                                    <Name id="n" lineno="7" col_offset="112" end_lineno="7" end_col_offset="113">
+                                      <Load/>
+                                    </Name>
+                                    <Sub/>
+                                    <Name id="j" lineno="7" col_offset="116" end_lineno="7" end_col_offset="117">
+                                      <Load/>
+                                    </Name>
+                                  </BinOp>
+                                  <Sub/>
+                                  <Constant value="1" kind="None" lineno="7" col_offset="120" end_lineno="7" end_col_offset="121"/>
+                                </BinOp>
+                                <Load/>
+                              </Subscript>
+                              <Name id="i" lineno="7" col_offset="123" end_lineno="7" end_col_offset="124">
+                                <Load/>
+                              </Name>
+                              <Load/>
+                            </Subscript>
+                            <Subscript lineno="7" col_offset="127" end_lineno="7" end_col_offset="155">
+                              <Subscript lineno="7" col_offset="127" end_lineno="7" end_col_offset="144">
+                                <Name id="matrix" lineno="7" col_offset="127" end_lineno="7" end_col_offset="133">
+                                  <Load/>
+                                </Name>
+                                <BinOp lineno="7" col_offset="134" end_lineno="7" end_col_offset="143">
+                                  <BinOp lineno="7" col_offset="134" end_lineno="7" end_col_offset="139">
+                                    <Name id="n" lineno="7" col_offset="134" end_lineno="7" end_col_offset="135">
+                                      <Load/>
+                                    </Name>
+                                    <Sub/>
+                                    <Name id="i" lineno="7" col_offset="138" end_lineno="7" end_col_offset="139">
+                                      <Load/>
+                                    </Name>
+                                  </BinOp>
+                                  <Sub/>
+                                  <Constant value="1" kind="None" lineno="7" col_offset="142" end_lineno="7" end_col_offset="143"/>
+                                </BinOp>
+                                <Load/>
+                              </Subscript>
+                              <BinOp lineno="7" col_offset="145" end_lineno="7" end_col_offset="154">
+                                <BinOp lineno="7" col_offset="145" end_lineno="7" end_col_offset="150">
+                                  <Name id="n" lineno="7" col_offset="145" end_lineno="7" end_col_offset="146">
+                                    <Load/>
+                                  </Name>
+                                  <Sub/>
+                                  <Name id="j" lineno="7" col_offset="149" end_lineno="7" end_col_offset="150">
+                                    <Load/>
+                                  </Name>
+                                </BinOp>
+                                <Sub/>
+                                <Constant value="1" kind="None" lineno="7" col_offset="153" end_lineno="7" end_col_offset="154"/>
+                              </BinOp>
+                              <Load/>
+                            </Subscript>
+                            <Subscript lineno="7" col_offset="157" end_lineno="7" end_col_offset="177">
+                              <Subscript lineno="7" col_offset="157" end_lineno="7" end_col_offset="166">
+                                <Name id="matrix" lineno="7" col_offset="157" end_lineno="7" end_col_offset="163">
+                                  <Load/>
+                                </Name>
+                                <Name id="j" lineno="7" col_offset="164" end_lineno="7" end_col_offset="165">
+                                  <Load/>
+                                </Name>
+                                <Load/>
+                              </Subscript>
+                              <BinOp lineno="7" col_offset="167" end_lineno="7" end_col_offset="176">
+                                <BinOp lineno="7" col_offset="167" end_lineno="7" end_col_offset="172">
+                                  <Name id="n" lineno="7" col_offset="167" end_lineno="7" end_col_offset="168">
+                                    <Load/>
+                                  </Name>
+                                  <Sub/>
+                                  <Name id="i" lineno="7" col_offset="171" end_lineno="7" end_col_offset="172">
+                                    <Load/>
+                                  </Name>
+                                </BinOp>
+                                <Sub/>
+                                <Constant value="1" kind="None" lineno="7" col_offset="175" end_lineno="7" end_col_offset="176"/>
+                              </BinOp>
+                              <Load/>
+                            </Subscript>
+                            <Subscript lineno="7" col_offset="179" end_lineno="7" end_col_offset="191">
+                              <Subscript lineno="7" col_offset="179" end_lineno="7" end_col_offset="188">
+                                <Name id="matrix" lineno="7" col_offset="179" end_lineno="7" end_col_offset="185">
+                                  <Load/>
+                                </Name>
+                                <Name id="i" lineno="7" col_offset="186" end_lineno="7" end_col_offset="187">
+                                  <Load/>
+                                </Name>
+                                <Load/>
+                              </Subscript>
+                              <Name id="j" lineno="7" col_offset="189" end_lineno="7" end_col_offset="190">
+                                <Load/>
+                              </Name>
+                              <Load/>
+                            </Subscript>
+                          </elts>
+                          <Load/>
+                        </Tuple>
+                      </Assign>
+                    </body>
+                    <orelse/>
+                  </For>
+                </body>
+                <orelse/>
+              </For>
+            </body>
+            <decorator_list/>
+            <Constant value="None" kind="None" lineno="2" col_offset="49" end_lineno="2" end_col_offset="53"/>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

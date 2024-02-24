@@ -1,0 +1,226 @@
+<ast>
+  <Module>
+    <body>
+      <FunctionDef name="SieveOfEratosthenes" returns="None" type_comment="None" lineno="15" col_offset="0" end_lineno="31" end_col_offset="20">
+        <arguments vararg="None" kwarg="None">
+          <posonlyargs/>
+          <args>
+            <arg arg="n" annotation="None" type_comment="None" lineno="15" col_offset="24" end_lineno="15" end_col_offset="25"/>
+          </args>
+          <kwonlyargs/>
+          <kw_defaults/>
+          <defaults/>
+        </arguments>
+        <body>
+          <Assign type_comment="None" lineno="16" col_offset="4" end_lineno="16" end_col_offset="29">
+            <targets>
+              <Name id="primes" lineno="16" col_offset="4" end_lineno="16" end_col_offset="10">
+                <Store/>
+              </Name>
+            </targets>
+            <BinOp lineno="16" col_offset="13" end_lineno="16" end_col_offset="29">
+              <List lineno="16" col_offset="13" end_lineno="16" end_col_offset="19">
+                <elts>
+                  <Constant value="True" kind="None" lineno="16" col_offset="14" end_lineno="16" end_col_offset="18"/>
+                </elts>
+                <Load/>
+              </List>
+              <Mult/>
+              <BinOp lineno="16" col_offset="23" end_lineno="16" end_col_offset="28">
+                <Name id="n" lineno="16" col_offset="23" end_lineno="16" end_col_offset="24">
+                  <Load/>
+                </Name>
+                <Add/>
+                <Constant value="1" kind="None" lineno="16" col_offset="27" end_lineno="16" end_col_offset="28"/>
+              </BinOp>
+            </BinOp>
+          </Assign>
+          <Assign type_comment="None" lineno="17" col_offset="4" end_lineno="17" end_col_offset="9">
+            <targets>
+              <Name id="p" lineno="17" col_offset="4" end_lineno="17" end_col_offset="5">
+                <Store/>
+              </Name>
+            </targets>
+            <Constant value="2" kind="None" lineno="17" col_offset="8" end_lineno="17" end_col_offset="9"/>
+          </Assign>
+          <While lineno="19" col_offset="4" end_lineno="26" end_col_offset="14">
+            <Compare lineno="19" col_offset="10" end_lineno="19" end_col_offset="20">
+              <BinOp lineno="19" col_offset="10" end_lineno="19" end_col_offset="15">
+                <Name id="p" lineno="19" col_offset="10" end_lineno="19" end_col_offset="11">
+                  <Load/>
+                </Name>
+                <Mult/>
+                <Name id="p" lineno="19" col_offset="14" end_lineno="19" end_col_offset="15">
+                  <Load/>
+                </Name>
+              </BinOp>
+              <ops>
+                <LtE/>
+              </ops>
+              <comparators>
+                <Name id="n" lineno="19" col_offset="19" end_lineno="19" end_col_offset="20">
+                  <Load/>
+                </Name>
+              </comparators>
+            </Compare>
+            <body>
+              <If lineno="21" col_offset="8" end_lineno="24" end_col_offset="33">
+                <Compare lineno="21" col_offset="10" end_lineno="21" end_col_offset="29">
+                  <Subscript lineno="21" col_offset="11" end_lineno="21" end_col_offset="20">
+                    <Name id="primes" lineno="21" col_offset="11" end_lineno="21" end_col_offset="17">
+                      <Load/>
+                    </Name>
+                    <Name id="p" lineno="21" col_offset="18" end_lineno="21" end_col_offset="19">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Subscript>
+                  <ops>
+                    <Eq/>
+                  </ops>
+                  <comparators>
+                    <Constant value="True" kind="None" lineno="21" col_offset="25" end_lineno="21" end_col_offset="29"/>
+                  </comparators>
+                </Compare>
+                <body>
+                  <For type_comment="None" lineno="23" col_offset="12" end_lineno="24" end_col_offset="33">
+                    <Name id="i" lineno="23" col_offset="16" end_lineno="23" end_col_offset="17">
+                      <Store/>
+                    </Name>
+                    <Call lineno="23" col_offset="21" end_lineno="23" end_col_offset="43">
+                      <Name id="range" lineno="23" col_offset="21" end_lineno="23" end_col_offset="26">
+                        <Load/>
+                      </Name>
+                      <args>
+                        <BinOp lineno="23" col_offset="27" end_lineno="23" end_col_offset="32">
+                          <Name id="p" lineno="23" col_offset="27" end_lineno="23" end_col_offset="28">
+                            <Load/>
+                          </Name>
+                          <Mult/>
+                          <Constant value="2" kind="None" lineno="23" col_offset="31" end_lineno="23" end_col_offset="32"/>
+                        </BinOp>
+                        <BinOp lineno="23" col_offset="34" end_lineno="23" end_col_offset="39">
+                          <Name id="n" lineno="23" col_offset="34" end_lineno="23" end_col_offset="35">
+                            <Load/>
+                          </Name>
+                          <Add/>
+                          <Constant value="1" kind="None" lineno="23" col_offset="38" end_lineno="23" end_col_offset="39"/>
+                        </BinOp>
+                        <Name id="p" lineno="23" col_offset="41" end_lineno="23" end_col_offset="42">
+                          <Load/>
+                        </Name>
+                      </args>
+                      <keywords/>
+                    </Call>
+                    <body>
+                      <Assign type_comment="None" lineno="24" col_offset="16" end_lineno="24" end_col_offset="33">
+                        <targets>
+                          <Subscript lineno="24" col_offset="16" end_lineno="24" end_col_offset="25">
+                            <Name id="primes" lineno="24" col_offset="16" end_lineno="24" end_col_offset="22">
+                              <Load/>
+                            </Name>
+                            <Name id="i" lineno="24" col_offset="23" end_lineno="24" end_col_offset="24">
+                              <Load/>
+                            </Name>
+                            <Store/>
+                          </Subscript>
+                        </targets>
+                        <Constant value="False" kind="None" lineno="24" col_offset="28" end_lineno="24" end_col_offset="33"/>
+                      </Assign>
+                    </body>
+                    <orelse/>
+                  </For>
+                </body>
+                <orelse/>
+              </If>
+              <AugAssign lineno="26" col_offset="8" end_lineno="26" end_col_offset="14">
+                <Name id="p" lineno="26" col_offset="8" end_lineno="26" end_col_offset="9">
+                  <Store/>
+                </Name>
+                <Add/>
+                <Constant value="1" kind="None" lineno="26" col_offset="13" end_lineno="26" end_col_offset="14"/>
+              </AugAssign>
+            </body>
+            <orelse/>
+          </While>
+          <For type_comment="None" lineno="29" col_offset="4" end_lineno="31" end_col_offset="20">
+            <Name id="i" lineno="29" col_offset="8" end_lineno="29" end_col_offset="9">
+              <Store/>
+            </Name>
+            <Call lineno="29" col_offset="13" end_lineno="29" end_col_offset="24">
+              <Name id="range" lineno="29" col_offset="13" end_lineno="29" end_col_offset="18">
+                <Load/>
+              </Name>
+              <args>
+                <Constant value="2" kind="None" lineno="29" col_offset="19" end_lineno="29" end_col_offset="20"/>
+                <Name id="n" lineno="29" col_offset="22" end_lineno="29" end_col_offset="23">
+                  <Load/>
+                </Name>
+              </args>
+              <keywords/>
+            </Call>
+            <body>
+              <If lineno="30" col_offset="8" end_lineno="31" end_col_offset="20">
+                <Subscript lineno="30" col_offset="11" end_lineno="30" end_col_offset="20">
+                  <Name id="primes" lineno="30" col_offset="11" end_lineno="30" end_col_offset="17">
+                    <Load/>
+                  </Name>
+                  <Name id="i" lineno="30" col_offset="18" end_lineno="30" end_col_offset="19">
+                    <Load/>
+                  </Name>
+                  <Load/>
+                </Subscript>
+                <body>
+                  <Expr lineno="31" col_offset="12" end_lineno="31" end_col_offset="20">
+                    <Call lineno="31" col_offset="12" end_lineno="31" end_col_offset="20">
+                      <Name id="print" lineno="31" col_offset="12" end_lineno="31" end_col_offset="17">
+                        <Load/>
+                      </Name>
+                      <args>
+                        <Name id="i" lineno="31" col_offset="18" end_lineno="31" end_col_offset="19">
+                          <Load/>
+                        </Name>
+                      </args>
+                      <keywords/>
+                    </Call>
+                  </Expr>
+                </body>
+                <orelse/>
+              </If>
+            </body>
+            <orelse/>
+          </For>
+        </body>
+        <decorator_list/>
+      </FunctionDef>
+      <If lineno="33" col_offset="0" end_lineno="34" end_col_offset="29">
+        <Compare lineno="33" col_offset="3" end_lineno="33" end_col_offset="25">
+          <Name id="__name__" lineno="33" col_offset="3" end_lineno="33" end_col_offset="11">
+            <Load/>
+          </Name>
+          <ops>
+            <Eq/>
+          </ops>
+          <comparators>
+            <Constant value="__main__" kind="None" lineno="33" col_offset="15" end_lineno="33" end_col_offset="25"/>
+          </comparators>
+        </Compare>
+        <body>
+          <Expr lineno="34" col_offset="4" end_lineno="34" end_col_offset="29">
+            <Call lineno="34" col_offset="4" end_lineno="34" end_col_offset="29">
+              <Name id="SieveOfEratosthenes" lineno="34" col_offset="4" end_lineno="34" end_col_offset="23">
+                <Load/>
+              </Name>
+              <args>
+                <Constant value="1000" kind="None" lineno="34" col_offset="24" end_lineno="34" end_col_offset="28"/>
+              </args>
+              <keywords/>
+            </Call>
+          </Expr>
+        </body>
+        <orelse/>
+      </If>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

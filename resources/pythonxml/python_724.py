@@ -1,0 +1,1 @@
+np.extract(array1 % 2 != 0, array1)

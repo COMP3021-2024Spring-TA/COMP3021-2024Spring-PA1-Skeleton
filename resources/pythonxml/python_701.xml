@@ -1,0 +1,85 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="1" col_offset="0" end_lineno="1" end_col_offset="25">
+        <targets>
+          <Name id="p1" lineno="1" col_offset="0" end_lineno="1" end_col_offset="2">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="1" col_offset="5" end_lineno="1" end_col_offset="25">
+          <Attribute attr="poly1d" lineno="1" col_offset="5" end_lineno="1" end_col_offset="14">
+            <Name id="np" lineno="1" col_offset="5" end_lineno="1" end_col_offset="7">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <List lineno="1" col_offset="15" end_lineno="1" end_col_offset="24">
+              <elts>
+                <Constant value="3" kind="None" lineno="1" col_offset="16" end_lineno="1" end_col_offset="17"/>
+                <Constant value="2" kind="None" lineno="1" col_offset="19" end_lineno="1" end_col_offset="20"/>
+                <Constant value="1" kind="None" lineno="1" col_offset="22" end_lineno="1" end_col_offset="23"/>
+              </elts>
+              <Load/>
+            </List>
+          </args>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Assign type_comment="None" lineno="2" col_offset="0" end_lineno="2" end_col_offset="25">
+        <targets>
+          <Name id="p2" lineno="2" col_offset="0" end_lineno="2" end_col_offset="2">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="2" col_offset="5" end_lineno="2" end_col_offset="25">
+          <Attribute attr="poly1d" lineno="2" col_offset="5" end_lineno="2" end_col_offset="14">
+            <Name id="np" lineno="2" col_offset="5" end_lineno="2" end_col_offset="7">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <List lineno="2" col_offset="15" end_lineno="2" end_col_offset="24">
+              <elts>
+                <Constant value="1" kind="None" lineno="2" col_offset="16" end_lineno="2" end_col_offset="17"/>
+                <Constant value="2" kind="None" lineno="2" col_offset="19" end_lineno="2" end_col_offset="20"/>
+                <Constant value="3" kind="None" lineno="2" col_offset="22" end_lineno="2" end_col_offset="23"/>
+              </elts>
+              <Load/>
+            </List>
+          </args>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Expr lineno="3" col_offset="0" end_lineno="3" end_col_offset="9">
+        <Call lineno="3" col_offset="0" end_lineno="3" end_col_offset="9">
+          <Name id="print" lineno="3" col_offset="0" end_lineno="3" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Name id="p1" lineno="3" col_offset="6" end_lineno="3" end_col_offset="8">
+              <Load/>
+            </Name>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="4" col_offset="0" end_lineno="4" end_col_offset="9">
+        <Call lineno="4" col_offset="0" end_lineno="4" end_col_offset="9">
+          <Name id="print" lineno="4" col_offset="0" end_lineno="4" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Name id="p2" lineno="4" col_offset="6" end_lineno="4" end_col_offset="8">
+              <Load/>
+            </Name>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

@@ -1,0 +1,47 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="39">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="39">
+          <Attribute attr="place" lineno="1" col_offset="0" end_lineno="1" end_col_offset="8">
+            <Name id="np" lineno="1" col_offset="0" end_lineno="1" end_col_offset="2">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <Name id="array1" lineno="1" col_offset="9" end_lineno="1" end_col_offset="15">
+              <Load/>
+            </Name>
+            <Compare lineno="1" col_offset="17" end_lineno="1" end_col_offset="27">
+              <Name id="array1" lineno="1" col_offset="17" end_lineno="1" end_col_offset="23">
+                <Load/>
+              </Name>
+              <ops>
+                <Gt/>
+              </ops>
+              <comparators>
+                <Constant value="5" kind="None" lineno="1" col_offset="26" end_lineno="1" end_col_offset="27"/>
+              </comparators>
+            </Compare>
+            <List lineno="1" col_offset="29" end_lineno="1" end_col_offset="38">
+              <elts>
+                <Constant value="1" kind="None" lineno="1" col_offset="30" end_lineno="1" end_col_offset="31"/>
+                <Constant value="2" kind="None" lineno="1" col_offset="33" end_lineno="1" end_col_offset="34"/>
+                <Constant value="3" kind="None" lineno="1" col_offset="36" end_lineno="1" end_col_offset="37"/>
+              </elts>
+              <Load/>
+            </List>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="2" col_offset="0" end_lineno="2" end_col_offset="6">
+        <Name id="array1" lineno="2" col_offset="0" end_lineno="2" end_col_offset="6">
+          <Load/>
+        </Name>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

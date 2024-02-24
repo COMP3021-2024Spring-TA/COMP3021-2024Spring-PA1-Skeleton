@@ -1,0 +1,72 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="1" col_offset="0" end_lineno="1" end_col_offset="13">
+        <targets>
+          <Tuple lineno="1" col_offset="0" end_lineno="1" end_col_offset="4">
+            <elts>
+              <Name id="a" lineno="1" col_offset="0" end_lineno="1" end_col_offset="1">
+                <Store/>
+              </Name>
+              <Name id="b" lineno="1" col_offset="3" end_lineno="1" end_col_offset="4">
+                <Store/>
+              </Name>
+            </elts>
+            <Store/>
+          </Tuple>
+        </targets>
+        <Tuple lineno="1" col_offset="7" end_lineno="1" end_col_offset="13">
+          <elts>
+            <Constant value="10" kind="None" lineno="1" col_offset="7" end_lineno="1" end_col_offset="9"/>
+            <Constant value="20" kind="None" lineno="1" col_offset="11" end_lineno="1" end_col_offset="13"/>
+          </elts>
+          <Load/>
+        </Tuple>
+      </Assign>
+      <AugAssign lineno="2" col_offset="0" end_lineno="2" end_col_offset="6">
+        <Name id="a" lineno="2" col_offset="0" end_lineno="2" end_col_offset="1">
+          <Store/>
+        </Name>
+        <BitXor/>
+        <Name id="b" lineno="2" col_offset="5" end_lineno="2" end_col_offset="6">
+          <Load/>
+        </Name>
+      </AugAssign>
+      <AugAssign lineno="3" col_offset="0" end_lineno="3" end_col_offset="6">
+        <Name id="b" lineno="3" col_offset="0" end_lineno="3" end_col_offset="1">
+          <Store/>
+        </Name>
+        <BitXor/>
+        <Name id="a" lineno="3" col_offset="5" end_lineno="3" end_col_offset="6">
+          <Load/>
+        </Name>
+      </AugAssign>
+      <AugAssign lineno="4" col_offset="0" end_lineno="4" end_col_offset="6">
+        <Name id="a" lineno="4" col_offset="0" end_lineno="4" end_col_offset="1">
+          <Store/>
+        </Name>
+        <BitXor/>
+        <Name id="b" lineno="4" col_offset="5" end_lineno="4" end_col_offset="6">
+          <Load/>
+        </Name>
+      </AugAssign>
+      <Expr lineno="5" col_offset="0" end_lineno="5" end_col_offset="11">
+        <Call lineno="5" col_offset="0" end_lineno="5" end_col_offset="11">
+          <Name id="print" lineno="5" col_offset="0" end_lineno="5" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Name id="a" lineno="5" col_offset="6" end_lineno="5" end_col_offset="7">
+              <Load/>
+            </Name>
+            <Name id="b" lineno="5" col_offset="9" end_lineno="5" end_col_offset="10">
+              <Load/>
+            </Name>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

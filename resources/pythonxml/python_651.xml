@@ -1,0 +1,31 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="58">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="58">
+          <Attribute attr="drop_duplicates" lineno="1" col_offset="0" end_lineno="1" end_col_offset="26">
+            <Name id="all_emp_df" lineno="1" col_offset="0" end_lineno="1" end_col_offset="10">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <List lineno="1" col_offset="27" end_lineno="1" end_col_offset="43">
+              <elts>
+                <Constant value="ename" kind="None" lineno="1" col_offset="28" end_lineno="1" end_col_offset="35"/>
+                <Constant value="job" kind="None" lineno="1" col_offset="37" end_lineno="1" end_col_offset="42"/>
+              </elts>
+              <Load/>
+            </List>
+          </args>
+          <keywords>
+            <keyword arg="inplace" lineno="1" col_offset="45" end_lineno="1" end_col_offset="57">
+              <Constant value="True" kind="None" lineno="1" col_offset="53" end_lineno="1" end_col_offset="57"/>
+            </keyword>
+          </keywords>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

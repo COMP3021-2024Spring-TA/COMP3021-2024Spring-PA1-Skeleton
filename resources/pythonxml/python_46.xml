@@ -1,0 +1,64 @@
+<ast>
+  <Module>
+    <body>
+      <FunctionDef name="algorithm" returns="None" type_comment="None" lineno="1" col_offset="0" end_lineno="5" end_col_offset="14">
+        <arguments vararg="None" kwarg="None">
+          <posonlyargs/>
+          <args>
+            <arg arg="n" annotation="None" type_comment="None" lineno="1" col_offset="14" end_lineno="1" end_col_offset="15"/>
+          </args>
+          <kwonlyargs/>
+          <kw_defaults/>
+          <defaults/>
+        </arguments>
+        <body>
+          <Assign type_comment="None" lineno="2" col_offset="4" end_lineno="2" end_col_offset="9">
+            <targets>
+              <Name id="a" lineno="2" col_offset="4" end_lineno="2" end_col_offset="5">
+                <Store/>
+              </Name>
+            </targets>
+            <Constant value="1" kind="None" lineno="2" col_offset="8" end_lineno="2" end_col_offset="9"/>
+          </Assign>
+          <Assign type_comment="None" lineno="3" col_offset="4" end_lineno="3" end_col_offset="9">
+            <targets>
+              <Name id="b" lineno="3" col_offset="4" end_lineno="3" end_col_offset="5">
+                <Store/>
+              </Name>
+            </targets>
+            <Constant value="2" kind="None" lineno="3" col_offset="8" end_lineno="3" end_col_offset="9"/>
+          </Assign>
+          <Assign type_comment="None" lineno="4" col_offset="4" end_lineno="4" end_col_offset="19">
+            <targets>
+              <Name id="res" lineno="4" col_offset="4" end_lineno="4" end_col_offset="7">
+                <Store/>
+              </Name>
+            </targets>
+            <BinOp lineno="4" col_offset="10" end_lineno="4" end_col_offset="19">
+              <BinOp lineno="4" col_offset="10" end_lineno="4" end_col_offset="15">
+                <Name id="a" lineno="4" col_offset="10" end_lineno="4" end_col_offset="11">
+                  <Load/>
+                </Name>
+                <Mult/>
+                <Name id="b" lineno="4" col_offset="14" end_lineno="4" end_col_offset="15">
+                  <Load/>
+                </Name>
+              </BinOp>
+              <Add/>
+              <Name id="n" lineno="4" col_offset="18" end_lineno="4" end_col_offset="19">
+                <Load/>
+              </Name>
+            </BinOp>
+          </Assign>
+          <Return lineno="5" col_offset="4" end_lineno="5" end_col_offset="14">
+            <Name id="res" lineno="5" col_offset="11" end_lineno="5" end_col_offset="14">
+              <Load/>
+            </Name>
+          </Return>
+        </body>
+        <decorator_list/>
+      </FunctionDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

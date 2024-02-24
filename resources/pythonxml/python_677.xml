@@ -1,0 +1,19 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="27">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="27">
+          <Attribute attr="render_notebook" lineno="1" col_offset="0" end_lineno="1" end_col_offset="25">
+            <Name id="pie_chart" lineno="1" col_offset="0" end_lineno="1" end_col_offset="9">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args/>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

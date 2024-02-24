@@ -1,0 +1,104 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="6" col_offset="0" end_lineno="6" end_col_offset="14">
+        <targets>
+          <Name id="x" lineno="6" col_offset="0" end_lineno="6" end_col_offset="1">
+            <Store/>
+          </Name>
+        </targets>
+        <Constant value="Global x" kind="None" lineno="6" col_offset="4" end_lineno="6" end_col_offset="14"/>
+      </Assign>
+      <FunctionDef name="test" returns="None" type_comment="None" lineno="8" col_offset="0" end_lineno="12" end_col_offset="21">
+        <arguments vararg="None" kwarg="None">
+          <posonlyargs/>
+          <args/>
+          <kwonlyargs/>
+          <kw_defaults/>
+          <defaults/>
+        </arguments>
+        <body>
+          <Assign type_comment="None" lineno="10" col_offset="4" end_lineno="10" end_col_offset="17">
+            <targets>
+              <Name id="y" lineno="10" col_offset="4" end_lineno="10" end_col_offset="5">
+                <Store/>
+              </Name>
+            </targets>
+            <Constant value="Local y" kind="None" lineno="10" col_offset="8" end_lineno="10" end_col_offset="17"/>
+          </Assign>
+          <Assign type_comment="None" lineno="11" col_offset="4" end_lineno="11" end_col_offset="17">
+            <targets>
+              <Name id="x" lineno="11" col_offset="4" end_lineno="11" end_col_offset="5">
+                <Store/>
+              </Name>
+            </targets>
+            <Constant value="Local x" kind="None" lineno="11" col_offset="8" end_lineno="11" end_col_offset="17"/>
+          </Assign>
+          <Expr lineno="12" col_offset="4" end_lineno="12" end_col_offset="21">
+            <Call lineno="12" col_offset="4" end_lineno="12" end_col_offset="21">
+              <Name id="print" lineno="12" col_offset="4" end_lineno="12" end_col_offset="9">
+                <Load/>
+              </Name>
+              <args>
+                <BinOp lineno="12" col_offset="10" end_lineno="12" end_col_offset="20">
+                  <BinOp lineno="12" col_offset="10" end_lineno="12" end_col_offset="17">
+                    <Name id="x" lineno="12" col_offset="10" end_lineno="12" end_col_offset="11">
+                      <Load/>
+                    </Name>
+                    <Add/>
+                    <Constant value=", " kind="None" lineno="12" col_offset="13" end_lineno="12" end_col_offset="17"/>
+                  </BinOp>
+                  <Add/>
+                  <Name id="y" lineno="12" col_offset="19" end_lineno="12" end_col_offset="20">
+                    <Load/>
+                  </Name>
+                </BinOp>
+              </args>
+              <keywords/>
+            </Call>
+          </Expr>
+        </body>
+        <decorator_list/>
+      </FunctionDef>
+      <If lineno="14" col_offset="0" end_lineno="16" end_col_offset="12">
+        <Compare lineno="14" col_offset="3" end_lineno="14" end_col_offset="25">
+          <Name id="__name__" lineno="14" col_offset="3" end_lineno="14" end_col_offset="11">
+            <Load/>
+          </Name>
+          <ops>
+            <Eq/>
+          </ops>
+          <comparators>
+            <Constant value="__main__" kind="None" lineno="14" col_offset="15" end_lineno="14" end_col_offset="25"/>
+          </comparators>
+        </Compare>
+        <body>
+          <Expr lineno="15" col_offset="4" end_lineno="15" end_col_offset="10">
+            <Call lineno="15" col_offset="4" end_lineno="15" end_col_offset="10">
+              <Name id="test" lineno="15" col_offset="4" end_lineno="15" end_col_offset="8">
+                <Load/>
+              </Name>
+              <args/>
+              <keywords/>
+            </Call>
+          </Expr>
+          <Expr lineno="16" col_offset="4" end_lineno="16" end_col_offset="12">
+            <Call lineno="16" col_offset="4" end_lineno="16" end_col_offset="12">
+              <Name id="print" lineno="16" col_offset="4" end_lineno="16" end_col_offset="9">
+                <Load/>
+              </Name>
+              <args>
+                <Name id="x" lineno="16" col_offset="10" end_lineno="16" end_col_offset="11">
+                  <Load/>
+                </Name>
+              </args>
+              <keywords/>
+            </Call>
+          </Expr>
+        </body>
+        <orelse/>
+      </If>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

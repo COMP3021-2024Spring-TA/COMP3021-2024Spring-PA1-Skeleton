@@ -1,0 +1,96 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="1" col_offset="0" end_lineno="1" end_col_offset="46">
+        <targets>
+          <Name id="array2" lineno="1" col_offset="0" end_lineno="1" end_col_offset="6">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="1" col_offset="9" end_lineno="1" end_col_offset="46">
+          <Attribute attr="array" lineno="1" col_offset="9" end_lineno="1" end_col_offset="17">
+            <Name id="np" lineno="1" col_offset="9" end_lineno="1" end_col_offset="11">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <List lineno="1" col_offset="18" end_lineno="1" end_col_offset="45">
+              <elts>
+                <Constant value="1" kind="None" lineno="1" col_offset="19" end_lineno="1" end_col_offset="20"/>
+                <Constant value="1" kind="None" lineno="1" col_offset="22" end_lineno="1" end_col_offset="23"/>
+                <Constant value="1" kind="None" lineno="1" col_offset="25" end_lineno="1" end_col_offset="26"/>
+                <Constant value="2" kind="None" lineno="1" col_offset="28" end_lineno="1" end_col_offset="29"/>
+                <Constant value="2" kind="None" lineno="1" col_offset="31" end_lineno="1" end_col_offset="32"/>
+                <Constant value="2" kind="None" lineno="1" col_offset="34" end_lineno="1" end_col_offset="35"/>
+                <Constant value="3" kind="None" lineno="1" col_offset="37" end_lineno="1" end_col_offset="38"/>
+                <Constant value="3" kind="None" lineno="1" col_offset="40" end_lineno="1" end_col_offset="41"/>
+                <Constant value="3" kind="None" lineno="1" col_offset="43" end_lineno="1" end_col_offset="44"/>
+              </elts>
+              <Load/>
+            </List>
+          </args>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Expr lineno="2" col_offset="0" end_lineno="2" end_col_offset="22">
+        <Call lineno="2" col_offset="0" end_lineno="2" end_col_offset="22">
+          <Name id="print" lineno="2" col_offset="0" end_lineno="2" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <BinOp lineno="2" col_offset="6" end_lineno="2" end_col_offset="21">
+              <Name id="array1" lineno="2" col_offset="6" end_lineno="2" end_col_offset="12">
+                <Load/>
+              </Name>
+              <Add/>
+              <Name id="array2" lineno="2" col_offset="15" end_lineno="2" end_col_offset="21">
+                <Load/>
+              </Name>
+            </BinOp>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="3" col_offset="0" end_lineno="3" end_col_offset="22">
+        <Call lineno="3" col_offset="0" end_lineno="3" end_col_offset="22">
+          <Name id="print" lineno="3" col_offset="0" end_lineno="3" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <BinOp lineno="3" col_offset="6" end_lineno="3" end_col_offset="21">
+              <Name id="array1" lineno="3" col_offset="6" end_lineno="3" end_col_offset="12">
+                <Load/>
+              </Name>
+              <Mult/>
+              <Name id="array2" lineno="3" col_offset="15" end_lineno="3" end_col_offset="21">
+                <Load/>
+              </Name>
+            </BinOp>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="4" col_offset="0" end_lineno="4" end_col_offset="23">
+        <Call lineno="4" col_offset="0" end_lineno="4" end_col_offset="23">
+          <Name id="print" lineno="4" col_offset="0" end_lineno="4" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <BinOp lineno="4" col_offset="6" end_lineno="4" end_col_offset="22">
+              <Name id="array1" lineno="4" col_offset="6" end_lineno="4" end_col_offset="12">
+                <Load/>
+              </Name>
+              <Pow/>
+              <Name id="array2" lineno="4" col_offset="16" end_lineno="4" end_col_offset="22">
+                <Load/>
+              </Name>
+            </BinOp>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

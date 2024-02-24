@@ -1,0 +1,274 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="Solution" lineno="1" col_offset="0" end_lineno="21" end_col_offset="61">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="binarySearch" returns="None" type_comment="None" lineno="2" col_offset="4" end_lineno="12" end_col_offset="21">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="2" col_offset="21" end_lineno="2" end_col_offset="25"/>
+                <arg arg="reader" annotation="None" type_comment="None" lineno="2" col_offset="27" end_lineno="2" end_col_offset="33"/>
+                <arg arg="left" annotation="None" type_comment="None" lineno="2" col_offset="35" end_lineno="2" end_col_offset="39"/>
+                <arg arg="right" annotation="None" type_comment="None" lineno="2" col_offset="41" end_lineno="2" end_col_offset="46"/>
+                <arg arg="target" annotation="None" type_comment="None" lineno="2" col_offset="48" end_lineno="2" end_col_offset="54"/>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <While lineno="3" col_offset="8" end_lineno="8" end_col_offset="27">
+                <Compare lineno="3" col_offset="14" end_lineno="3" end_col_offset="26">
+                  <Name id="left" lineno="3" col_offset="14" end_lineno="3" end_col_offset="18">
+                    <Load/>
+                  </Name>
+                  <ops>
+                    <Lt/>
+                  </ops>
+                  <comparators>
+                    <Name id="right" lineno="3" col_offset="21" end_lineno="3" end_col_offset="26">
+                      <Load/>
+                    </Name>
+                  </comparators>
+                </Compare>
+                <body>
+                  <Assign type_comment="None" lineno="4" col_offset="12" end_lineno="4" end_col_offset="44">
+                    <targets>
+                      <Name id="mid" lineno="4" col_offset="12" end_lineno="4" end_col_offset="15">
+                        <Store/>
+                      </Name>
+                    </targets>
+                    <BinOp lineno="4" col_offset="18" end_lineno="4" end_col_offset="44">
+                      <Name id="left" lineno="4" col_offset="18" end_lineno="4" end_col_offset="22">
+                        <Load/>
+                      </Name>
+                      <Add/>
+                      <BinOp lineno="4" col_offset="25" end_lineno="4" end_col_offset="44">
+                        <BinOp lineno="4" col_offset="26" end_lineno="4" end_col_offset="38">
+                          <Name id="right" lineno="4" col_offset="26" end_lineno="4" end_col_offset="31">
+                            <Load/>
+                          </Name>
+                          <Sub/>
+                          <Name id="left" lineno="4" col_offset="34" end_lineno="4" end_col_offset="38">
+                            <Load/>
+                          </Name>
+                        </BinOp>
+                        <FloorDiv/>
+                        <Constant value="2" kind="None" lineno="4" col_offset="43" end_lineno="4" end_col_offset="44"/>
+                      </BinOp>
+                    </BinOp>
+                  </Assign>
+                  <If lineno="5" col_offset="12" end_lineno="8" end_col_offset="27">
+                    <Compare lineno="5" col_offset="15" end_lineno="5" end_col_offset="39">
+                      <Name id="target" lineno="5" col_offset="15" end_lineno="5" end_col_offset="21">
+                        <Load/>
+                      </Name>
+                      <ops>
+                        <Gt/>
+                      </ops>
+                      <comparators>
+                        <Call lineno="5" col_offset="24" end_lineno="5" end_col_offset="39">
+                          <Attribute attr="get" lineno="5" col_offset="24" end_lineno="5" end_col_offset="34">
+                            <Name id="reader" lineno="5" col_offset="24" end_lineno="5" end_col_offset="30">
+                              <Load/>
+                            </Name>
+                            <Load/>
+                          </Attribute>
+                          <args>
+                            <Name id="mid" lineno="5" col_offset="35" end_lineno="5" end_col_offset="38">
+                              <Load/>
+                            </Name>
+                          </args>
+                          <keywords/>
+                        </Call>
+                      </comparators>
+                    </Compare>
+                    <body>
+                      <Assign type_comment="None" lineno="6" col_offset="16" end_lineno="6" end_col_offset="30">
+                        <targets>
+                          <Name id="left" lineno="6" col_offset="16" end_lineno="6" end_col_offset="20">
+                            <Store/>
+                          </Name>
+                        </targets>
+                        <BinOp lineno="6" col_offset="23" end_lineno="6" end_col_offset="30">
+                          <Name id="mid" lineno="6" col_offset="23" end_lineno="6" end_col_offset="26">
+                            <Load/>
+                          </Name>
+                          <Add/>
+                          <Constant value="1" kind="None" lineno="6" col_offset="29" end_lineno="6" end_col_offset="30"/>
+                        </BinOp>
+                      </Assign>
+                    </body>
+                    <orelse>
+                      <Assign type_comment="None" lineno="8" col_offset="16" end_lineno="8" end_col_offset="27">
+                        <targets>
+                          <Name id="right" lineno="8" col_offset="16" end_lineno="8" end_col_offset="21">
+                            <Store/>
+                          </Name>
+                        </targets>
+                        <Name id="mid" lineno="8" col_offset="24" end_lineno="8" end_col_offset="27">
+                          <Load/>
+                        </Name>
+                      </Assign>
+                    </orelse>
+                  </If>
+                </body>
+                <orelse/>
+              </While>
+              <If lineno="9" col_offset="8" end_lineno="12" end_col_offset="21">
+                <Compare lineno="9" col_offset="11" end_lineno="9" end_col_offset="37">
+                  <Call lineno="9" col_offset="11" end_lineno="9" end_col_offset="27">
+                    <Attribute attr="get" lineno="9" col_offset="11" end_lineno="9" end_col_offset="21">
+                      <Name id="reader" lineno="9" col_offset="11" end_lineno="9" end_col_offset="17">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Attribute>
+                    <args>
+                      <Name id="left" lineno="9" col_offset="22" end_lineno="9" end_col_offset="26">
+                        <Load/>
+                      </Name>
+                    </args>
+                    <keywords/>
+                  </Call>
+                  <ops>
+                    <Eq/>
+                  </ops>
+                  <comparators>
+                    <Name id="target" lineno="9" col_offset="31" end_lineno="9" end_col_offset="37">
+                      <Load/>
+                    </Name>
+                  </comparators>
+                </Compare>
+                <body>
+                  <Return lineno="10" col_offset="12" end_lineno="10" end_col_offset="23">
+                    <Name id="left" lineno="10" col_offset="19" end_lineno="10" end_col_offset="23">
+                      <Load/>
+                    </Name>
+                  </Return>
+                </body>
+                <orelse>
+                  <Return lineno="12" col_offset="12" end_lineno="12" end_col_offset="21">
+                    <UnaryOp lineno="12" col_offset="19" end_lineno="12" end_col_offset="21">
+                      <USub/>
+                      <Constant value="1" kind="None" lineno="12" col_offset="20" end_lineno="12" end_col_offset="21"/>
+                    </UnaryOp>
+                  </Return>
+                </orelse>
+              </If>
+            </body>
+            <decorator_list/>
+          </FunctionDef>
+          <FunctionDef name="search" returns="None" type_comment="None" lineno="14" col_offset="4" end_lineno="21" end_col_offset="61">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="14" col_offset="15" end_lineno="14" end_col_offset="19"/>
+                <arg arg="reader" annotation="None" type_comment="None" lineno="14" col_offset="21" end_lineno="14" end_col_offset="27"/>
+                <arg arg="target" annotation="None" type_comment="None" lineno="14" col_offset="29" end_lineno="14" end_col_offset="35"/>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Assign type_comment="None" lineno="15" col_offset="8" end_lineno="15" end_col_offset="16">
+                <targets>
+                  <Name id="left" lineno="15" col_offset="8" end_lineno="15" end_col_offset="12">
+                    <Store/>
+                  </Name>
+                </targets>
+                <Constant value="0" kind="None" lineno="15" col_offset="15" end_lineno="15" end_col_offset="16"/>
+              </Assign>
+              <Assign type_comment="None" lineno="16" col_offset="8" end_lineno="16" end_col_offset="17">
+                <targets>
+                  <Name id="right" lineno="16" col_offset="8" end_lineno="16" end_col_offset="13">
+                    <Store/>
+                  </Name>
+                </targets>
+                <Constant value="1" kind="None" lineno="16" col_offset="16" end_lineno="16" end_col_offset="17"/>
+              </Assign>
+              <While lineno="17" col_offset="8" end_lineno="19" end_col_offset="23">
+                <Compare lineno="17" col_offset="14" end_lineno="17" end_col_offset="40">
+                  <Call lineno="17" col_offset="14" end_lineno="17" end_col_offset="31">
+                    <Attribute attr="get" lineno="17" col_offset="14" end_lineno="17" end_col_offset="24">
+                      <Name id="reader" lineno="17" col_offset="14" end_lineno="17" end_col_offset="20">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Attribute>
+                    <args>
+                      <Name id="right" lineno="17" col_offset="25" end_lineno="17" end_col_offset="30">
+                        <Load/>
+                      </Name>
+                    </args>
+                    <keywords/>
+                  </Call>
+                  <ops>
+                    <Lt/>
+                  </ops>
+                  <comparators>
+                    <Name id="target" lineno="17" col_offset="34" end_lineno="17" end_col_offset="40">
+                      <Load/>
+                    </Name>
+                  </comparators>
+                </Compare>
+                <body>
+                  <Assign type_comment="None" lineno="18" col_offset="12" end_lineno="18" end_col_offset="24">
+                    <targets>
+                      <Name id="left" lineno="18" col_offset="12" end_lineno="18" end_col_offset="16">
+                        <Store/>
+                      </Name>
+                    </targets>
+                    <Name id="right" lineno="18" col_offset="19" end_lineno="18" end_col_offset="24">
+                      <Load/>
+                    </Name>
+                  </Assign>
+                  <AugAssign lineno="19" col_offset="12" end_lineno="19" end_col_offset="23">
+                    <Name id="right" lineno="19" col_offset="12" end_lineno="19" end_col_offset="17">
+                      <Store/>
+                    </Name>
+                    <LShift/>
+                    <Constant value="1" kind="None" lineno="19" col_offset="22" end_lineno="19" end_col_offset="23"/>
+                  </AugAssign>
+                </body>
+                <orelse/>
+              </While>
+              <Return lineno="21" col_offset="8" end_lineno="21" end_col_offset="61">
+                <Call lineno="21" col_offset="15" end_lineno="21" end_col_offset="61">
+                  <Attribute attr="binarySearch" lineno="21" col_offset="15" end_lineno="21" end_col_offset="32">
+                    <Name id="self" lineno="21" col_offset="15" end_lineno="21" end_col_offset="19">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Attribute>
+                  <args>
+                    <Name id="reader" lineno="21" col_offset="33" end_lineno="21" end_col_offset="39">
+                      <Load/>
+                    </Name>
+                    <Name id="left" lineno="21" col_offset="41" end_lineno="21" end_col_offset="45">
+                      <Load/>
+                    </Name>
+                    <Name id="right" lineno="21" col_offset="47" end_lineno="21" end_col_offset="52">
+                      <Load/>
+                    </Name>
+                    <Name id="target" lineno="21" col_offset="54" end_lineno="21" end_col_offset="60">
+                      <Load/>
+                    </Name>
+                  </args>
+                  <keywords/>
+                </Call>
+              </Return>
+            </body>
+            <decorator_list/>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

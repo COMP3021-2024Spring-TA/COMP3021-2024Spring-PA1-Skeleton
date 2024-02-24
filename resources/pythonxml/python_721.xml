@@ -1,0 +1,35 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="40">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="40">
+          <Attribute attr="concatenate" lineno="1" col_offset="0" end_lineno="1" end_col_offset="14">
+            <Name id="np" lineno="1" col_offset="0" end_lineno="1" end_col_offset="2">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <Tuple lineno="1" col_offset="15" end_lineno="1" end_col_offset="31">
+              <elts>
+                <Name id="array8" lineno="1" col_offset="16" end_lineno="1" end_col_offset="22">
+                  <Load/>
+                </Name>
+                <Name id="array9" lineno="1" col_offset="24" end_lineno="1" end_col_offset="30">
+                  <Load/>
+                </Name>
+              </elts>
+              <Load/>
+            </Tuple>
+          </args>
+          <keywords>
+            <keyword arg="axis" lineno="1" col_offset="33" end_lineno="1" end_col_offset="39">
+              <Constant value="1" kind="None" lineno="1" col_offset="38" end_lineno="1" end_col_offset="39"/>
+            </keyword>
+          </keywords>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

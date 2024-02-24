@@ -1,0 +1,61 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="1" col_offset="0" end_lineno="1" end_col_offset="106">
+        <targets>
+          <Name id="index" lineno="1" col_offset="0" end_lineno="1" end_col_offset="5">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="1" col_offset="8" end_lineno="1" end_col_offset="106">
+          <Attribute attr="interval_range" lineno="1" col_offset="8" end_lineno="1" end_col_offset="25">
+            <Name id="pd" lineno="1" col_offset="8" end_lineno="1" end_col_offset="10">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args/>
+          <keywords>
+            <keyword arg="start" lineno="1" col_offset="26" end_lineno="1" end_col_offset="58">
+              <Call lineno="1" col_offset="32" end_lineno="1" end_col_offset="58">
+                <Attribute attr="Timestamp" lineno="1" col_offset="32" end_lineno="1" end_col_offset="44">
+                  <Name id="pd" lineno="1" col_offset="32" end_lineno="1" end_col_offset="34">
+                    <Load/>
+                  </Name>
+                  <Load/>
+                </Attribute>
+                <args>
+                  <Constant value="2022-01-01" kind="None" lineno="1" col_offset="45" end_lineno="1" end_col_offset="57"/>
+                </args>
+                <keywords/>
+              </Call>
+            </keyword>
+            <keyword arg="end" lineno="1" col_offset="60" end_lineno="1" end_col_offset="90">
+              <Call lineno="1" col_offset="64" end_lineno="1" end_col_offset="90">
+                <Attribute attr="Timestamp" lineno="1" col_offset="64" end_lineno="1" end_col_offset="76">
+                  <Name id="pd" lineno="1" col_offset="64" end_lineno="1" end_col_offset="66">
+                    <Load/>
+                  </Name>
+                  <Load/>
+                </Attribute>
+                <args>
+                  <Constant value="2022-01-04" kind="None" lineno="1" col_offset="77" end_lineno="1" end_col_offset="89"/>
+                </args>
+                <keywords/>
+              </Call>
+            </keyword>
+            <keyword arg="closed" lineno="1" col_offset="92" end_lineno="1" end_col_offset="105">
+              <Constant value="both" kind="None" lineno="1" col_offset="99" end_lineno="1" end_col_offset="105"/>
+            </keyword>
+          </keywords>
+        </Call>
+      </Assign>
+      <Expr lineno="2" col_offset="0" end_lineno="2" end_col_offset="5">
+        <Name id="index" lineno="2" col_offset="0" end_lineno="2" end_col_offset="5">
+          <Load/>
+        </Name>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

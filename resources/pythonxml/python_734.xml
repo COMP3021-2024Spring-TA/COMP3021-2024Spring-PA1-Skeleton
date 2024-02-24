@@ -1,0 +1,108 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="MyFirstClass" lineno="4" col_offset="0" end_lineno="6" end_col_offset="12">
+        <bases/>
+        <keywords/>
+        <body>
+          <Assign type_comment="None" lineno="6" col_offset="4" end_lineno="6" end_col_offset="12">
+            <targets>
+              <Name id="var" lineno="6" col_offset="4" end_lineno="6" end_col_offset="7">
+                <Store/>
+              </Name>
+            </targets>
+            <Constant value="10" kind="None" lineno="6" col_offset="10" end_lineno="6" end_col_offset="12"/>
+          </Assign>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+      <Assign type_comment="None" lineno="8" col_offset="0" end_lineno="8" end_col_offset="28">
+        <targets>
+          <Name id="firstObject" lineno="8" col_offset="0" end_lineno="8" end_col_offset="11">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="8" col_offset="14" end_lineno="8" end_col_offset="28">
+          <Name id="MyFirstClass" lineno="8" col_offset="14" end_lineno="8" end_col_offset="26">
+            <Load/>
+          </Name>
+          <args/>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Expr lineno="9" col_offset="0" end_lineno="9" end_col_offset="18">
+        <Call lineno="9" col_offset="0" end_lineno="9" end_col_offset="18">
+          <Name id="print" lineno="9" col_offset="0" end_lineno="9" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Name id="firstObject" lineno="9" col_offset="6" end_lineno="9" end_col_offset="17">
+              <Load/>
+            </Name>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="10" col_offset="0" end_lineno="10" end_col_offset="22">
+        <Call lineno="10" col_offset="0" end_lineno="10" end_col_offset="22">
+          <Name id="print" lineno="10" col_offset="0" end_lineno="10" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Attribute attr="var" lineno="10" col_offset="6" end_lineno="10" end_col_offset="21">
+              <Name id="firstObject" lineno="10" col_offset="6" end_lineno="10" end_col_offset="17">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Assign type_comment="None" lineno="12" col_offset="0" end_lineno="12" end_col_offset="29">
+        <targets>
+          <Name id="secondObject" lineno="12" col_offset="0" end_lineno="12" end_col_offset="12">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="12" col_offset="15" end_lineno="12" end_col_offset="29">
+          <Name id="MyFirstClass" lineno="12" col_offset="15" end_lineno="12" end_col_offset="27">
+            <Load/>
+          </Name>
+          <args/>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Expr lineno="13" col_offset="0" end_lineno="13" end_col_offset="19">
+        <Call lineno="13" col_offset="0" end_lineno="13" end_col_offset="19">
+          <Name id="print" lineno="13" col_offset="0" end_lineno="13" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Name id="secondObject" lineno="13" col_offset="6" end_lineno="13" end_col_offset="18">
+              <Load/>
+            </Name>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="14" col_offset="0" end_lineno="14" end_col_offset="23">
+        <Call lineno="14" col_offset="0" end_lineno="14" end_col_offset="23">
+          <Name id="print" lineno="14" col_offset="0" end_lineno="14" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Attribute attr="var" lineno="14" col_offset="6" end_lineno="14" end_col_offset="22">
+              <Name id="secondObject" lineno="14" col_offset="6" end_lineno="14" end_col_offset="18">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

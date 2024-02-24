@@ -1,0 +1,38 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="35">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="35">
+          <Attribute attr="extract" lineno="1" col_offset="0" end_lineno="1" end_col_offset="10">
+            <Name id="np" lineno="1" col_offset="0" end_lineno="1" end_col_offset="2">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <Compare lineno="1" col_offset="11" end_lineno="1" end_col_offset="26">
+              <BinOp lineno="1" col_offset="11" end_lineno="1" end_col_offset="21">
+                <Name id="array1" lineno="1" col_offset="11" end_lineno="1" end_col_offset="17">
+                  <Load/>
+                </Name>
+                <Mod/>
+                <Constant value="2" kind="None" lineno="1" col_offset="20" end_lineno="1" end_col_offset="21"/>
+              </BinOp>
+              <ops>
+                <NotEq/>
+              </ops>
+              <comparators>
+                <Constant value="0" kind="None" lineno="1" col_offset="25" end_lineno="1" end_col_offset="26"/>
+              </comparators>
+            </Compare>
+            <Name id="array1" lineno="1" col_offset="28" end_lineno="1" end_col_offset="34">
+              <Load/>
+            </Name>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

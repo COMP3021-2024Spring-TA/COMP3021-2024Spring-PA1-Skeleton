@@ -1,0 +1,56 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="Node" lineno="1" col_offset="0" end_lineno="4" end_col_offset="26">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="__init__" returns="None" type_comment="None" lineno="2" col_offset="4" end_lineno="4" end_col_offset="26">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="2" col_offset="17" end_lineno="2" end_col_offset="21"/>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Assign type_comment="None" lineno="3" col_offset="8" end_lineno="3" end_col_offset="30">
+                <targets>
+                  <Attribute attr="children" lineno="3" col_offset="8" end_lineno="3" end_col_offset="21">
+                    <Name id="self" lineno="3" col_offset="8" end_lineno="3" end_col_offset="12">
+                      <Load/>
+                    </Name>
+                    <Store/>
+                  </Attribute>
+                </targets>
+                <Call lineno="3" col_offset="24" end_lineno="3" end_col_offset="30">
+                  <Name id="dict" lineno="3" col_offset="24" end_lineno="3" end_col_offset="28">
+                    <Load/>
+                  </Name>
+                  <args/>
+                  <keywords/>
+                </Call>
+              </Assign>
+              <Assign type_comment="None" lineno="4" col_offset="8" end_lineno="4" end_col_offset="26">
+                <targets>
+                  <Attribute attr="isEnd" lineno="4" col_offset="8" end_lineno="4" end_col_offset="18">
+                    <Name id="self" lineno="4" col_offset="8" end_lineno="4" end_col_offset="12">
+                      <Load/>
+                    </Name>
+                    <Store/>
+                  </Attribute>
+                </targets>
+                <Constant value="False" kind="None" lineno="4" col_offset="21" end_lineno="4" end_col_offset="26"/>
+              </Assign>
+            </body>
+            <decorator_list/>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

@@ -1,0 +1,47 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="17">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="17">
+          <Name id="print" lineno="1" col_offset="0" end_lineno="1" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Call lineno="1" col_offset="6" end_lineno="1" end_col_offset="16">
+              <Attribute attr="deriv" lineno="1" col_offset="6" end_lineno="1" end_col_offset="14">
+                <Name id="p1" lineno="1" col_offset="6" end_lineno="1" end_col_offset="8">
+                  <Load/>
+                </Name>
+                <Load/>
+              </Attribute>
+              <args/>
+              <keywords/>
+            </Call>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="2" col_offset="0" end_lineno="2" end_col_offset="17">
+        <Call lineno="2" col_offset="0" end_lineno="2" end_col_offset="17">
+          <Name id="print" lineno="2" col_offset="0" end_lineno="2" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Call lineno="2" col_offset="6" end_lineno="2" end_col_offset="16">
+              <Attribute attr="integ" lineno="2" col_offset="6" end_lineno="2" end_col_offset="14">
+                <Name id="p1" lineno="2" col_offset="6" end_lineno="2" end_col_offset="8">
+                  <Load/>
+                </Name>
+                <Load/>
+              </Attribute>
+              <args/>
+              <keywords/>
+            </Call>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

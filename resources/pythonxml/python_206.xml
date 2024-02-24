@@ -1,0 +1,164 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="Solution" lineno="1" col_offset="0" end_lineno="13" end_col_offset="16">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="singleNumber" type_comment="None" lineno="2" col_offset="4" end_lineno="13" end_col_offset="16">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="2" col_offset="21" end_lineno="2" end_col_offset="25"/>
+                <arg arg="nums" type_comment="None" lineno="2" col_offset="27" end_lineno="2" end_col_offset="42">
+                  <Subscript lineno="2" col_offset="33" end_lineno="2" end_col_offset="42">
+                    <Name id="List" lineno="2" col_offset="33" end_lineno="2" end_col_offset="37">
+                      <Load/>
+                    </Name>
+                    <Name id="int" lineno="2" col_offset="38" end_lineno="2" end_col_offset="41">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Subscript>
+                </arg>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Assign type_comment="None" lineno="3" col_offset="8" end_lineno="3" end_col_offset="26">
+                <targets>
+                  <Name id="nums_dict" lineno="3" col_offset="8" end_lineno="3" end_col_offset="17">
+                    <Store/>
+                  </Name>
+                </targets>
+                <Call lineno="3" col_offset="20" end_lineno="3" end_col_offset="26">
+                  <Name id="dict" lineno="3" col_offset="20" end_lineno="3" end_col_offset="24">
+                    <Load/>
+                  </Name>
+                  <args/>
+                  <keywords/>
+                </Call>
+              </Assign>
+              <For type_comment="None" lineno="4" col_offset="8" end_lineno="8" end_col_offset="34">
+                <Name id="num" lineno="4" col_offset="12" end_lineno="4" end_col_offset="15">
+                  <Store/>
+                </Name>
+                <Name id="nums" lineno="4" col_offset="19" end_lineno="4" end_col_offset="23">
+                  <Load/>
+                </Name>
+                <body>
+                  <If lineno="5" col_offset="12" end_lineno="8" end_col_offset="34">
+                    <Compare lineno="5" col_offset="15" end_lineno="5" end_col_offset="31">
+                      <Name id="num" lineno="5" col_offset="15" end_lineno="5" end_col_offset="18">
+                        <Load/>
+                      </Name>
+                      <ops>
+                        <In/>
+                      </ops>
+                      <comparators>
+                        <Name id="nums_dict" lineno="5" col_offset="22" end_lineno="5" end_col_offset="31">
+                          <Load/>
+                        </Name>
+                      </comparators>
+                    </Compare>
+                    <body>
+                      <AugAssign lineno="6" col_offset="16" end_lineno="6" end_col_offset="35">
+                        <Subscript lineno="6" col_offset="16" end_lineno="6" end_col_offset="30">
+                          <Name id="nums_dict" lineno="6" col_offset="16" end_lineno="6" end_col_offset="25">
+                            <Load/>
+                          </Name>
+                          <Name id="num" lineno="6" col_offset="26" end_lineno="6" end_col_offset="29">
+                            <Load/>
+                          </Name>
+                          <Store/>
+                        </Subscript>
+                        <Add/>
+                        <Constant value="1" kind="None" lineno="6" col_offset="34" end_lineno="6" end_col_offset="35"/>
+                      </AugAssign>
+                    </body>
+                    <orelse>
+                      <Assign type_comment="None" lineno="8" col_offset="16" end_lineno="8" end_col_offset="34">
+                        <targets>
+                          <Subscript lineno="8" col_offset="16" end_lineno="8" end_col_offset="30">
+                            <Name id="nums_dict" lineno="8" col_offset="16" end_lineno="8" end_col_offset="25">
+                              <Load/>
+                            </Name>
+                            <Name id="num" lineno="8" col_offset="26" end_lineno="8" end_col_offset="29">
+                              <Load/>
+                            </Name>
+                            <Store/>
+                          </Subscript>
+                        </targets>
+                        <Constant value="1" kind="None" lineno="8" col_offset="33" end_lineno="8" end_col_offset="34"/>
+                      </Assign>
+                    </orelse>
+                  </If>
+                </body>
+                <orelse/>
+              </For>
+              <For type_comment="None" lineno="9" col_offset="8" end_lineno="12" end_col_offset="26">
+                <Name id="key" lineno="9" col_offset="12" end_lineno="9" end_col_offset="15">
+                  <Store/>
+                </Name>
+                <Name id="nums_dict" lineno="9" col_offset="19" end_lineno="9" end_col_offset="28">
+                  <Load/>
+                </Name>
+                <body>
+                  <Assign type_comment="None" lineno="10" col_offset="12" end_lineno="10" end_col_offset="34">
+                    <targets>
+                      <Name id="value" lineno="10" col_offset="12" end_lineno="10" end_col_offset="17">
+                        <Store/>
+                      </Name>
+                    </targets>
+                    <Subscript lineno="10" col_offset="20" end_lineno="10" end_col_offset="34">
+                      <Name id="nums_dict" lineno="10" col_offset="20" end_lineno="10" end_col_offset="29">
+                        <Load/>
+                      </Name>
+                      <Name id="key" lineno="10" col_offset="30" end_lineno="10" end_col_offset="33">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Subscript>
+                  </Assign>
+                  <If lineno="11" col_offset="12" end_lineno="12" end_col_offset="26">
+                    <Compare lineno="11" col_offset="15" end_lineno="11" end_col_offset="25">
+                      <Name id="value" lineno="11" col_offset="15" end_lineno="11" end_col_offset="20">
+                        <Load/>
+                      </Name>
+                      <ops>
+                        <Eq/>
+                      </ops>
+                      <comparators>
+                        <Constant value="1" kind="None" lineno="11" col_offset="24" end_lineno="11" end_col_offset="25"/>
+                      </comparators>
+                    </Compare>
+                    <body>
+                      <Return lineno="12" col_offset="16" end_lineno="12" end_col_offset="26">
+                        <Name id="key" lineno="12" col_offset="23" end_lineno="12" end_col_offset="26">
+                          <Load/>
+                        </Name>
+                      </Return>
+                    </body>
+                    <orelse/>
+                  </If>
+                </body>
+                <orelse/>
+              </For>
+              <Return lineno="13" col_offset="8" end_lineno="13" end_col_offset="16">
+                <Constant value="0" kind="None" lineno="13" col_offset="15" end_lineno="13" end_col_offset="16"/>
+              </Return>
+            </body>
+            <decorator_list/>
+            <Name id="int" lineno="2" col_offset="47" end_lineno="2" end_col_offset="50">
+              <Load/>
+            </Name>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

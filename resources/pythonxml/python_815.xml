@@ -1,0 +1,102 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="27" col_offset="0" end_lineno="27" end_col_offset="7">
+        <Call lineno="27" col_offset="0" end_lineno="27" end_col_offset="7">
+          <Name id="input" lineno="27" col_offset="0" end_lineno="27" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args/>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Assign type_comment="None" lineno="28" col_offset="0" end_lineno="28" end_col_offset="11">
+        <targets>
+          <Name id="S" lineno="28" col_offset="0" end_lineno="28" end_col_offset="1">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="28" col_offset="4" end_lineno="28" end_col_offset="11">
+          <Name id="input" lineno="28" col_offset="4" end_lineno="28" end_col_offset="9">
+            <Load/>
+          </Name>
+          <args/>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Assign type_comment="None" lineno="29" col_offset="0" end_lineno="29" end_col_offset="27">
+        <targets>
+          <Name id="maxS" lineno="29" col_offset="0" end_lineno="29" end_col_offset="4">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="29" col_offset="7" end_lineno="29" end_col_offset="27">
+          <Attribute attr="replace" lineno="29" col_offset="7" end_lineno="29" end_col_offset="16">
+            <Name id="S" lineno="29" col_offset="7" end_lineno="29" end_col_offset="8">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <Constant value="w" kind="None" lineno="29" col_offset="17" end_lineno="29" end_col_offset="20"/>
+            <Constant value="vv" kind="None" lineno="29" col_offset="22" end_lineno="29" end_col_offset="26"/>
+          </args>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Assign type_comment="None" lineno="30" col_offset="0" end_lineno="30" end_col_offset="30">
+        <targets>
+          <Name id="minS" lineno="30" col_offset="0" end_lineno="30" end_col_offset="4">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="30" col_offset="7" end_lineno="30" end_col_offset="30">
+          <Attribute attr="replace" lineno="30" col_offset="7" end_lineno="30" end_col_offset="19">
+            <Name id="maxS" lineno="30" col_offset="7" end_lineno="30" end_col_offset="11">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <Constant value="vv" kind="None" lineno="30" col_offset="20" end_lineno="30" end_col_offset="24"/>
+            <Constant value="w" kind="None" lineno="30" col_offset="26" end_lineno="30" end_col_offset="29"/>
+          </args>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Expr lineno="31" col_offset="0" end_lineno="31" end_col_offset="27">
+        <Call lineno="31" col_offset="0" end_lineno="31" end_col_offset="27">
+          <Name id="print" lineno="31" col_offset="0" end_lineno="31" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Call lineno="31" col_offset="6" end_lineno="31" end_col_offset="15">
+              <Name id="len" lineno="31" col_offset="6" end_lineno="31" end_col_offset="9">
+                <Load/>
+              </Name>
+              <args>
+                <Name id="minS" lineno="31" col_offset="10" end_lineno="31" end_col_offset="14">
+                  <Load/>
+                </Name>
+              </args>
+              <keywords/>
+            </Call>
+            <Call lineno="31" col_offset="17" end_lineno="31" end_col_offset="26">
+              <Name id="len" lineno="31" col_offset="17" end_lineno="31" end_col_offset="20">
+                <Load/>
+              </Name>
+              <args>
+                <Name id="maxS" lineno="31" col_offset="21" end_lineno="31" end_col_offset="25">
+                  <Load/>
+                </Name>
+              </args>
+              <keywords/>
+            </Call>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

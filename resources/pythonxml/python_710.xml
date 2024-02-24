@@ -1,0 +1,53 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="17">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="17">
+          <Name id="print" lineno="1" col_offset="0" end_lineno="1" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Compare lineno="1" col_offset="6" end_lineno="1" end_col_offset="16">
+              <Name id="array1" lineno="1" col_offset="6" end_lineno="1" end_col_offset="12">
+                <Load/>
+              </Name>
+              <ops>
+                <Gt/>
+              </ops>
+              <comparators>
+                <Constant value="5" kind="None" lineno="1" col_offset="15" end_lineno="1" end_col_offset="16"/>
+              </comparators>
+            </Compare>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="2" col_offset="0" end_lineno="2" end_col_offset="22">
+        <Call lineno="2" col_offset="0" end_lineno="2" end_col_offset="22">
+          <Name id="print" lineno="2" col_offset="0" end_lineno="2" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Compare lineno="2" col_offset="6" end_lineno="2" end_col_offset="21">
+              <BinOp lineno="2" col_offset="6" end_lineno="2" end_col_offset="16">
+                <Name id="array1" lineno="2" col_offset="6" end_lineno="2" end_col_offset="12">
+                  <Load/>
+                </Name>
+                <Mod/>
+                <Constant value="2" kind="None" lineno="2" col_offset="15" end_lineno="2" end_col_offset="16"/>
+              </BinOp>
+              <ops>
+                <Eq/>
+              </ops>
+              <comparators>
+                <Constant value="0" kind="None" lineno="2" col_offset="20" end_lineno="2" end_col_offset="21"/>
+              </comparators>
+            </Compare>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

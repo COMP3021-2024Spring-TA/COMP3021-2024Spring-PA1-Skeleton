@@ -1,0 +1,41 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="1" col_offset="0" end_lineno="1" end_col_offset="35">
+        <targets>
+          <Name id="nums1" lineno="1" col_offset="0" end_lineno="1" end_col_offset="5">
+            <Store/>
+          </Name>
+        </targets>
+        <List lineno="1" col_offset="20" end_lineno="1" end_col_offset="35">
+          <elts>
+            <Constant value="1" kind="None" lineno="1" col_offset="21" end_lineno="1" end_col_offset="22"/>
+            <Constant value="2" kind="None" lineno="1" col_offset="24" end_lineno="1" end_col_offset="25"/>
+            <Constant value="3" kind="None" lineno="1" col_offset="27" end_lineno="1" end_col_offset="28"/>
+            <Constant value="2" kind="None" lineno="1" col_offset="30" end_lineno="1" end_col_offset="31"/>
+            <Constant value="1" kind="None" lineno="1" col_offset="33" end_lineno="1" end_col_offset="34"/>
+          </elts>
+          <Load/>
+        </List>
+      </Assign>
+      <Assign type_comment="None" lineno="2" col_offset="0" end_lineno="2" end_col_offset="23">
+        <targets>
+          <Name id="nums2" lineno="2" col_offset="0" end_lineno="2" end_col_offset="5">
+            <Store/>
+          </Name>
+        </targets>
+        <List lineno="2" col_offset="8" end_lineno="2" end_col_offset="23">
+          <elts>
+            <Constant value="3" kind="None" lineno="2" col_offset="9" end_lineno="2" end_col_offset="10"/>
+            <Constant value="2" kind="None" lineno="2" col_offset="12" end_lineno="2" end_col_offset="13"/>
+            <Constant value="1" kind="None" lineno="2" col_offset="15" end_lineno="2" end_col_offset="16"/>
+            <Constant value="4" kind="None" lineno="2" col_offset="18" end_lineno="2" end_col_offset="19"/>
+            <Constant value="7" kind="None" lineno="2" col_offset="21" end_lineno="2" end_col_offset="22"/>
+          </elts>
+          <Load/>
+        </List>
+      </Assign>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

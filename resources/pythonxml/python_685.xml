@@ -1,0 +1,28 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="23">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="23">
+          <Attribute attr="sum" lineno="1" col_offset="0" end_lineno="1" end_col_offset="21">
+            <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="17">
+              <Attribute attr="groupby" lineno="1" col_offset="0" end_lineno="1" end_col_offset="11">
+                <Name id="ser" lineno="1" col_offset="0" end_lineno="1" end_col_offset="3">
+                  <Load/>
+                </Name>
+                <Load/>
+              </Attribute>
+              <args>
+                <Constant value="no" kind="None" lineno="1" col_offset="12" end_lineno="1" end_col_offset="16"/>
+              </args>
+              <keywords/>
+            </Call>
+            <Load/>
+          </Attribute>
+          <args/>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

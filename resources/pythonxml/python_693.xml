@@ -1,0 +1,39 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="1" col_offset="0" end_lineno="1" end_col_offset="43">
+        <targets>
+          <Name id="array5" lineno="1" col_offset="0" end_lineno="1" end_col_offset="6">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="1" col_offset="9" end_lineno="1" end_col_offset="43">
+          <Attribute attr="logspace" lineno="1" col_offset="9" end_lineno="1" end_col_offset="20">
+            <Name id="np" lineno="1" col_offset="9" end_lineno="1" end_col_offset="11">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <Constant value="1" kind="None" lineno="1" col_offset="21" end_lineno="1" end_col_offset="22"/>
+            <Constant value="10" kind="None" lineno="1" col_offset="24" end_lineno="1" end_col_offset="26"/>
+          </args>
+          <keywords>
+            <keyword arg="num" lineno="1" col_offset="28" end_lineno="1" end_col_offset="34">
+              <Constant value="10" kind="None" lineno="1" col_offset="32" end_lineno="1" end_col_offset="34"/>
+            </keyword>
+            <keyword arg="base" lineno="1" col_offset="36" end_lineno="1" end_col_offset="42">
+              <Constant value="2" kind="None" lineno="1" col_offset="41" end_lineno="1" end_col_offset="42"/>
+            </keyword>
+          </keywords>
+        </Call>
+      </Assign>
+      <Expr lineno="2" col_offset="0" end_lineno="2" end_col_offset="6">
+        <Name id="array5" lineno="2" col_offset="0" end_lineno="2" end_col_offset="6">
+          <Load/>
+        </Name>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

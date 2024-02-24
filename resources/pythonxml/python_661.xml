@@ -1,0 +1,19 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="14">
+        <Subscript lineno="1" col_offset="0" end_lineno="1" end_col_offset="14">
+          <Attribute attr="iloc" lineno="1" col_offset="0" end_lineno="1" end_col_offset="11">
+            <Name id="emp_df" lineno="1" col_offset="0" end_lineno="1" end_col_offset="6">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <Constant value="1" kind="None" lineno="1" col_offset="12" end_lineno="1" end_col_offset="13"/>
+          <Load/>
+        </Subscript>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

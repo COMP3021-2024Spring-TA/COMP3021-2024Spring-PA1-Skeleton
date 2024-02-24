@@ -1,0 +1,1 @@
+all_emp_df.drop_duplicates(['ename', 'job'], inplace=True)

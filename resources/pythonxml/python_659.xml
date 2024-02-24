@@ -1,0 +1,15 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="12">
+        <Attribute attr="ename" lineno="1" col_offset="0" end_lineno="1" end_col_offset="12">
+          <Name id="emp_df" lineno="1" col_offset="0" end_lineno="1" end_col_offset="6">
+            <Load/>
+          </Name>
+          <Load/>
+        </Attribute>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

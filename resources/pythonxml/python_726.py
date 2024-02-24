@@ -1,0 +1,1 @@
+np.where(array1 <= 5, array1 * 10, array1 ** 2)

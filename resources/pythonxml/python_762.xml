@@ -1,0 +1,154 @@
+<ast>
+  <Module>
+    <body>
+      <FunctionDef name="checkGreater" returns="None" type_comment="None" lineno="4" col_offset="0" end_lineno="11" end_col_offset="66">
+        <arguments vararg="None" kwarg="None">
+          <posonlyargs/>
+          <args>
+            <arg arg="number" annotation="None" type_comment="None" lineno="4" col_offset="17" end_lineno="4" end_col_offset="23"/>
+          </args>
+          <kwonlyargs/>
+          <kw_defaults/>
+          <defaults/>
+        </arguments>
+        <body>
+          <Expr lineno="5" col_offset="4" end_lineno="5" end_col_offset="91">
+            <Constant value="This function checks whether the entered number is greater than those in the list" kind="None" lineno="5" col_offset="4" end_lineno="5" end_col_offset="91"/>
+          </Expr>
+          <Assign type_comment="None" lineno="6" col_offset="4" end_lineno="6" end_col_offset="26">
+            <targets>
+              <Name id="original" lineno="6" col_offset="4" end_lineno="6" end_col_offset="12">
+                <Store/>
+              </Name>
+            </targets>
+            <List lineno="6" col_offset="15" end_lineno="6" end_col_offset="26">
+              <elts>
+                <Constant value="1" kind="None" lineno="6" col_offset="16" end_lineno="6" end_col_offset="17"/>
+                <Constant value="2" kind="None" lineno="6" col_offset="18" end_lineno="6" end_col_offset="19"/>
+                <Constant value="3" kind="None" lineno="6" col_offset="20" end_lineno="6" end_col_offset="21"/>
+                <Constant value="4" kind="None" lineno="6" col_offset="22" end_lineno="6" end_col_offset="23"/>
+                <Constant value="5" kind="None" lineno="6" col_offset="24" end_lineno="6" end_col_offset="25"/>
+              </elts>
+              <Load/>
+            </List>
+          </Assign>
+          <Expr lineno="7" col_offset="4" end_lineno="7" end_col_offset="19">
+            <Call lineno="7" col_offset="4" end_lineno="7" end_col_offset="19">
+              <Attribute attr="sort" lineno="7" col_offset="4" end_lineno="7" end_col_offset="17">
+                <Name id="original" lineno="7" col_offset="4" end_lineno="7" end_col_offset="12">
+                  <Load/>
+                </Name>
+                <Load/>
+              </Attribute>
+              <args/>
+              <keywords/>
+            </Call>
+          </Expr>
+          <If lineno="8" col_offset="4" end_lineno="11" end_col_offset="66">
+            <Compare lineno="8" col_offset="7" end_lineno="8" end_col_offset="28">
+              <Name id="number" lineno="8" col_offset="7" end_lineno="8" end_col_offset="13">
+                <Load/>
+              </Name>
+              <ops>
+                <Gt/>
+              </ops>
+              <comparators>
+                <Subscript lineno="8" col_offset="16" end_lineno="8" end_col_offset="28">
+                  <Name id="original" lineno="8" col_offset="16" end_lineno="8" end_col_offset="24">
+                    <Load/>
+                  </Name>
+                  <UnaryOp lineno="8" col_offset="25" end_lineno="8" end_col_offset="27">
+                    <USub/>
+                    <Constant value="1" kind="None" lineno="8" col_offset="26" end_lineno="8" end_col_offset="27"/>
+                  </UnaryOp>
+                  <Load/>
+                </Subscript>
+              </comparators>
+            </Compare>
+            <body>
+              <Expr lineno="9" col_offset="8" end_lineno="9" end_col_offset="74">
+                <Call lineno="9" col_offset="8" end_lineno="9" end_col_offset="74">
+                  <Name id="print" lineno="9" col_offset="8" end_lineno="9" end_col_offset="13">
+                    <Load/>
+                  </Name>
+                  <args>
+                    <Constant value="Yes, the entered number is greater than those in the list" kind="None" lineno="9" col_offset="14" end_lineno="9" end_col_offset="73"/>
+                  </args>
+                  <keywords/>
+                </Call>
+              </Expr>
+            </body>
+            <orelse>
+              <Expr lineno="11" col_offset="8" end_lineno="11" end_col_offset="66">
+                <Call lineno="11" col_offset="8" end_lineno="11" end_col_offset="66">
+                  <Name id="print" lineno="11" col_offset="8" end_lineno="11" end_col_offset="13">
+                    <Load/>
+                  </Name>
+                  <args>
+                    <Constant value="No, entered number is less than those in the list" kind="None" lineno="11" col_offset="14" end_lineno="11" end_col_offset="65"/>
+                  </args>
+                  <keywords/>
+                </Call>
+              </Expr>
+            </orelse>
+          </If>
+        </body>
+        <decorator_list/>
+      </FunctionDef>
+      <If lineno="13" col_offset="0" end_lineno="15" end_col_offset="27">
+        <Compare lineno="13" col_offset="3" end_lineno="13" end_col_offset="25">
+          <Name id="__name__" lineno="13" col_offset="3" end_lineno="13" end_col_offset="11">
+            <Load/>
+          </Name>
+          <ops>
+            <Eq/>
+          </ops>
+          <comparators>
+            <Constant value="__main__" kind="None" lineno="13" col_offset="15" end_lineno="13" end_col_offset="25"/>
+          </comparators>
+        </Compare>
+        <body>
+          <Assign type_comment="None" lineno="14" col_offset="4" end_lineno="14" end_col_offset="57">
+            <targets>
+              <Name id="userInput" lineno="14" col_offset="4" end_lineno="14" end_col_offset="13">
+                <Store/>
+              </Name>
+            </targets>
+            <Call lineno="14" col_offset="16" end_lineno="14" end_col_offset="57">
+              <Name id="int" lineno="14" col_offset="16" end_lineno="14" end_col_offset="19">
+                <Load/>
+              </Name>
+              <args>
+                <Call lineno="14" col_offset="20" end_lineno="14" end_col_offset="56">
+                  <Name id="input" lineno="14" col_offset="20" end_lineno="14" end_col_offset="25">
+                    <Load/>
+                  </Name>
+                  <args>
+                    <Constant value="Enter the number to check: " kind="None" lineno="14" col_offset="26" end_lineno="14" end_col_offset="55"/>
+                  </args>
+                  <keywords/>
+                </Call>
+              </args>
+              <keywords/>
+            </Call>
+          </Assign>
+          <Expr lineno="15" col_offset="4" end_lineno="15" end_col_offset="27">
+            <Call lineno="15" col_offset="4" end_lineno="15" end_col_offset="27">
+              <Name id="checkGreater" lineno="15" col_offset="4" end_lineno="15" end_col_offset="16">
+                <Load/>
+              </Name>
+              <args>
+                <Name id="userInput" lineno="15" col_offset="17" end_lineno="15" end_col_offset="26">
+                  <Load/>
+                </Name>
+              </args>
+              <keywords/>
+            </Call>
+          </Expr>
+        </body>
+        <orelse/>
+      </If>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

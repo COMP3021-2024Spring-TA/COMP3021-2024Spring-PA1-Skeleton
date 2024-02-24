@@ -1,0 +1,18 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="11">
+        <BinOp lineno="1" col_offset="0" end_lineno="1" end_col_offset="11">
+          <Name id="ser1" lineno="1" col_offset="0" end_lineno="1" end_col_offset="4">
+            <Load/>
+          </Name>
+          <Add/>
+          <Name id="ser2" lineno="1" col_offset="7" end_lineno="1" end_col_offset="11">
+            <Load/>
+          </Name>
+        </BinOp>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

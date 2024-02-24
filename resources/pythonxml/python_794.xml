@@ -1,0 +1,271 @@
+<ast>
+  <Module>
+    <body>
+      <FunctionDef name="enqueue" returns="None" type_comment="None" lineno="34" col_offset="0" end_lineno="35" end_col_offset="27">
+        <arguments vararg="None" kwarg="None">
+          <posonlyargs/>
+          <args>
+            <arg arg="myList" annotation="None" type_comment="None" lineno="34" col_offset="12" end_lineno="34" end_col_offset="18"/>
+            <arg arg="element" annotation="None" type_comment="None" lineno="34" col_offset="20" end_lineno="34" end_col_offset="27"/>
+          </args>
+          <kwonlyargs/>
+          <kw_defaults/>
+          <defaults/>
+        </arguments>
+        <body>
+          <Expr lineno="35" col_offset="2" end_lineno="35" end_col_offset="27">
+            <Call lineno="35" col_offset="2" end_lineno="35" end_col_offset="27">
+              <Attribute attr="insert" lineno="35" col_offset="2" end_lineno="35" end_col_offset="15">
+                <Name id="myList" lineno="35" col_offset="2" end_lineno="35" end_col_offset="8">
+                  <Load/>
+                </Name>
+                <Load/>
+              </Attribute>
+              <args>
+                <Constant value="0" kind="None" lineno="35" col_offset="16" end_lineno="35" end_col_offset="17"/>
+                <Name id="element" lineno="35" col_offset="19" end_lineno="35" end_col_offset="26">
+                  <Load/>
+                </Name>
+              </args>
+              <keywords/>
+            </Call>
+          </Expr>
+        </body>
+        <decorator_list/>
+      </FunctionDef>
+      <FunctionDef name="dequeue" returns="None" type_comment="None" lineno="37" col_offset="0" end_lineno="41" end_col_offset="13">
+        <arguments vararg="None" kwarg="None">
+          <posonlyargs/>
+          <args>
+            <arg arg="myList" annotation="None" type_comment="None" lineno="37" col_offset="12" end_lineno="37" end_col_offset="18"/>
+          </args>
+          <kwonlyargs/>
+          <kw_defaults/>
+          <defaults/>
+        </arguments>
+        <body>
+          <If lineno="38" col_offset="2" end_lineno="41" end_col_offset="13">
+            <Compare lineno="38" col_offset="5" end_lineno="38" end_col_offset="20">
+              <Call lineno="38" col_offset="5" end_lineno="38" end_col_offset="16">
+                <Name id="len" lineno="38" col_offset="5" end_lineno="38" end_col_offset="8">
+                  <Load/>
+                </Name>
+                <args>
+                  <Name id="myList" lineno="38" col_offset="9" end_lineno="38" end_col_offset="15">
+                    <Load/>
+                  </Name>
+                </args>
+                <keywords/>
+              </Call>
+              <ops>
+                <Gt/>
+              </ops>
+              <comparators>
+                <Constant value="0" kind="None" lineno="38" col_offset="19" end_lineno="38" end_col_offset="20"/>
+              </comparators>
+            </Compare>
+            <body>
+              <Return lineno="39" col_offset="4" end_lineno="39" end_col_offset="23">
+                <Call lineno="39" col_offset="11" end_lineno="39" end_col_offset="23">
+                  <Attribute attr="pop" lineno="39" col_offset="11" end_lineno="39" end_col_offset="21">
+                    <Name id="myList" lineno="39" col_offset="11" end_lineno="39" end_col_offset="17">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Attribute>
+                  <args/>
+                  <keywords/>
+                </Call>
+              </Return>
+            </body>
+            <orelse>
+              <Return lineno="41" col_offset="4" end_lineno="41" end_col_offset="13">
+                <UnaryOp lineno="41" col_offset="11" end_lineno="41" end_col_offset="13">
+                  <USub/>
+                  <Constant value="1" kind="None" lineno="41" col_offset="12" end_lineno="41" end_col_offset="13"/>
+                </UnaryOp>
+              </Return>
+            </orelse>
+          </If>
+        </body>
+        <decorator_list/>
+      </FunctionDef>
+      <Assign type_comment="None" lineno="43" col_offset="0" end_lineno="43" end_col_offset="11">
+        <targets>
+          <Name id="myList" lineno="43" col_offset="0" end_lineno="43" end_col_offset="6">
+            <Store/>
+          </Name>
+        </targets>
+        <List lineno="43" col_offset="9" end_lineno="43" end_col_offset="11">
+          <elts/>
+          <Load/>
+        </List>
+      </Assign>
+      <For type_comment="None" lineno="45" col_offset="0" end_lineno="52" end_col_offset="33">
+        <Name id="_" lineno="45" col_offset="4" end_lineno="45" end_col_offset="5">
+          <Store/>
+        </Name>
+        <Call lineno="45" col_offset="9" end_lineno="45" end_col_offset="28">
+          <Name id="range" lineno="45" col_offset="9" end_lineno="45" end_col_offset="14">
+            <Load/>
+          </Name>
+          <args>
+            <Call lineno="45" col_offset="15" end_lineno="45" end_col_offset="27">
+              <Name id="int" lineno="45" col_offset="15" end_lineno="45" end_col_offset="18">
+                <Load/>
+              </Name>
+              <args>
+                <Call lineno="45" col_offset="19" end_lineno="45" end_col_offset="26">
+                  <Name id="input" lineno="45" col_offset="19" end_lineno="45" end_col_offset="24">
+                    <Load/>
+                  </Name>
+                  <args/>
+                  <keywords/>
+                </Call>
+              </args>
+              <keywords/>
+            </Call>
+          </args>
+          <keywords/>
+        </Call>
+        <body>
+          <Assign type_comment="None" lineno="46" col_offset="4" end_lineno="46" end_col_offset="31">
+            <targets>
+              <Name id="userInput" lineno="46" col_offset="4" end_lineno="46" end_col_offset="13">
+                <Store/>
+              </Name>
+            </targets>
+            <Call lineno="46" col_offset="16" end_lineno="46" end_col_offset="31">
+              <Attribute attr="split" lineno="46" col_offset="16" end_lineno="46" end_col_offset="29">
+                <Call lineno="46" col_offset="16" end_lineno="46" end_col_offset="23">
+                  <Name id="input" lineno="46" col_offset="16" end_lineno="46" end_col_offset="21">
+                    <Load/>
+                  </Name>
+                  <args/>
+                  <keywords/>
+                </Call>
+                <Load/>
+              </Attribute>
+              <args/>
+              <keywords/>
+            </Call>
+          </Assign>
+          <If lineno="47" col_offset="4" end_lineno="52" end_col_offset="33">
+            <Compare lineno="47" col_offset="7" end_lineno="47" end_col_offset="26">
+              <Subscript lineno="47" col_offset="7" end_lineno="47" end_col_offset="19">
+                <Name id="userInput" lineno="47" col_offset="7" end_lineno="47" end_col_offset="16">
+                  <Load/>
+                </Name>
+                <Constant value="0" kind="None" lineno="47" col_offset="17" end_lineno="47" end_col_offset="18"/>
+                <Load/>
+              </Subscript>
+              <ops>
+                <Eq/>
+              </ops>
+              <comparators>
+                <Constant value="E" kind="None" lineno="47" col_offset="23" end_lineno="47" end_col_offset="26"/>
+              </comparators>
+            </Compare>
+            <body>
+              <Expr lineno="48" col_offset="6" end_lineno="48" end_col_offset="40">
+                <Call lineno="48" col_offset="6" end_lineno="48" end_col_offset="40">
+                  <Name id="enqueue" lineno="48" col_offset="6" end_lineno="48" end_col_offset="13">
+                    <Load/>
+                  </Name>
+                  <args>
+                    <Name id="myList" lineno="48" col_offset="14" end_lineno="48" end_col_offset="20">
+                      <Load/>
+                    </Name>
+                    <Call lineno="48" col_offset="22" end_lineno="48" end_col_offset="39">
+                      <Name id="int" lineno="48" col_offset="22" end_lineno="48" end_col_offset="25">
+                        <Load/>
+                      </Name>
+                      <args>
+                        <Subscript lineno="48" col_offset="26" end_lineno="48" end_col_offset="38">
+                          <Name id="userInput" lineno="48" col_offset="26" end_lineno="48" end_col_offset="35">
+                            <Load/>
+                          </Name>
+                          <Constant value="1" kind="None" lineno="48" col_offset="36" end_lineno="48" end_col_offset="37"/>
+                          <Load/>
+                        </Subscript>
+                      </args>
+                      <keywords/>
+                    </Call>
+                  </args>
+                  <keywords/>
+                </Call>
+              </Expr>
+              <Expr lineno="49" col_offset="6" end_lineno="49" end_col_offset="24">
+                <Call lineno="49" col_offset="6" end_lineno="49" end_col_offset="24">
+                  <Name id="print" lineno="49" col_offset="6" end_lineno="49" end_col_offset="11">
+                    <Load/>
+                  </Name>
+                  <args>
+                    <Call lineno="49" col_offset="12" end_lineno="49" end_col_offset="23">
+                      <Name id="len" lineno="49" col_offset="12" end_lineno="49" end_col_offset="15">
+                        <Load/>
+                      </Name>
+                      <args>
+                        <Name id="myList" lineno="49" col_offset="16" end_lineno="49" end_col_offset="22">
+                          <Load/>
+                        </Name>
+                      </args>
+                      <keywords/>
+                    </Call>
+                  </args>
+                  <keywords/>
+                </Call>
+              </Expr>
+            </body>
+            <orelse>
+              <Assign type_comment="None" lineno="51" col_offset="6" end_lineno="51" end_col_offset="31">
+                <targets>
+                  <Name id="deleted" lineno="51" col_offset="6" end_lineno="51" end_col_offset="13">
+                    <Store/>
+                  </Name>
+                </targets>
+                <Call lineno="51" col_offset="16" end_lineno="51" end_col_offset="31">
+                  <Name id="dequeue" lineno="51" col_offset="16" end_lineno="51" end_col_offset="23">
+                    <Load/>
+                  </Name>
+                  <args>
+                    <Name id="myList" lineno="51" col_offset="24" end_lineno="51" end_col_offset="30">
+                      <Load/>
+                    </Name>
+                  </args>
+                  <keywords/>
+                </Call>
+              </Assign>
+              <Expr lineno="52" col_offset="6" end_lineno="52" end_col_offset="33">
+                <Call lineno="52" col_offset="6" end_lineno="52" end_col_offset="33">
+                  <Name id="print" lineno="52" col_offset="6" end_lineno="52" end_col_offset="11">
+                    <Load/>
+                  </Name>
+                  <args>
+                    <Name id="deleted" lineno="52" col_offset="12" end_lineno="52" end_col_offset="19">
+                      <Load/>
+                    </Name>
+                    <Call lineno="52" col_offset="21" end_lineno="52" end_col_offset="32">
+                      <Name id="len" lineno="52" col_offset="21" end_lineno="52" end_col_offset="24">
+                        <Load/>
+                      </Name>
+                      <args>
+                        <Name id="myList" lineno="52" col_offset="25" end_lineno="52" end_col_offset="31">
+                          <Load/>
+                        </Name>
+                      </args>
+                      <keywords/>
+                    </Call>
+                  </args>
+                  <keywords/>
+                </Call>
+              </Expr>
+            </orelse>
+          </If>
+        </body>
+        <orelse/>
+      </For>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

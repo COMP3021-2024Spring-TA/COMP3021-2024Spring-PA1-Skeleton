@@ -1,0 +1,45 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="47">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="47">
+          <Attribute attr="where" lineno="1" col_offset="0" end_lineno="1" end_col_offset="8">
+            <Name id="np" lineno="1" col_offset="0" end_lineno="1" end_col_offset="2">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <Compare lineno="1" col_offset="9" end_lineno="1" end_col_offset="20">
+              <Name id="array1" lineno="1" col_offset="9" end_lineno="1" end_col_offset="15">
+                <Load/>
+              </Name>
+              <ops>
+                <LtE/>
+              </ops>
+              <comparators>
+                <Constant value="5" kind="None" lineno="1" col_offset="19" end_lineno="1" end_col_offset="20"/>
+              </comparators>
+            </Compare>
+            <BinOp lineno="1" col_offset="22" end_lineno="1" end_col_offset="33">
+              <Name id="array1" lineno="1" col_offset="22" end_lineno="1" end_col_offset="28">
+                <Load/>
+              </Name>
+              <Mult/>
+              <Constant value="10" kind="None" lineno="1" col_offset="31" end_lineno="1" end_col_offset="33"/>
+            </BinOp>
+            <BinOp lineno="1" col_offset="35" end_lineno="1" end_col_offset="46">
+              <Name id="array1" lineno="1" col_offset="35" end_lineno="1" end_col_offset="41">
+                <Load/>
+              </Name>
+              <Pow/>
+              <Constant value="2" kind="None" lineno="1" col_offset="45" end_lineno="1" end_col_offset="46"/>
+            </BinOp>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

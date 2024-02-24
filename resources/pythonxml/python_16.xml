@@ -1,0 +1,69 @@
+<ast>
+  <Module>
+    <body>
+      <FunctionDef name="insertFront" returns="None" type_comment="None" lineno="2" col_offset="0" end_lineno="5" end_col_offset="20">
+        <arguments vararg="None" kwarg="None">
+          <posonlyargs/>
+          <args>
+            <arg arg="self" annotation="None" type_comment="None" lineno="2" col_offset="16" end_lineno="2" end_col_offset="20"/>
+            <arg arg="val" annotation="None" type_comment="None" lineno="2" col_offset="22" end_lineno="2" end_col_offset="25"/>
+          </args>
+          <kwonlyargs/>
+          <kw_defaults/>
+          <defaults/>
+        </arguments>
+        <body>
+          <Assign type_comment="None" lineno="3" col_offset="4" end_lineno="3" end_col_offset="24">
+            <targets>
+              <Name id="node" lineno="3" col_offset="4" end_lineno="3" end_col_offset="8">
+                <Store/>
+              </Name>
+            </targets>
+            <Call lineno="3" col_offset="11" end_lineno="3" end_col_offset="24">
+              <Name id="ListNode" lineno="3" col_offset="11" end_lineno="3" end_col_offset="19">
+                <Load/>
+              </Name>
+              <args>
+                <Name id="val" lineno="3" col_offset="20" end_lineno="3" end_col_offset="23">
+                  <Load/>
+                </Name>
+              </args>
+              <keywords/>
+            </Call>
+          </Assign>
+          <Assign type_comment="None" lineno="4" col_offset="4" end_lineno="4" end_col_offset="25">
+            <targets>
+              <Attribute attr="next" lineno="4" col_offset="4" end_lineno="4" end_col_offset="13">
+                <Name id="node" lineno="4" col_offset="4" end_lineno="4" end_col_offset="8">
+                  <Load/>
+                </Name>
+                <Store/>
+              </Attribute>
+            </targets>
+            <Attribute attr="head" lineno="4" col_offset="16" end_lineno="4" end_col_offset="25">
+              <Name id="self" lineno="4" col_offset="16" end_lineno="4" end_col_offset="20">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+          </Assign>
+          <Assign type_comment="None" lineno="5" col_offset="4" end_lineno="5" end_col_offset="20">
+            <targets>
+              <Attribute attr="head" lineno="5" col_offset="4" end_lineno="5" end_col_offset="13">
+                <Name id="self" lineno="5" col_offset="4" end_lineno="5" end_col_offset="8">
+                  <Load/>
+                </Name>
+                <Store/>
+              </Attribute>
+            </targets>
+            <Name id="node" lineno="5" col_offset="16" end_lineno="5" end_col_offset="20">
+              <Load/>
+            </Name>
+          </Assign>
+        </body>
+        <decorator_list/>
+      </FunctionDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

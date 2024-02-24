@@ -1,0 +1,15 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="1" col_offset="0" end_lineno="1" end_col_offset="19">
+        <targets>
+          <Name id="str" lineno="1" col_offset="0" end_lineno="1" end_col_offset="3">
+            <Store/>
+          </Name>
+        </targets>
+        <Constant value="Hello World" kind="None" lineno="1" col_offset="6" end_lineno="1" end_col_offset="19"/>
+      </Assign>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

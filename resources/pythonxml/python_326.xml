@@ -1,0 +1,158 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="Solution" lineno="1" col_offset="0" end_lineno="7" end_col_offset="22">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="reverseString" type_comment="None" lineno="2" col_offset="4" end_lineno="7" end_col_offset="22">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="2" col_offset="22" end_lineno="2" end_col_offset="26"/>
+                <arg arg="s" type_comment="None" lineno="2" col_offset="28" end_lineno="2" end_col_offset="40">
+                  <Subscript lineno="2" col_offset="31" end_lineno="2" end_col_offset="40">
+                    <Name id="List" lineno="2" col_offset="31" end_lineno="2" end_col_offset="35">
+                      <Load/>
+                    </Name>
+                    <Name id="str" lineno="2" col_offset="36" end_lineno="2" end_col_offset="39">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Subscript>
+                </arg>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Assign type_comment="None" lineno="3" col_offset="8" end_lineno="3" end_col_offset="35">
+                <targets>
+                  <Tuple lineno="3" col_offset="8" end_lineno="3" end_col_offset="19">
+                    <elts>
+                      <Name id="left" lineno="3" col_offset="8" end_lineno="3" end_col_offset="12">
+                        <Store/>
+                      </Name>
+                      <Name id="right" lineno="3" col_offset="14" end_lineno="3" end_col_offset="19">
+                        <Store/>
+                      </Name>
+                    </elts>
+                    <Store/>
+                  </Tuple>
+                </targets>
+                <Tuple lineno="3" col_offset="22" end_lineno="3" end_col_offset="35">
+                  <elts>
+                    <Constant value="0" kind="None" lineno="3" col_offset="22" end_lineno="3" end_col_offset="23"/>
+                    <BinOp lineno="3" col_offset="25" end_lineno="3" end_col_offset="35">
+                      <Call lineno="3" col_offset="25" end_lineno="3" end_col_offset="31">
+                        <Name id="len" lineno="3" col_offset="25" end_lineno="3" end_col_offset="28">
+                          <Load/>
+                        </Name>
+                        <args>
+                          <Name id="s" lineno="3" col_offset="29" end_lineno="3" end_col_offset="30">
+                            <Load/>
+                          </Name>
+                        </args>
+                        <keywords/>
+                      </Call>
+                      <Sub/>
+                      <Constant value="1" kind="None" lineno="3" col_offset="34" end_lineno="3" end_col_offset="35"/>
+                    </BinOp>
+                  </elts>
+                  <Load/>
+                </Tuple>
+              </Assign>
+              <While lineno="4" col_offset="8" end_lineno="7" end_col_offset="22">
+                <Compare lineno="4" col_offset="14" end_lineno="4" end_col_offset="26">
+                  <Name id="left" lineno="4" col_offset="14" end_lineno="4" end_col_offset="18">
+                    <Load/>
+                  </Name>
+                  <ops>
+                    <Lt/>
+                  </ops>
+                  <comparators>
+                    <Name id="right" lineno="4" col_offset="21" end_lineno="4" end_col_offset="26">
+                      <Load/>
+                    </Name>
+                  </comparators>
+                </Compare>
+                <body>
+                  <Assign type_comment="None" lineno="5" col_offset="12" end_lineno="5" end_col_offset="49">
+                    <targets>
+                      <Tuple lineno="5" col_offset="12" end_lineno="5" end_col_offset="29">
+                        <elts>
+                          <Subscript lineno="5" col_offset="12" end_lineno="5" end_col_offset="19">
+                            <Name id="s" lineno="5" col_offset="12" end_lineno="5" end_col_offset="13">
+                              <Load/>
+                            </Name>
+                            <Name id="left" lineno="5" col_offset="14" end_lineno="5" end_col_offset="18">
+                              <Load/>
+                            </Name>
+                            <Store/>
+                          </Subscript>
+                          <Subscript lineno="5" col_offset="21" end_lineno="5" end_col_offset="29">
+                            <Name id="s" lineno="5" col_offset="21" end_lineno="5" end_col_offset="22">
+                              <Load/>
+                            </Name>
+                            <Name id="right" lineno="5" col_offset="23" end_lineno="5" end_col_offset="28">
+                              <Load/>
+                            </Name>
+                            <Store/>
+                          </Subscript>
+                        </elts>
+                        <Store/>
+                      </Tuple>
+                    </targets>
+                    <Tuple lineno="5" col_offset="32" end_lineno="5" end_col_offset="49">
+                      <elts>
+                        <Subscript lineno="5" col_offset="32" end_lineno="5" end_col_offset="40">
+                          <Name id="s" lineno="5" col_offset="32" end_lineno="5" end_col_offset="33">
+                            <Load/>
+                          </Name>
+                          <Name id="right" lineno="5" col_offset="34" end_lineno="5" end_col_offset="39">
+                            <Load/>
+                          </Name>
+                          <Load/>
+                        </Subscript>
+                        <Subscript lineno="5" col_offset="42" end_lineno="5" end_col_offset="49">
+                          <Name id="s" lineno="5" col_offset="42" end_lineno="5" end_col_offset="43">
+                            <Load/>
+                          </Name>
+                          <Name id="left" lineno="5" col_offset="44" end_lineno="5" end_col_offset="48">
+                            <Load/>
+                          </Name>
+                          <Load/>
+                        </Subscript>
+                      </elts>
+                      <Load/>
+                    </Tuple>
+                  </Assign>
+                  <AugAssign lineno="6" col_offset="12" end_lineno="6" end_col_offset="21">
+                    <Name id="left" lineno="6" col_offset="12" end_lineno="6" end_col_offset="16">
+                      <Store/>
+                    </Name>
+                    <Add/>
+                    <Constant value="1" kind="None" lineno="6" col_offset="20" end_lineno="6" end_col_offset="21"/>
+                  </AugAssign>
+                  <AugAssign lineno="7" col_offset="12" end_lineno="7" end_col_offset="22">
+                    <Name id="right" lineno="7" col_offset="12" end_lineno="7" end_col_offset="17">
+                      <Store/>
+                    </Name>
+                    <Sub/>
+                    <Constant value="1" kind="None" lineno="7" col_offset="21" end_lineno="7" end_col_offset="22"/>
+                  </AugAssign>
+                </body>
+                <orelse/>
+              </While>
+            </body>
+            <decorator_list/>
+            <Constant value="None" kind="None" lineno="2" col_offset="45" end_lineno="2" end_col_offset="49"/>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

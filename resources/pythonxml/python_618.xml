@@ -1,0 +1,125 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="6">
+        <Name id="输入" lineno="1" col_offset="0" end_lineno="1" end_col_offset="6">
+          <Load/>
+        </Name>
+      </Expr>
+      <Expr lineno="2" col_offset="0" end_lineno="2" end_col_offset="99">
+        <List lineno="2" col_offset="0" end_lineno="2" end_col_offset="99">
+          <elts>
+            <Constant value="BSTIterator" kind="None" lineno="2" col_offset="1" end_lineno="2" end_col_offset="14"/>
+            <Constant value="next" kind="None" lineno="2" col_offset="16" end_lineno="2" end_col_offset="22"/>
+            <Constant value="next" kind="None" lineno="2" col_offset="24" end_lineno="2" end_col_offset="30"/>
+            <Constant value="hasNext" kind="None" lineno="2" col_offset="32" end_lineno="2" end_col_offset="41"/>
+            <Constant value="next" kind="None" lineno="2" col_offset="43" end_lineno="2" end_col_offset="49"/>
+            <Constant value="hasNext" kind="None" lineno="2" col_offset="51" end_lineno="2" end_col_offset="60"/>
+            <Constant value="next" kind="None" lineno="2" col_offset="62" end_lineno="2" end_col_offset="68"/>
+            <Constant value="hasNext" kind="None" lineno="2" col_offset="70" end_lineno="2" end_col_offset="79"/>
+            <Constant value="next" kind="None" lineno="2" col_offset="81" end_lineno="2" end_col_offset="87"/>
+            <Constant value="hasNext" kind="None" lineno="2" col_offset="89" end_lineno="2" end_col_offset="98"/>
+          </elts>
+          <Load/>
+        </List>
+      </Expr>
+      <Expr lineno="3" col_offset="0" end_lineno="3" end_col_offset="69">
+        <List lineno="3" col_offset="0" end_lineno="3" end_col_offset="69">
+          <elts>
+            <List lineno="3" col_offset="1" end_lineno="3" end_col_offset="32">
+              <elts>
+                <List lineno="3" col_offset="2" end_lineno="3" end_col_offset="31">
+                  <elts>
+                    <Constant value="7" kind="None" lineno="3" col_offset="3" end_lineno="3" end_col_offset="4"/>
+                    <Constant value="3" kind="None" lineno="3" col_offset="6" end_lineno="3" end_col_offset="7"/>
+                    <Constant value="15" kind="None" lineno="3" col_offset="9" end_lineno="3" end_col_offset="11"/>
+                    <Name id="null" lineno="3" col_offset="13" end_lineno="3" end_col_offset="17">
+                      <Load/>
+                    </Name>
+                    <Name id="null" lineno="3" col_offset="19" end_lineno="3" end_col_offset="23">
+                      <Load/>
+                    </Name>
+                    <Constant value="9" kind="None" lineno="3" col_offset="25" end_lineno="3" end_col_offset="26"/>
+                    <Constant value="20" kind="None" lineno="3" col_offset="28" end_lineno="3" end_col_offset="30"/>
+                  </elts>
+                  <Load/>
+                </List>
+              </elts>
+              <Load/>
+            </List>
+            <List lineno="3" col_offset="34" end_lineno="3" end_col_offset="36">
+              <elts/>
+              <Load/>
+            </List>
+            <List lineno="3" col_offset="38" end_lineno="3" end_col_offset="40">
+              <elts/>
+              <Load/>
+            </List>
+            <List lineno="3" col_offset="42" end_lineno="3" end_col_offset="44">
+              <elts/>
+              <Load/>
+            </List>
+            <List lineno="3" col_offset="46" end_lineno="3" end_col_offset="48">
+              <elts/>
+              <Load/>
+            </List>
+            <List lineno="3" col_offset="50" end_lineno="3" end_col_offset="52">
+              <elts/>
+              <Load/>
+            </List>
+            <List lineno="3" col_offset="54" end_lineno="3" end_col_offset="56">
+              <elts/>
+              <Load/>
+            </List>
+            <List lineno="3" col_offset="58" end_lineno="3" end_col_offset="60">
+              <elts/>
+              <Load/>
+            </List>
+            <List lineno="3" col_offset="62" end_lineno="3" end_col_offset="64">
+              <elts/>
+              <Load/>
+            </List>
+            <List lineno="3" col_offset="66" end_lineno="3" end_col_offset="68">
+              <elts/>
+              <Load/>
+            </List>
+          </elts>
+          <Load/>
+        </List>
+      </Expr>
+      <Expr lineno="4" col_offset="0" end_lineno="4" end_col_offset="6">
+        <Name id="输出" lineno="4" col_offset="0" end_lineno="4" end_col_offset="6">
+          <Load/>
+        </Name>
+      </Expr>
+      <Expr lineno="5" col_offset="0" end_lineno="5" end_col_offset="48">
+        <List lineno="5" col_offset="0" end_lineno="5" end_col_offset="48">
+          <elts>
+            <Name id="null" lineno="5" col_offset="1" end_lineno="5" end_col_offset="5">
+              <Load/>
+            </Name>
+            <Constant value="3" kind="None" lineno="5" col_offset="7" end_lineno="5" end_col_offset="8"/>
+            <Constant value="7" kind="None" lineno="5" col_offset="10" end_lineno="5" end_col_offset="11"/>
+            <Name id="true" lineno="5" col_offset="13" end_lineno="5" end_col_offset="17">
+              <Load/>
+            </Name>
+            <Constant value="9" kind="None" lineno="5" col_offset="19" end_lineno="5" end_col_offset="20"/>
+            <Name id="true" lineno="5" col_offset="22" end_lineno="5" end_col_offset="26">
+              <Load/>
+            </Name>
+            <Constant value="15" kind="None" lineno="5" col_offset="28" end_lineno="5" end_col_offset="30"/>
+            <Name id="true" lineno="5" col_offset="32" end_lineno="5" end_col_offset="36">
+              <Load/>
+            </Name>
+            <Constant value="20" kind="None" lineno="5" col_offset="38" end_lineno="5" end_col_offset="40"/>
+            <Name id="false" lineno="5" col_offset="42" end_lineno="5" end_col_offset="47">
+              <Load/>
+            </Name>
+          </elts>
+          <Load/>
+        </List>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

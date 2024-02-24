@@ -1,0 +1,266 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="Solution" lineno="1" col_offset="0" end_lineno="17" end_col_offset="30">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="reverseVowels" type_comment="None" lineno="2" col_offset="4" end_lineno="17" end_col_offset="30">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="2" col_offset="22" end_lineno="2" end_col_offset="26"/>
+                <arg arg="s" type_comment="None" lineno="2" col_offset="28" end_lineno="2" end_col_offset="34">
+                  <Name id="str" lineno="2" col_offset="31" end_lineno="2" end_col_offset="34">
+                    <Load/>
+                  </Name>
+                </arg>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Assign type_comment="None" lineno="3" col_offset="8" end_lineno="3" end_col_offset="67">
+                <targets>
+                  <Name id="vowels" lineno="3" col_offset="8" end_lineno="3" end_col_offset="14">
+                    <Store/>
+                  </Name>
+                </targets>
+                <List lineno="3" col_offset="17" end_lineno="3" end_col_offset="67">
+                  <elts>
+                    <Constant value="a" kind="None" lineno="3" col_offset="18" end_lineno="3" end_col_offset="21"/>
+                    <Constant value="e" kind="None" lineno="3" col_offset="23" end_lineno="3" end_col_offset="26"/>
+                    <Constant value="i" kind="None" lineno="3" col_offset="28" end_lineno="3" end_col_offset="31"/>
+                    <Constant value="o" kind="None" lineno="3" col_offset="33" end_lineno="3" end_col_offset="36"/>
+                    <Constant value="u" kind="None" lineno="3" col_offset="38" end_lineno="3" end_col_offset="41"/>
+                    <Constant value="A" kind="None" lineno="3" col_offset="43" end_lineno="3" end_col_offset="46"/>
+                    <Constant value="E" kind="None" lineno="3" col_offset="48" end_lineno="3" end_col_offset="51"/>
+                    <Constant value="I" kind="None" lineno="3" col_offset="53" end_lineno="3" end_col_offset="56"/>
+                    <Constant value="O" kind="None" lineno="3" col_offset="58" end_lineno="3" end_col_offset="61"/>
+                    <Constant value="U" kind="None" lineno="3" col_offset="63" end_lineno="3" end_col_offset="66"/>
+                  </elts>
+                  <Load/>
+                </List>
+              </Assign>
+              <Assign type_comment="None" lineno="4" col_offset="8" end_lineno="4" end_col_offset="16">
+                <targets>
+                  <Name id="left" lineno="4" col_offset="8" end_lineno="4" end_col_offset="12">
+                    <Store/>
+                  </Name>
+                </targets>
+                <Constant value="0" kind="None" lineno="4" col_offset="15" end_lineno="4" end_col_offset="16"/>
+              </Assign>
+              <Assign type_comment="None" lineno="5" col_offset="8" end_lineno="5" end_col_offset="24">
+                <targets>
+                  <Name id="right" lineno="5" col_offset="8" end_lineno="5" end_col_offset="13">
+                    <Store/>
+                  </Name>
+                </targets>
+                <BinOp lineno="5" col_offset="16" end_lineno="5" end_col_offset="24">
+                  <Call lineno="5" col_offset="16" end_lineno="5" end_col_offset="22">
+                    <Name id="len" lineno="5" col_offset="16" end_lineno="5" end_col_offset="19">
+                      <Load/>
+                    </Name>
+                    <args>
+                      <Name id="s" lineno="5" col_offset="20" end_lineno="5" end_col_offset="21">
+                        <Load/>
+                      </Name>
+                    </args>
+                    <keywords/>
+                  </Call>
+                  <Sub/>
+                  <Constant value="1" kind="None" lineno="5" col_offset="23" end_lineno="5" end_col_offset="24"/>
+                </BinOp>
+              </Assign>
+              <Assign type_comment="None" lineno="6" col_offset="8" end_lineno="6" end_col_offset="24">
+                <targets>
+                  <Name id="s_list" lineno="6" col_offset="8" end_lineno="6" end_col_offset="14">
+                    <Store/>
+                  </Name>
+                </targets>
+                <Call lineno="6" col_offset="17" end_lineno="6" end_col_offset="24">
+                  <Name id="list" lineno="6" col_offset="17" end_lineno="6" end_col_offset="21">
+                    <Load/>
+                  </Name>
+                  <args>
+                    <Name id="s" lineno="6" col_offset="22" end_lineno="6" end_col_offset="23">
+                      <Load/>
+                    </Name>
+                  </args>
+                  <keywords/>
+                </Call>
+              </Assign>
+              <While lineno="7" col_offset="8" end_lineno="16" end_col_offset="22">
+                <Compare lineno="7" col_offset="14" end_lineno="7" end_col_offset="26">
+                  <Name id="left" lineno="7" col_offset="14" end_lineno="7" end_col_offset="18">
+                    <Load/>
+                  </Name>
+                  <ops>
+                    <Lt/>
+                  </ops>
+                  <comparators>
+                    <Name id="right" lineno="7" col_offset="21" end_lineno="7" end_col_offset="26">
+                      <Load/>
+                    </Name>
+                  </comparators>
+                </Compare>
+                <body>
+                  <If lineno="8" col_offset="12" end_lineno="10" end_col_offset="24">
+                    <Compare lineno="8" col_offset="15" end_lineno="8" end_col_offset="41">
+                      <Subscript lineno="8" col_offset="15" end_lineno="8" end_col_offset="27">
+                        <Name id="s_list" lineno="8" col_offset="15" end_lineno="8" end_col_offset="21">
+                          <Load/>
+                        </Name>
+                        <Name id="left" lineno="8" col_offset="22" end_lineno="8" end_col_offset="26">
+                          <Load/>
+                        </Name>
+                        <Load/>
+                      </Subscript>
+                      <ops>
+                        <NotIn/>
+                      </ops>
+                      <comparators>
+                        <Name id="vowels" lineno="8" col_offset="35" end_lineno="8" end_col_offset="41">
+                          <Load/>
+                        </Name>
+                      </comparators>
+                    </Compare>
+                    <body>
+                      <AugAssign lineno="9" col_offset="16" end_lineno="9" end_col_offset="25">
+                        <Name id="left" lineno="9" col_offset="16" end_lineno="9" end_col_offset="20">
+                          <Store/>
+                        </Name>
+                        <Add/>
+                        <Constant value="1" kind="None" lineno="9" col_offset="24" end_lineno="9" end_col_offset="25"/>
+                      </AugAssign>
+                      <Continue lineno="10" col_offset="16" end_lineno="10" end_col_offset="24"/>
+                    </body>
+                    <orelse/>
+                  </If>
+                  <If lineno="11" col_offset="12" end_lineno="13" end_col_offset="24">
+                    <Compare lineno="11" col_offset="15" end_lineno="11" end_col_offset="42">
+                      <Subscript lineno="11" col_offset="15" end_lineno="11" end_col_offset="28">
+                        <Name id="s_list" lineno="11" col_offset="15" end_lineno="11" end_col_offset="21">
+                          <Load/>
+                        </Name>
+                        <Name id="right" lineno="11" col_offset="22" end_lineno="11" end_col_offset="27">
+                          <Load/>
+                        </Name>
+                        <Load/>
+                      </Subscript>
+                      <ops>
+                        <NotIn/>
+                      </ops>
+                      <comparators>
+                        <Name id="vowels" lineno="11" col_offset="36" end_lineno="11" end_col_offset="42">
+                          <Load/>
+                        </Name>
+                      </comparators>
+                    </Compare>
+                    <body>
+                      <AugAssign lineno="12" col_offset="16" end_lineno="12" end_col_offset="26">
+                        <Name id="right" lineno="12" col_offset="16" end_lineno="12" end_col_offset="21">
+                          <Store/>
+                        </Name>
+                        <Sub/>
+                        <Constant value="1" kind="None" lineno="12" col_offset="25" end_lineno="12" end_col_offset="26"/>
+                      </AugAssign>
+                      <Continue lineno="13" col_offset="16" end_lineno="13" end_col_offset="24"/>
+                    </body>
+                    <orelse/>
+                  </If>
+                  <Assign type_comment="None" lineno="14" col_offset="12" end_lineno="14" end_col_offset="69">
+                    <targets>
+                      <Tuple lineno="14" col_offset="12" end_lineno="14" end_col_offset="39">
+                        <elts>
+                          <Subscript lineno="14" col_offset="12" end_lineno="14" end_col_offset="24">
+                            <Name id="s_list" lineno="14" col_offset="12" end_lineno="14" end_col_offset="18">
+                              <Load/>
+                            </Name>
+                            <Name id="left" lineno="14" col_offset="19" end_lineno="14" end_col_offset="23">
+                              <Load/>
+                            </Name>
+                            <Store/>
+                          </Subscript>
+                          <Subscript lineno="14" col_offset="26" end_lineno="14" end_col_offset="39">
+                            <Name id="s_list" lineno="14" col_offset="26" end_lineno="14" end_col_offset="32">
+                              <Load/>
+                            </Name>
+                            <Name id="right" lineno="14" col_offset="33" end_lineno="14" end_col_offset="38">
+                              <Load/>
+                            </Name>
+                            <Store/>
+                          </Subscript>
+                        </elts>
+                        <Store/>
+                      </Tuple>
+                    </targets>
+                    <Tuple lineno="14" col_offset="42" end_lineno="14" end_col_offset="69">
+                      <elts>
+                        <Subscript lineno="14" col_offset="42" end_lineno="14" end_col_offset="55">
+                          <Name id="s_list" lineno="14" col_offset="42" end_lineno="14" end_col_offset="48">
+                            <Load/>
+                          </Name>
+                          <Name id="right" lineno="14" col_offset="49" end_lineno="14" end_col_offset="54">
+                            <Load/>
+                          </Name>
+                          <Load/>
+                        </Subscript>
+                        <Subscript lineno="14" col_offset="57" end_lineno="14" end_col_offset="69">
+                          <Name id="s_list" lineno="14" col_offset="57" end_lineno="14" end_col_offset="63">
+                            <Load/>
+                          </Name>
+                          <Name id="left" lineno="14" col_offset="64" end_lineno="14" end_col_offset="68">
+                            <Load/>
+                          </Name>
+                          <Load/>
+                        </Subscript>
+                      </elts>
+                      <Load/>
+                    </Tuple>
+                  </Assign>
+                  <AugAssign lineno="15" col_offset="12" end_lineno="15" end_col_offset="21">
+                    <Name id="left" lineno="15" col_offset="12" end_lineno="15" end_col_offset="16">
+                      <Store/>
+                    </Name>
+                    <Add/>
+                    <Constant value="1" kind="None" lineno="15" col_offset="20" end_lineno="15" end_col_offset="21"/>
+                  </AugAssign>
+                  <AugAssign lineno="16" col_offset="12" end_lineno="16" end_col_offset="22">
+                    <Name id="right" lineno="16" col_offset="12" end_lineno="16" end_col_offset="17">
+                      <Store/>
+                    </Name>
+                    <Sub/>
+                    <Constant value="1" kind="None" lineno="16" col_offset="21" end_lineno="16" end_col_offset="22"/>
+                  </AugAssign>
+                </body>
+                <orelse/>
+              </While>
+              <Return lineno="17" col_offset="8" end_lineno="17" end_col_offset="30">
+                <Call lineno="17" col_offset="15" end_lineno="17" end_col_offset="30">
+                  <Attribute attr="join" lineno="17" col_offset="15" end_lineno="17" end_col_offset="22">
+                    <Constant value="" kind="None" lineno="17" col_offset="15" end_lineno="17" end_col_offset="17"/>
+                    <Load/>
+                  </Attribute>
+                  <args>
+                    <Name id="s_list" lineno="17" col_offset="23" end_lineno="17" end_col_offset="29">
+                      <Load/>
+                    </Name>
+                  </args>
+                  <keywords/>
+                </Call>
+              </Return>
+            </body>
+            <decorator_list/>
+            <Name id="str" lineno="2" col_offset="39" end_lineno="2" end_col_offset="42">
+              <Load/>
+            </Name>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

@@ -1,0 +1,59 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="1" col_offset="0" end_lineno="1" end_col_offset="68">
+        <targets>
+          <Attribute attr="index" lineno="1" col_offset="0" end_lineno="1" end_col_offset="9">
+            <Name id="ser" lineno="1" col_offset="0" end_lineno="1" end_col_offset="3">
+              <Load/>
+            </Name>
+            <Store/>
+          </Attribute>
+        </targets>
+        <Call lineno="1" col_offset="12" end_lineno="1" end_col_offset="68">
+          <Attribute attr="reorder_categories" lineno="1" col_offset="12" end_lineno="1" end_col_offset="36">
+            <Name id="index" lineno="1" col_offset="12" end_lineno="1" end_col_offset="17">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <List lineno="1" col_offset="37" end_lineno="1" end_col_offset="67">
+              <elts>
+                <Constant value="香蕉" kind="None" lineno="1" col_offset="38" end_lineno="1" end_col_offset="46"/>
+                <Constant value="桃子" kind="None" lineno="1" col_offset="48" end_lineno="1" end_col_offset="56"/>
+                <Constant value="苹果" kind="None" lineno="1" col_offset="58" end_lineno="1" end_col_offset="66"/>
+              </elts>
+              <Load/>
+            </List>
+          </args>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Expr lineno="2" col_offset="0" end_lineno="2" end_col_offset="26">
+        <Call lineno="2" col_offset="0" end_lineno="2" end_col_offset="26">
+          <Attribute attr="sum" lineno="2" col_offset="0" end_lineno="2" end_col_offset="24">
+            <Call lineno="2" col_offset="0" end_lineno="2" end_col_offset="20">
+              <Attribute attr="groupby" lineno="2" col_offset="0" end_lineno="2" end_col_offset="11">
+                <Name id="ser" lineno="2" col_offset="0" end_lineno="2" end_col_offset="3">
+                  <Load/>
+                </Name>
+                <Load/>
+              </Attribute>
+              <args/>
+              <keywords>
+                <keyword arg="level" lineno="2" col_offset="12" end_lineno="2" end_col_offset="19">
+                  <Constant value="0" kind="None" lineno="2" col_offset="18" end_lineno="2" end_col_offset="19"/>
+                </keyword>
+              </keywords>
+            </Call>
+            <Load/>
+          </Attribute>
+          <args/>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

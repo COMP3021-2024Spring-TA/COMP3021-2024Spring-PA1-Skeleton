@@ -1,0 +1,80 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="8" col_offset="0" end_lineno="8" end_col_offset="32">
+        <targets>
+          <Name id="n" lineno="8" col_offset="0" end_lineno="8" end_col_offset="1">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="8" col_offset="4" end_lineno="8" end_col_offset="32">
+          <Name id="int" lineno="8" col_offset="4" end_lineno="8" end_col_offset="7">
+            <Load/>
+          </Name>
+          <args>
+            <Call lineno="8" col_offset="8" end_lineno="8" end_col_offset="31">
+              <Name id="input" lineno="8" col_offset="8" end_lineno="8" end_col_offset="13">
+                <Load/>
+              </Name>
+              <args>
+                <Constant value="Enter a number" kind="None" lineno="8" col_offset="14" end_lineno="8" end_col_offset="30"/>
+              </args>
+              <keywords/>
+            </Call>
+          </args>
+          <keywords/>
+        </Call>
+      </Assign>
+      <If lineno="9" col_offset="0" end_lineno="12" end_col_offset="35">
+        <Compare lineno="9" col_offset="3" end_lineno="9" end_col_offset="19">
+          <BinOp lineno="9" col_offset="3" end_lineno="9" end_col_offset="14">
+            <Name id="n" lineno="9" col_offset="3" end_lineno="9" end_col_offset="4">
+              <Load/>
+            </Name>
+            <BitAnd/>
+            <BinOp lineno="9" col_offset="8" end_lineno="9" end_col_offset="13">
+              <Name id="n" lineno="9" col_offset="8" end_lineno="9" end_col_offset="9">
+                <Load/>
+              </Name>
+              <Sub/>
+              <Constant value="1" kind="None" lineno="9" col_offset="12" end_lineno="9" end_col_offset="13"/>
+            </BinOp>
+          </BinOp>
+          <ops>
+            <Eq/>
+          </ops>
+          <comparators>
+            <Constant value="0" kind="None" lineno="9" col_offset="18" end_lineno="9" end_col_offset="19"/>
+          </comparators>
+        </Compare>
+        <body>
+          <Expr lineno="10" col_offset="4" end_lineno="10" end_col_offset="38">
+            <Call lineno="10" col_offset="4" end_lineno="10" end_col_offset="38">
+              <Name id="print" lineno="10" col_offset="4" end_lineno="10" end_col_offset="9">
+                <Load/>
+              </Name>
+              <args>
+                <Constant value="Its a perfect square of 2" kind="None" lineno="10" col_offset="10" end_lineno="10" end_col_offset="37"/>
+              </args>
+              <keywords/>
+            </Call>
+          </Expr>
+        </body>
+        <orelse>
+          <Expr lineno="12" col_offset="4" end_lineno="12" end_col_offset="35">
+            <Call lineno="12" col_offset="4" end_lineno="12" end_col_offset="35">
+              <Name id="print" lineno="12" col_offset="4" end_lineno="12" end_col_offset="9">
+                <Load/>
+              </Name>
+              <args>
+                <Constant value="Its not perfect square" kind="None" lineno="12" col_offset="10" end_lineno="12" end_col_offset="34"/>
+              </args>
+              <keywords/>
+            </Call>
+          </Expr>
+        </orelse>
+      </If>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

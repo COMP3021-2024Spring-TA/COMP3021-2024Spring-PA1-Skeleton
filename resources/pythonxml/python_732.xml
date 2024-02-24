@@ -1,0 +1,223 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="Data" lineno="7" col_offset="0" end_lineno="12" end_col_offset="32">
+        <bases>
+          <Name id="object" lineno="7" col_offset="11" end_lineno="7" end_col_offset="17">
+            <Load/>
+          </Name>
+        </bases>
+        <keywords/>
+        <body>
+          <FunctionDef name="__init__" returns="None" type_comment="None" lineno="8" col_offset="4" end_lineno="9" end_col_offset="24">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="8" col_offset="17" end_lineno="8" end_col_offset="21"/>
+                <arg arg="data" annotation="None" type_comment="None" lineno="8" col_offset="23" end_lineno="8" end_col_offset="27"/>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Assign type_comment="None" lineno="9" col_offset="8" end_lineno="9" end_col_offset="24">
+                <targets>
+                  <Attribute attr="data" lineno="9" col_offset="8" end_lineno="9" end_col_offset="17">
+                    <Name id="self" lineno="9" col_offset="8" end_lineno="9" end_col_offset="12">
+                      <Load/>
+                    </Name>
+                    <Store/>
+                  </Attribute>
+                </targets>
+                <Name id="data" lineno="9" col_offset="20" end_lineno="9" end_col_offset="24">
+                  <Load/>
+                </Name>
+              </Assign>
+            </body>
+            <decorator_list/>
+          </FunctionDef>
+          <FunctionDef name="getData" returns="None" type_comment="None" lineno="11" col_offset="4" end_lineno="12" end_col_offset="32">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="11" col_offset="16" end_lineno="11" end_col_offset="20"/>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Expr lineno="12" col_offset="8" end_lineno="12" end_col_offset="32">
+                <Call lineno="12" col_offset="8" end_lineno="12" end_col_offset="32">
+                  <Name id="print" lineno="12" col_offset="8" end_lineno="12" end_col_offset="13">
+                    <Load/>
+                  </Name>
+                  <args>
+                    <Constant value="Data:" kind="None" lineno="12" col_offset="14" end_lineno="12" end_col_offset="21"/>
+                    <Attribute attr="data" lineno="12" col_offset="22" end_lineno="12" end_col_offset="31">
+                      <Name id="self" lineno="12" col_offset="22" end_lineno="12" end_col_offset="26">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Attribute>
+                  </args>
+                  <keywords/>
+                </Call>
+              </Expr>
+            </body>
+            <decorator_list/>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+      <ClassDef name="Time" lineno="14" col_offset="0" end_lineno="16" end_col_offset="32">
+        <bases>
+          <Name id="Data" lineno="14" col_offset="11" end_lineno="14" end_col_offset="15">
+            <Load/>
+          </Name>
+        </bases>
+        <keywords/>
+        <body>
+          <FunctionDef name="getTime" returns="None" type_comment="None" lineno="15" col_offset="4" end_lineno="16" end_col_offset="32">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="15" col_offset="16" end_lineno="15" end_col_offset="20"/>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Expr lineno="16" col_offset="8" end_lineno="16" end_col_offset="32">
+                <Call lineno="16" col_offset="8" end_lineno="16" end_col_offset="32">
+                  <Name id="print" lineno="16" col_offset="8" end_lineno="16" end_col_offset="13">
+                    <Load/>
+                  </Name>
+                  <args>
+                    <Constant value="Time:" kind="None" lineno="16" col_offset="14" end_lineno="16" end_col_offset="21"/>
+                    <Attribute attr="data" lineno="16" col_offset="22" end_lineno="16" end_col_offset="31">
+                      <Name id="self" lineno="16" col_offset="22" end_lineno="16" end_col_offset="26">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Attribute>
+                  </args>
+                  <keywords/>
+                </Call>
+              </Expr>
+            </body>
+            <decorator_list/>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+      <If lineno="18" col_offset="0" end_lineno="26" end_col_offset="21">
+        <Compare lineno="18" col_offset="3" end_lineno="18" end_col_offset="25">
+          <Name id="__name__" lineno="18" col_offset="3" end_lineno="18" end_col_offset="11">
+            <Load/>
+          </Name>
+          <ops>
+            <Eq/>
+          </ops>
+          <comparators>
+            <Constant value="__main__" kind="None" lineno="18" col_offset="15" end_lineno="18" end_col_offset="25"/>
+          </comparators>
+        </Compare>
+        <body>
+          <Assign type_comment="None" lineno="19" col_offset="4" end_lineno="19" end_col_offset="19">
+            <targets>
+              <Name id="data" lineno="19" col_offset="4" end_lineno="19" end_col_offset="8">
+                <Store/>
+              </Name>
+            </targets>
+            <Call lineno="19" col_offset="11" end_lineno="19" end_col_offset="19">
+              <Name id="Data" lineno="19" col_offset="11" end_lineno="19" end_col_offset="15">
+                <Load/>
+              </Name>
+              <args>
+                <Constant value="10" kind="None" lineno="19" col_offset="16" end_lineno="19" end_col_offset="18"/>
+              </args>
+              <keywords/>
+            </Call>
+          </Assign>
+          <Assign type_comment="None" lineno="20" col_offset="4" end_lineno="20" end_col_offset="19">
+            <targets>
+              <Name id="time" lineno="20" col_offset="4" end_lineno="20" end_col_offset="8">
+                <Store/>
+              </Name>
+            </targets>
+            <Call lineno="20" col_offset="11" end_lineno="20" end_col_offset="19">
+              <Name id="Time" lineno="20" col_offset="11" end_lineno="20" end_col_offset="15">
+                <Load/>
+              </Name>
+              <args>
+                <Constant value="20" kind="None" lineno="20" col_offset="16" end_lineno="20" end_col_offset="18"/>
+              </args>
+              <keywords/>
+            </Call>
+          </Assign>
+          <Expr lineno="22" col_offset="4" end_lineno="22" end_col_offset="18">
+            <Call lineno="22" col_offset="4" end_lineno="22" end_col_offset="18">
+              <Attribute attr="getTime" lineno="22" col_offset="4" end_lineno="22" end_col_offset="16">
+                <Name id="time" lineno="22" col_offset="4" end_lineno="22" end_col_offset="8">
+                  <Load/>
+                </Name>
+                <Load/>
+              </Attribute>
+              <args/>
+              <keywords/>
+            </Call>
+          </Expr>
+          <Expr lineno="23" col_offset="4" end_lineno="23" end_col_offset="18">
+            <Call lineno="23" col_offset="4" end_lineno="23" end_col_offset="18">
+              <Attribute attr="getData" lineno="23" col_offset="4" end_lineno="23" end_col_offset="16">
+                <Name id="data" lineno="23" col_offset="4" end_lineno="23" end_col_offset="8">
+                  <Load/>
+                </Name>
+                <Load/>
+              </Attribute>
+              <args/>
+              <keywords/>
+            </Call>
+          </Expr>
+          <Expr lineno="24" col_offset="4" end_lineno="24" end_col_offset="18">
+            <Call lineno="24" col_offset="4" end_lineno="24" end_col_offset="18">
+              <Attribute attr="getData" lineno="24" col_offset="4" end_lineno="24" end_col_offset="16">
+                <Name id="time" lineno="24" col_offset="4" end_lineno="24" end_col_offset="8">
+                  <Load/>
+                </Name>
+                <Load/>
+              </Attribute>
+              <args/>
+              <keywords/>
+            </Call>
+          </Expr>
+          <Expr lineno="26" col_offset="4" end_lineno="26" end_col_offset="21">
+            <Call lineno="26" col_offset="4" end_lineno="26" end_col_offset="21">
+              <Name id="print" lineno="26" col_offset="4" end_lineno="26" end_col_offset="9">
+                <Load/>
+              </Name>
+              <args>
+                <Call lineno="26" col_offset="10" end_lineno="26" end_col_offset="20">
+                  <Attribute attr="mro" lineno="26" col_offset="10" end_lineno="26" end_col_offset="18">
+                    <Name id="Time" lineno="26" col_offset="10" end_lineno="26" end_col_offset="14">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Attribute>
+                  <args/>
+                  <keywords/>
+                </Call>
+              </args>
+              <keywords/>
+            </Call>
+          </Expr>
+        </body>
+        <orelse/>
+      </If>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

@@ -1,0 +1,297 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="MinStack" lineno="1" col_offset="0" end_lineno="23" end_col_offset="32">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="__init__" returns="None" type_comment="None" lineno="3" col_offset="4" end_lineno="5" end_col_offset="26">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="3" col_offset="17" end_lineno="3" end_col_offset="21"/>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Assign type_comment="None" lineno="4" col_offset="8" end_lineno="4" end_col_offset="23">
+                <targets>
+                  <Attribute attr="stack" lineno="4" col_offset="8" end_lineno="4" end_col_offset="18">
+                    <Name id="self" lineno="4" col_offset="8" end_lineno="4" end_col_offset="12">
+                      <Load/>
+                    </Name>
+                    <Store/>
+                  </Attribute>
+                </targets>
+                <List lineno="4" col_offset="21" end_lineno="4" end_col_offset="23">
+                  <elts/>
+                  <Load/>
+                </List>
+              </Assign>
+              <Assign type_comment="None" lineno="5" col_offset="8" end_lineno="5" end_col_offset="26">
+                <targets>
+                  <Attribute attr="minstack" lineno="5" col_offset="8" end_lineno="5" end_col_offset="21">
+                    <Name id="self" lineno="5" col_offset="8" end_lineno="5" end_col_offset="12">
+                      <Load/>
+                    </Name>
+                    <Store/>
+                  </Attribute>
+                </targets>
+                <List lineno="5" col_offset="24" end_lineno="5" end_col_offset="26">
+                  <elts/>
+                  <Load/>
+                </List>
+              </Assign>
+            </body>
+            <decorator_list/>
+          </FunctionDef>
+          <FunctionDef name="push" type_comment="None" lineno="7" col_offset="4" end_lineno="13" end_col_offset="61">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="7" col_offset="13" end_lineno="7" end_col_offset="17"/>
+                <arg arg="val" type_comment="None" lineno="7" col_offset="19" end_lineno="7" end_col_offset="27">
+                  <Name id="int" lineno="7" col_offset="24" end_lineno="7" end_col_offset="27">
+                    <Load/>
+                  </Name>
+                </arg>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <If lineno="8" col_offset="8" end_lineno="13" end_col_offset="61">
+                <UnaryOp lineno="8" col_offset="11" end_lineno="8" end_col_offset="25">
+                  <Not/>
+                  <Attribute attr="stack" lineno="8" col_offset="15" end_lineno="8" end_col_offset="25">
+                    <Name id="self" lineno="8" col_offset="15" end_lineno="8" end_col_offset="19">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Attribute>
+                </UnaryOp>
+                <body>
+                  <Expr lineno="9" col_offset="12" end_lineno="9" end_col_offset="34">
+                    <Call lineno="9" col_offset="12" end_lineno="9" end_col_offset="34">
+                      <Attribute attr="append" lineno="9" col_offset="12" end_lineno="9" end_col_offset="29">
+                        <Attribute attr="stack" lineno="9" col_offset="12" end_lineno="9" end_col_offset="22">
+                          <Name id="self" lineno="9" col_offset="12" end_lineno="9" end_col_offset="16">
+                            <Load/>
+                          </Name>
+                          <Load/>
+                        </Attribute>
+                        <Load/>
+                      </Attribute>
+                      <args>
+                        <Name id="val" lineno="9" col_offset="30" end_lineno="9" end_col_offset="33">
+                          <Load/>
+                        </Name>
+                      </args>
+                      <keywords/>
+                    </Call>
+                  </Expr>
+                  <Expr lineno="10" col_offset="12" end_lineno="10" end_col_offset="37">
+                    <Call lineno="10" col_offset="12" end_lineno="10" end_col_offset="37">
+                      <Attribute attr="append" lineno="10" col_offset="12" end_lineno="10" end_col_offset="32">
+                        <Attribute attr="minstack" lineno="10" col_offset="12" end_lineno="10" end_col_offset="25">
+                          <Name id="self" lineno="10" col_offset="12" end_lineno="10" end_col_offset="16">
+                            <Load/>
+                          </Name>
+                          <Load/>
+                        </Attribute>
+                        <Load/>
+                      </Attribute>
+                      <args>
+                        <Name id="val" lineno="10" col_offset="33" end_lineno="10" end_col_offset="36">
+                          <Load/>
+                        </Name>
+                      </args>
+                      <keywords/>
+                    </Call>
+                  </Expr>
+                </body>
+                <orelse>
+                  <Expr lineno="12" col_offset="12" end_lineno="12" end_col_offset="34">
+                    <Call lineno="12" col_offset="12" end_lineno="12" end_col_offset="34">
+                      <Attribute attr="append" lineno="12" col_offset="12" end_lineno="12" end_col_offset="29">
+                        <Attribute attr="stack" lineno="12" col_offset="12" end_lineno="12" end_col_offset="22">
+                          <Name id="self" lineno="12" col_offset="12" end_lineno="12" end_col_offset="16">
+                            <Load/>
+                          </Name>
+                          <Load/>
+                        </Attribute>
+                        <Load/>
+                      </Attribute>
+                      <args>
+                        <Name id="val" lineno="12" col_offset="30" end_lineno="12" end_col_offset="33">
+                          <Load/>
+                        </Name>
+                      </args>
+                      <keywords/>
+                    </Call>
+                  </Expr>
+                  <Expr lineno="13" col_offset="12" end_lineno="13" end_col_offset="61">
+                    <Call lineno="13" col_offset="12" end_lineno="13" end_col_offset="61">
+                      <Attribute attr="append" lineno="13" col_offset="12" end_lineno="13" end_col_offset="32">
+                        <Attribute attr="minstack" lineno="13" col_offset="12" end_lineno="13" end_col_offset="25">
+                          <Name id="self" lineno="13" col_offset="12" end_lineno="13" end_col_offset="16">
+                            <Load/>
+                          </Name>
+                          <Load/>
+                        </Attribute>
+                        <Load/>
+                      </Attribute>
+                      <args>
+                        <Call lineno="13" col_offset="33" end_lineno="13" end_col_offset="60">
+                          <Name id="min" lineno="13" col_offset="33" end_lineno="13" end_col_offset="36">
+                            <Load/>
+                          </Name>
+                          <args>
+                            <Name id="val" lineno="13" col_offset="37" end_lineno="13" end_col_offset="40">
+                              <Load/>
+                            </Name>
+                            <Subscript lineno="13" col_offset="42" end_lineno="13" end_col_offset="59">
+                              <Attribute attr="minstack" lineno="13" col_offset="42" end_lineno="13" end_col_offset="55">
+                                <Name id="self" lineno="13" col_offset="42" end_lineno="13" end_col_offset="46">
+                                  <Load/>
+                                </Name>
+                                <Load/>
+                              </Attribute>
+                              <UnaryOp lineno="13" col_offset="56" end_lineno="13" end_col_offset="58">
+                                <USub/>
+                                <Constant value="1" kind="None" lineno="13" col_offset="57" end_lineno="13" end_col_offset="58"/>
+                              </UnaryOp>
+                              <Load/>
+                            </Subscript>
+                          </args>
+                          <keywords/>
+                        </Call>
+                      </args>
+                      <keywords/>
+                    </Call>
+                  </Expr>
+                </orelse>
+              </If>
+            </body>
+            <decorator_list/>
+            <Constant value="None" kind="None" lineno="7" col_offset="32" end_lineno="7" end_col_offset="36"/>
+          </FunctionDef>
+          <FunctionDef name="pop" type_comment="None" lineno="15" col_offset="4" end_lineno="17" end_col_offset="27">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="15" col_offset="12" end_lineno="15" end_col_offset="16"/>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Expr lineno="16" col_offset="8" end_lineno="16" end_col_offset="24">
+                <Call lineno="16" col_offset="8" end_lineno="16" end_col_offset="24">
+                  <Attribute attr="pop" lineno="16" col_offset="8" end_lineno="16" end_col_offset="22">
+                    <Attribute attr="stack" lineno="16" col_offset="8" end_lineno="16" end_col_offset="18">
+                      <Name id="self" lineno="16" col_offset="8" end_lineno="16" end_col_offset="12">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Attribute>
+                    <Load/>
+                  </Attribute>
+                  <args/>
+                  <keywords/>
+                </Call>
+              </Expr>
+              <Expr lineno="17" col_offset="8" end_lineno="17" end_col_offset="27">
+                <Call lineno="17" col_offset="8" end_lineno="17" end_col_offset="27">
+                  <Attribute attr="pop" lineno="17" col_offset="8" end_lineno="17" end_col_offset="25">
+                    <Attribute attr="minstack" lineno="17" col_offset="8" end_lineno="17" end_col_offset="21">
+                      <Name id="self" lineno="17" col_offset="8" end_lineno="17" end_col_offset="12">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Attribute>
+                    <Load/>
+                  </Attribute>
+                  <args/>
+                  <keywords/>
+                </Call>
+              </Expr>
+            </body>
+            <decorator_list/>
+            <Constant value="None" kind="None" lineno="15" col_offset="21" end_lineno="15" end_col_offset="25"/>
+          </FunctionDef>
+          <FunctionDef name="top" type_comment="None" lineno="19" col_offset="4" end_lineno="20" end_col_offset="29">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="19" col_offset="12" end_lineno="19" end_col_offset="16"/>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Return lineno="20" col_offset="8" end_lineno="20" end_col_offset="29">
+                <Subscript lineno="20" col_offset="15" end_lineno="20" end_col_offset="29">
+                  <Attribute attr="stack" lineno="20" col_offset="15" end_lineno="20" end_col_offset="25">
+                    <Name id="self" lineno="20" col_offset="15" end_lineno="20" end_col_offset="19">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Attribute>
+                  <UnaryOp lineno="20" col_offset="26" end_lineno="20" end_col_offset="28">
+                    <USub/>
+                    <Constant value="1" kind="None" lineno="20" col_offset="27" end_lineno="20" end_col_offset="28"/>
+                  </UnaryOp>
+                  <Load/>
+                </Subscript>
+              </Return>
+            </body>
+            <decorator_list/>
+            <Name id="int" lineno="19" col_offset="21" end_lineno="19" end_col_offset="24">
+              <Load/>
+            </Name>
+          </FunctionDef>
+          <FunctionDef name="getMin" type_comment="None" lineno="22" col_offset="4" end_lineno="23" end_col_offset="32">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="22" col_offset="15" end_lineno="22" end_col_offset="19"/>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Return lineno="23" col_offset="8" end_lineno="23" end_col_offset="32">
+                <Subscript lineno="23" col_offset="15" end_lineno="23" end_col_offset="32">
+                  <Attribute attr="minstack" lineno="23" col_offset="15" end_lineno="23" end_col_offset="28">
+                    <Name id="self" lineno="23" col_offset="15" end_lineno="23" end_col_offset="19">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Attribute>
+                  <UnaryOp lineno="23" col_offset="29" end_lineno="23" end_col_offset="31">
+                    <USub/>
+                    <Constant value="1" kind="None" lineno="23" col_offset="30" end_lineno="23" end_col_offset="31"/>
+                  </UnaryOp>
+                  <Load/>
+                </Subscript>
+              </Return>
+            </body>
+            <decorator_list/>
+            <Name id="int" lineno="22" col_offset="24" end_lineno="22" end_col_offset="27">
+              <Load/>
+            </Name>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

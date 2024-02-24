@@ -1,0 +1,32 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="67">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="67">
+          <Attribute attr="drop" lineno="1" col_offset="0" end_lineno="1" end_col_offset="14">
+            <Name id="result_df" lineno="1" col_offset="0" end_lineno="1" end_col_offset="9">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args/>
+          <keywords>
+            <keyword arg="columns" lineno="1" col_offset="15" end_lineno="1" end_col_offset="52">
+              <List lineno="1" col_offset="23" end_lineno="1" end_col_offset="52">
+                <elts>
+                  <Constant value="上月销售额" kind="None" lineno="1" col_offset="24" end_lineno="1" end_col_offset="41"/>
+                  <Constant value="环比" kind="None" lineno="1" col_offset="43" end_lineno="1" end_col_offset="51"/>
+                </elts>
+                <Load/>
+              </List>
+            </keyword>
+            <keyword arg="inplace" lineno="1" col_offset="54" end_lineno="1" end_col_offset="66">
+              <Constant value="True" kind="None" lineno="1" col_offset="62" end_lineno="1" end_col_offset="66"/>
+            </keyword>
+          </keywords>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

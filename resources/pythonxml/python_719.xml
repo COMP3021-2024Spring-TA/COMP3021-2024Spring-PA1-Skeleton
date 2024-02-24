@@ -1,0 +1,31 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="27">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="27">
+          <Attribute attr="vstack" lineno="1" col_offset="0" end_lineno="1" end_col_offset="9">
+            <Name id="np" lineno="1" col_offset="0" end_lineno="1" end_col_offset="2">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <Tuple lineno="1" col_offset="10" end_lineno="1" end_col_offset="26">
+              <elts>
+                <Name id="array8" lineno="1" col_offset="11" end_lineno="1" end_col_offset="17">
+                  <Load/>
+                </Name>
+                <Name id="array9" lineno="1" col_offset="19" end_lineno="1" end_col_offset="25">
+                  <Load/>
+                </Name>
+              </elts>
+              <Load/>
+            </Tuple>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

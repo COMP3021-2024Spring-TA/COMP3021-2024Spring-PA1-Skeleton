@@ -1,0 +1,25 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="23">
+        <Subscript lineno="1" col_offset="0" end_lineno="1" end_col_offset="23">
+          <Attribute attr="loc" lineno="1" col_offset="0" end_lineno="1" end_col_offset="10">
+            <Name id="emp_df" lineno="1" col_offset="0" end_lineno="1" end_col_offset="6">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <Tuple lineno="1" col_offset="11" end_lineno="1" end_col_offset="22">
+            <elts>
+              <Constant value="2056" kind="None" lineno="1" col_offset="11" end_lineno="1" end_col_offset="15"/>
+              <Constant value="job" kind="None" lineno="1" col_offset="17" end_lineno="1" end_col_offset="22"/>
+            </elts>
+            <Load/>
+          </Tuple>
+          <Load/>
+        </Subscript>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

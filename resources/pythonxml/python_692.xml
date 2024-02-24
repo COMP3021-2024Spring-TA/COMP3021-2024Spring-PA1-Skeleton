@@ -1,0 +1,36 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="44">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="44">
+          <Attribute attr="agg" lineno="1" col_offset="0" end_lineno="1" end_col_offset="27">
+            <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="23">
+              <Attribute attr="resample" lineno="1" col_offset="0" end_lineno="1" end_col_offset="17">
+                <Name id="baidu_df" lineno="1" col_offset="0" end_lineno="1" end_col_offset="8">
+                  <Load/>
+                </Name>
+                <Load/>
+              </Attribute>
+              <args>
+                <Constant value="1M" kind="None" lineno="1" col_offset="18" end_lineno="1" end_col_offset="22"/>
+              </args>
+              <keywords/>
+            </Call>
+            <Load/>
+          </Attribute>
+          <args>
+            <List lineno="1" col_offset="28" end_lineno="1" end_col_offset="43">
+              <elts>
+                <Constant value="mean" kind="None" lineno="1" col_offset="29" end_lineno="1" end_col_offset="35"/>
+                <Constant value="std" kind="None" lineno="1" col_offset="37" end_lineno="1" end_col_offset="42"/>
+              </elts>
+              <Load/>
+            </List>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

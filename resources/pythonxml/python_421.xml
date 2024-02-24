@@ -1,0 +1,59 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="Solution" lineno="1" col_offset="0" end_lineno="3" end_col_offset="26">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="getConcatenation" type_comment="None" lineno="2" col_offset="4" end_lineno="3" end_col_offset="26">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="2" col_offset="25" end_lineno="2" end_col_offset="29"/>
+                <arg arg="nums" type_comment="None" lineno="2" col_offset="31" end_lineno="2" end_col_offset="46">
+                  <Subscript lineno="2" col_offset="37" end_lineno="2" end_col_offset="46">
+                    <Name id="List" lineno="2" col_offset="37" end_lineno="2" end_col_offset="41">
+                      <Load/>
+                    </Name>
+                    <Name id="int" lineno="2" col_offset="42" end_lineno="2" end_col_offset="45">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Subscript>
+                </arg>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Return lineno="3" col_offset="8" end_lineno="3" end_col_offset="26">
+                <BinOp lineno="3" col_offset="15" end_lineno="3" end_col_offset="26">
+                  <Name id="nums" lineno="3" col_offset="15" end_lineno="3" end_col_offset="19">
+                    <Load/>
+                  </Name>
+                  <Add/>
+                  <Name id="nums" lineno="3" col_offset="22" end_lineno="3" end_col_offset="26">
+                    <Load/>
+                  </Name>
+                </BinOp>
+              </Return>
+            </body>
+            <decorator_list/>
+            <Subscript lineno="2" col_offset="51" end_lineno="2" end_col_offset="60">
+              <Name id="List" lineno="2" col_offset="51" end_lineno="2" end_col_offset="55">
+                <Load/>
+              </Name>
+              <Name id="int" lineno="2" col_offset="56" end_lineno="2" end_col_offset="59">
+                <Load/>
+              </Name>
+              <Load/>
+            </Subscript>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

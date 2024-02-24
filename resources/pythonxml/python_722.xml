@@ -1,0 +1,30 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="28">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="28">
+          <Attribute attr="append" lineno="1" col_offset="0" end_lineno="1" end_col_offset="9">
+            <Name id="np" lineno="1" col_offset="0" end_lineno="1" end_col_offset="2">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <Name id="array1" lineno="1" col_offset="10" end_lineno="1" end_col_offset="16">
+              <Load/>
+            </Name>
+            <List lineno="1" col_offset="18" end_lineno="1" end_col_offset="27">
+              <elts>
+                <Constant value="10" kind="None" lineno="1" col_offset="19" end_lineno="1" end_col_offset="21"/>
+                <Constant value="100" kind="None" lineno="1" col_offset="23" end_lineno="1" end_col_offset="26"/>
+              </elts>
+              <Load/>
+            </List>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

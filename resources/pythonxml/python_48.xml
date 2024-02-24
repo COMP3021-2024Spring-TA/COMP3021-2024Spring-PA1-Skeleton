@@ -1,0 +1,187 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="Solution" lineno="1" col_offset="0" end_lineno="7" end_col_offset="17">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="twoSum" type_comment="None" lineno="2" col_offset="4" end_lineno="7" end_col_offset="17">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="2" col_offset="15" end_lineno="2" end_col_offset="19"/>
+                <arg arg="nums" type_comment="None" lineno="2" col_offset="21" end_lineno="2" end_col_offset="36">
+                  <Subscript lineno="2" col_offset="27" end_lineno="2" end_col_offset="36">
+                    <Name id="List" lineno="2" col_offset="27" end_lineno="2" end_col_offset="31">
+                      <Load/>
+                    </Name>
+                    <Name id="int" lineno="2" col_offset="32" end_lineno="2" end_col_offset="35">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Subscript>
+                </arg>
+                <arg arg="target" type_comment="None" lineno="2" col_offset="38" end_lineno="2" end_col_offset="49">
+                  <Name id="int" lineno="2" col_offset="46" end_lineno="2" end_col_offset="49">
+                    <Load/>
+                  </Name>
+                </arg>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <For type_comment="None" lineno="3" col_offset="8" end_lineno="6" end_col_offset="33">
+                <Name id="i" lineno="3" col_offset="12" end_lineno="3" end_col_offset="13">
+                  <Store/>
+                </Name>
+                <Call lineno="3" col_offset="17" end_lineno="3" end_col_offset="33">
+                  <Name id="range" lineno="3" col_offset="17" end_lineno="3" end_col_offset="22">
+                    <Load/>
+                  </Name>
+                  <args>
+                    <Call lineno="3" col_offset="23" end_lineno="3" end_col_offset="32">
+                      <Name id="len" lineno="3" col_offset="23" end_lineno="3" end_col_offset="26">
+                        <Load/>
+                      </Name>
+                      <args>
+                        <Name id="nums" lineno="3" col_offset="27" end_lineno="3" end_col_offset="31">
+                          <Load/>
+                        </Name>
+                      </args>
+                      <keywords/>
+                    </Call>
+                  </args>
+                  <keywords/>
+                </Call>
+                <body>
+                  <For type_comment="None" lineno="4" col_offset="12" end_lineno="6" end_col_offset="33">
+                    <Name id="j" lineno="4" col_offset="16" end_lineno="4" end_col_offset="17">
+                      <Store/>
+                    </Name>
+                    <Call lineno="4" col_offset="21" end_lineno="4" end_col_offset="44">
+                      <Name id="range" lineno="4" col_offset="21" end_lineno="4" end_col_offset="26">
+                        <Load/>
+                      </Name>
+                      <args>
+                        <BinOp lineno="4" col_offset="27" end_lineno="4" end_col_offset="32">
+                          <Name id="i" lineno="4" col_offset="27" end_lineno="4" end_col_offset="28">
+                            <Load/>
+                          </Name>
+                          <Add/>
+                          <Constant value="1" kind="None" lineno="4" col_offset="31" end_lineno="4" end_col_offset="32"/>
+                        </BinOp>
+                        <Call lineno="4" col_offset="34" end_lineno="4" end_col_offset="43">
+                          <Name id="len" lineno="4" col_offset="34" end_lineno="4" end_col_offset="37">
+                            <Load/>
+                          </Name>
+                          <args>
+                            <Name id="nums" lineno="4" col_offset="38" end_lineno="4" end_col_offset="42">
+                              <Load/>
+                            </Name>
+                          </args>
+                          <keywords/>
+                        </Call>
+                      </args>
+                      <keywords/>
+                    </Call>
+                    <body>
+                      <If lineno="5" col_offset="16" end_lineno="6" end_col_offset="33">
+                        <BoolOp lineno="5" col_offset="19" end_lineno="5" end_col_offset="57">
+                          <And/>
+                          <values>
+                            <Compare lineno="5" col_offset="19" end_lineno="5" end_col_offset="25">
+                              <Name id="i" lineno="5" col_offset="19" end_lineno="5" end_col_offset="20">
+                                <Load/>
+                              </Name>
+                              <ops>
+                                <NotEq/>
+                              </ops>
+                              <comparators>
+                                <Name id="j" lineno="5" col_offset="24" end_lineno="5" end_col_offset="25">
+                                  <Load/>
+                                </Name>
+                              </comparators>
+                            </Compare>
+                            <Compare lineno="5" col_offset="30" end_lineno="5" end_col_offset="57">
+                              <BinOp lineno="5" col_offset="30" end_lineno="5" end_col_offset="47">
+                                <Subscript lineno="5" col_offset="30" end_lineno="5" end_col_offset="37">
+                                  <Name id="nums" lineno="5" col_offset="30" end_lineno="5" end_col_offset="34">
+                                    <Load/>
+                                  </Name>
+                                  <Name id="i" lineno="5" col_offset="35" end_lineno="5" end_col_offset="36">
+                                    <Load/>
+                                  </Name>
+                                  <Load/>
+                                </Subscript>
+                                <Add/>
+                                <Subscript lineno="5" col_offset="40" end_lineno="5" end_col_offset="47">
+                                  <Name id="nums" lineno="5" col_offset="40" end_lineno="5" end_col_offset="44">
+                                    <Load/>
+                                  </Name>
+                                  <Name id="j" lineno="5" col_offset="45" end_lineno="5" end_col_offset="46">
+                                    <Load/>
+                                  </Name>
+                                  <Load/>
+                                </Subscript>
+                              </BinOp>
+                              <ops>
+                                <Eq/>
+                              </ops>
+                              <comparators>
+                                <Name id="target" lineno="5" col_offset="51" end_lineno="5" end_col_offset="57">
+                                  <Load/>
+                                </Name>
+                              </comparators>
+                            </Compare>
+                          </values>
+                        </BoolOp>
+                        <body>
+                          <Return lineno="6" col_offset="20" end_lineno="6" end_col_offset="33">
+                            <List lineno="6" col_offset="27" end_lineno="6" end_col_offset="33">
+                              <elts>
+                                <Name id="i" lineno="6" col_offset="28" end_lineno="6" end_col_offset="29">
+                                  <Load/>
+                                </Name>
+                                <Name id="j" lineno="6" col_offset="31" end_lineno="6" end_col_offset="32">
+                                  <Load/>
+                                </Name>
+                              </elts>
+                              <Load/>
+                            </List>
+                          </Return>
+                        </body>
+                        <orelse/>
+                      </If>
+                    </body>
+                    <orelse/>
+                  </For>
+                </body>
+                <orelse/>
+              </For>
+              <Return lineno="7" col_offset="8" end_lineno="7" end_col_offset="17">
+                <List lineno="7" col_offset="15" end_lineno="7" end_col_offset="17">
+                  <elts/>
+                  <Load/>
+                </List>
+              </Return>
+            </body>
+            <decorator_list/>
+            <Subscript lineno="2" col_offset="54" end_lineno="2" end_col_offset="63">
+              <Name id="List" lineno="2" col_offset="54" end_lineno="2" end_col_offset="58">
+                <Load/>
+              </Name>
+              <Name id="int" lineno="2" col_offset="59" end_lineno="2" end_col_offset="62">
+                <Load/>
+              </Name>
+              <Load/>
+            </Subscript>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

@@ -1,0 +1,123 @@
+<ast>
+  <Module>
+    <body>
+      <For type_comment="None" lineno="30" col_offset="0" end_lineno="37" end_col_offset="16">
+        <Name id="_" lineno="30" col_offset="4" end_lineno="30" end_col_offset="5">
+          <Store/>
+        </Name>
+        <Call lineno="30" col_offset="9" end_lineno="30" end_col_offset="28">
+          <Name id="range" lineno="30" col_offset="9" end_lineno="30" end_col_offset="14">
+            <Load/>
+          </Name>
+          <args>
+            <Call lineno="30" col_offset="15" end_lineno="30" end_col_offset="27">
+              <Name id="int" lineno="30" col_offset="15" end_lineno="30" end_col_offset="18">
+                <Load/>
+              </Name>
+              <args>
+                <Call lineno="30" col_offset="19" end_lineno="30" end_col_offset="26">
+                  <Name id="input" lineno="30" col_offset="19" end_lineno="30" end_col_offset="24">
+                    <Load/>
+                  </Name>
+                  <args/>
+                  <keywords/>
+                </Call>
+              </args>
+              <keywords/>
+            </Call>
+          </args>
+          <keywords/>
+        </Call>
+        <body>
+          <Assign type_comment="None" lineno="31" col_offset="4" end_lineno="31" end_col_offset="14">
+            <targets>
+              <Name id="count" lineno="31" col_offset="4" end_lineno="31" end_col_offset="9">
+                <Store/>
+              </Name>
+            </targets>
+            <Constant value="0" kind="None" lineno="31" col_offset="13" end_lineno="31" end_col_offset="14"/>
+          </Assign>
+          <Assign type_comment="None" lineno="32" col_offset="4" end_lineno="32" end_col_offset="28">
+            <targets>
+              <Name id="string" lineno="32" col_offset="4" end_lineno="32" end_col_offset="10">
+                <Store/>
+              </Name>
+            </targets>
+            <Call lineno="32" col_offset="13" end_lineno="32" end_col_offset="28">
+              <Attribute attr="lower" lineno="32" col_offset="13" end_lineno="32" end_col_offset="26">
+                <Call lineno="32" col_offset="13" end_lineno="32" end_col_offset="20">
+                  <Name id="input" lineno="32" col_offset="13" end_lineno="32" end_col_offset="18">
+                    <Load/>
+                  </Name>
+                  <args/>
+                  <keywords/>
+                </Call>
+                <Load/>
+              </Attribute>
+              <args/>
+              <keywords/>
+            </Call>
+          </Assign>
+          <For type_comment="None" lineno="33" col_offset="4" end_lineno="35" end_col_offset="22">
+            <Name id="i" lineno="33" col_offset="8" end_lineno="33" end_col_offset="9">
+              <Store/>
+            </Name>
+            <Name id="string" lineno="33" col_offset="13" end_lineno="33" end_col_offset="19">
+              <Load/>
+            </Name>
+            <body>
+              <If lineno="34" col_offset="8" end_lineno="35" end_col_offset="22">
+                <Compare lineno="34" col_offset="11" end_lineno="34" end_col_offset="41">
+                  <Name id="i" lineno="34" col_offset="11" end_lineno="34" end_col_offset="12">
+                    <Load/>
+                  </Name>
+                  <ops>
+                    <In/>
+                  </ops>
+                  <comparators>
+                    <List lineno="34" col_offset="16" end_lineno="34" end_col_offset="41">
+                      <elts>
+                        <Constant value="a" kind="None" lineno="34" col_offset="17" end_lineno="34" end_col_offset="20"/>
+                        <Constant value="e" kind="None" lineno="34" col_offset="22" end_lineno="34" end_col_offset="25"/>
+                        <Constant value="i" kind="None" lineno="34" col_offset="27" end_lineno="34" end_col_offset="30"/>
+                        <Constant value="o" kind="None" lineno="34" col_offset="32" end_lineno="34" end_col_offset="35"/>
+                        <Constant value="u" kind="None" lineno="34" col_offset="37" end_lineno="34" end_col_offset="40"/>
+                      </elts>
+                      <Load/>
+                    </List>
+                  </comparators>
+                </Compare>
+                <body>
+                  <AugAssign lineno="35" col_offset="12" end_lineno="35" end_col_offset="22">
+                    <Name id="count" lineno="35" col_offset="12" end_lineno="35" end_col_offset="17">
+                      <Store/>
+                    </Name>
+                    <Add/>
+                    <Constant value="1" kind="None" lineno="35" col_offset="21" end_lineno="35" end_col_offset="22"/>
+                  </AugAssign>
+                </body>
+                <orelse/>
+              </If>
+            </body>
+            <orelse/>
+          </For>
+          <Expr lineno="37" col_offset="4" end_lineno="37" end_col_offset="16">
+            <Call lineno="37" col_offset="4" end_lineno="37" end_col_offset="16">
+              <Name id="print" lineno="37" col_offset="4" end_lineno="37" end_col_offset="9">
+                <Load/>
+              </Name>
+              <args>
+                <Name id="count" lineno="37" col_offset="10" end_lineno="37" end_col_offset="15">
+                  <Load/>
+                </Name>
+              </args>
+              <keywords/>
+            </Call>
+          </Expr>
+        </body>
+        <orelse/>
+      </For>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

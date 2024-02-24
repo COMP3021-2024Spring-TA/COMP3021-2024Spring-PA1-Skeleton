@@ -1,0 +1,125 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="1" col_offset="0" end_lineno="1" end_col_offset="8">
+        <targets>
+          <Name id="left" lineno="1" col_offset="0" end_lineno="1" end_col_offset="4">
+            <Store/>
+          </Name>
+        </targets>
+        <Constant value="0" kind="None" lineno="1" col_offset="7" end_lineno="1" end_col_offset="8"/>
+      </Assign>
+      <Assign type_comment="None" lineno="2" col_offset="0" end_lineno="2" end_col_offset="9">
+        <targets>
+          <Name id="right" lineno="2" col_offset="0" end_lineno="2" end_col_offset="5">
+            <Store/>
+          </Name>
+        </targets>
+        <Constant value="0" kind="None" lineno="2" col_offset="8" end_lineno="2" end_col_offset="9"/>
+      </Assign>
+      <While lineno="4" col_offset="0" end_lineno="14" end_col_offset="14">
+        <Compare lineno="4" col_offset="6" end_lineno="4" end_col_offset="23">
+          <Name id="right" lineno="4" col_offset="6" end_lineno="4" end_col_offset="11">
+            <Load/>
+          </Name>
+          <ops>
+            <Lt/>
+          </ops>
+          <comparators>
+            <Call lineno="4" col_offset="14" end_lineno="4" end_col_offset="23">
+              <Name id="len" lineno="4" col_offset="14" end_lineno="4" end_col_offset="17">
+                <Load/>
+              </Name>
+              <args>
+                <Name id="nums" lineno="4" col_offset="18" end_lineno="4" end_col_offset="22">
+                  <Load/>
+                </Name>
+              </args>
+              <keywords/>
+            </Call>
+          </comparators>
+        </Compare>
+        <body>
+          <Expr lineno="5" col_offset="4" end_lineno="5" end_col_offset="30">
+            <Call lineno="5" col_offset="4" end_lineno="5" end_col_offset="30">
+              <Attribute attr="append" lineno="5" col_offset="4" end_lineno="5" end_col_offset="17">
+                <Name id="window" lineno="5" col_offset="4" end_lineno="5" end_col_offset="10">
+                  <Load/>
+                </Name>
+                <Load/>
+              </Attribute>
+              <args>
+                <Subscript lineno="5" col_offset="18" end_lineno="5" end_col_offset="29">
+                  <Name id="nums" lineno="5" col_offset="18" end_lineno="5" end_col_offset="22">
+                    <Load/>
+                  </Name>
+                  <Name id="right" lineno="5" col_offset="23" end_lineno="5" end_col_offset="28">
+                    <Load/>
+                  </Name>
+                  <Load/>
+                </Subscript>
+              </args>
+              <keywords/>
+            </Call>
+          </Expr>
+          <If lineno="8" col_offset="4" end_lineno="11" end_col_offset="17">
+            <Compare lineno="8" col_offset="7" end_lineno="8" end_col_offset="38">
+              <BinOp lineno="8" col_offset="7" end_lineno="8" end_col_offset="23">
+                <BinOp lineno="8" col_offset="7" end_lineno="8" end_col_offset="19">
+                  <Name id="right" lineno="8" col_offset="7" end_lineno="8" end_col_offset="12">
+                    <Load/>
+                  </Name>
+                  <Sub/>
+                  <Name id="left" lineno="8" col_offset="15" end_lineno="8" end_col_offset="19">
+                    <Load/>
+                  </Name>
+                </BinOp>
+                <Add/>
+                <Constant value="1" kind="None" lineno="8" col_offset="22" end_lineno="8" end_col_offset="23"/>
+              </BinOp>
+              <ops>
+                <GtE/>
+              </ops>
+              <comparators>
+                <Name id="window_size" lineno="8" col_offset="27" end_lineno="8" end_col_offset="38">
+                  <Load/>
+                </Name>
+              </comparators>
+            </Compare>
+            <body>
+              <Expr lineno="10" col_offset="8" end_lineno="10" end_col_offset="24">
+                <Call lineno="10" col_offset="8" end_lineno="10" end_col_offset="24">
+                  <Attribute attr="popleft" lineno="10" col_offset="8" end_lineno="10" end_col_offset="22">
+                    <Name id="window" lineno="10" col_offset="8" end_lineno="10" end_col_offset="14">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Attribute>
+                  <args/>
+                  <keywords/>
+                </Call>
+              </Expr>
+              <AugAssign lineno="11" col_offset="8" end_lineno="11" end_col_offset="17">
+                <Name id="left" lineno="11" col_offset="8" end_lineno="11" end_col_offset="12">
+                  <Store/>
+                </Name>
+                <Add/>
+                <Constant value="1" kind="None" lineno="11" col_offset="16" end_lineno="11" end_col_offset="17"/>
+              </AugAssign>
+            </body>
+            <orelse/>
+          </If>
+          <AugAssign lineno="14" col_offset="4" end_lineno="14" end_col_offset="14">
+            <Name id="right" lineno="14" col_offset="4" end_lineno="14" end_col_offset="9">
+              <Store/>
+            </Name>
+            <Add/>
+            <Constant value="1" kind="None" lineno="14" col_offset="13" end_lineno="14" end_col_offset="14"/>
+          </AugAssign>
+        </body>
+        <orelse/>
+      </While>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

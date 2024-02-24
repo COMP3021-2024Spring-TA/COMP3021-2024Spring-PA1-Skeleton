@@ -1,0 +1,54 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="24" col_offset="0" end_lineno="24" end_col_offset="20">
+        <targets>
+          <Name id="check" lineno="24" col_offset="0" end_lineno="24" end_col_offset="5">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="24" col_offset="8" end_lineno="24" end_col_offset="20">
+          <Name id="int" lineno="24" col_offset="8" end_lineno="24" end_col_offset="11">
+            <Load/>
+          </Name>
+          <args>
+            <Call lineno="24" col_offset="12" end_lineno="24" end_col_offset="19">
+              <Name id="input" lineno="24" col_offset="12" end_lineno="24" end_col_offset="17">
+                <Load/>
+              </Name>
+              <args/>
+              <keywords/>
+            </Call>
+          </args>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Expr lineno="25" col_offset="0" end_lineno="25" end_col_offset="30">
+        <Call lineno="25" col_offset="0" end_lineno="25" end_col_offset="30">
+          <Name id="print" lineno="25" col_offset="0" end_lineno="25" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <BinOp lineno="25" col_offset="6" end_lineno="25" end_col_offset="29">
+              <BinOp lineno="25" col_offset="6" end_lineno="25" end_col_offset="23">
+                <Constant value="W" kind="None" lineno="25" col_offset="6" end_lineno="25" end_col_offset="9"/>
+                <Add/>
+                <BinOp lineno="25" col_offset="12" end_lineno="25" end_col_offset="23">
+                  <Name id="check" lineno="25" col_offset="12" end_lineno="25" end_col_offset="17">
+                    <Load/>
+                  </Name>
+                  <Mult/>
+                  <Constant value="o" kind="None" lineno="25" col_offset="20" end_lineno="25" end_col_offset="23"/>
+                </BinOp>
+              </BinOp>
+              <Add/>
+              <Constant value="w" kind="None" lineno="25" col_offset="26" end_lineno="25" end_col_offset="29"/>
+            </BinOp>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

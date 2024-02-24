@@ -1,0 +1,1 @@
+bar_chart.render_notebook()

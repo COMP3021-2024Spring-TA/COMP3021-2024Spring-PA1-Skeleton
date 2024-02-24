@@ -1,0 +1,39 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="22">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="22">
+          <Name id="print" lineno="1" col_offset="0" end_lineno="1" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Attribute attr="coefficients" lineno="1" col_offset="6" end_lineno="1" end_col_offset="21">
+              <Name id="p1" lineno="1" col_offset="6" end_lineno="1" end_col_offset="8">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="2" col_offset="0" end_lineno="2" end_col_offset="16">
+        <Call lineno="2" col_offset="0" end_lineno="2" end_col_offset="16">
+          <Name id="print" lineno="2" col_offset="0" end_lineno="2" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Attribute attr="coeffs" lineno="2" col_offset="6" end_lineno="2" end_col_offset="15">
+              <Name id="p2" lineno="2" col_offset="6" end_lineno="2" end_col_offset="8">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

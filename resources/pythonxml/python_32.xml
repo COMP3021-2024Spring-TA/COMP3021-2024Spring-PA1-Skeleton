@@ -1,0 +1,45 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="Trie" lineno="1" col_offset="0" end_lineno="5" end_col_offset="26">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="__init__" returns="None" type_comment="None" lineno="4" col_offset="4" end_lineno="5" end_col_offset="26">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="4" col_offset="17" end_lineno="4" end_col_offset="21"/>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Assign type_comment="None" lineno="5" col_offset="8" end_lineno="5" end_col_offset="26">
+                <targets>
+                  <Attribute attr="root" lineno="5" col_offset="8" end_lineno="5" end_col_offset="17">
+                    <Name id="self" lineno="5" col_offset="8" end_lineno="5" end_col_offset="12">
+                      <Load/>
+                    </Name>
+                    <Store/>
+                  </Attribute>
+                </targets>
+                <Call lineno="5" col_offset="20" end_lineno="5" end_col_offset="26">
+                  <Name id="Node" lineno="5" col_offset="20" end_lineno="5" end_col_offset="24">
+                    <Load/>
+                  </Name>
+                  <args/>
+                  <keywords/>
+                </Call>
+              </Assign>
+            </body>
+            <decorator_list/>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

@@ -1,0 +1,120 @@
+<ast>
+  <Module>
+    <body>
+      <FunctionDef name="search" type_comment="None" lineno="2" col_offset="0" end_lineno="9" end_col_offset="40">
+        <arguments vararg="None" kwarg="None">
+          <posonlyargs/>
+          <args>
+            <arg arg="self" annotation="None" type_comment="None" lineno="2" col_offset="11" end_lineno="2" end_col_offset="15"/>
+            <arg arg="word" type_comment="None" lineno="2" col_offset="17" end_lineno="2" end_col_offset="26">
+              <Name id="str" lineno="2" col_offset="23" end_lineno="2" end_col_offset="26">
+                <Load/>
+              </Name>
+            </arg>
+          </args>
+          <kwonlyargs/>
+          <kw_defaults/>
+          <defaults/>
+        </arguments>
+        <body>
+          <Assign type_comment="None" lineno="3" col_offset="4" end_lineno="3" end_col_offset="19">
+            <targets>
+              <Name id="cur" lineno="3" col_offset="4" end_lineno="3" end_col_offset="7">
+                <Store/>
+              </Name>
+            </targets>
+            <Attribute attr="root" lineno="3" col_offset="10" end_lineno="3" end_col_offset="19">
+              <Name id="self" lineno="3" col_offset="10" end_lineno="3" end_col_offset="14">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+          </Assign>
+          <For type_comment="None" lineno="4" col_offset="4" end_lineno="7" end_col_offset="30">
+            <Name id="ch" lineno="4" col_offset="8" end_lineno="4" end_col_offset="10">
+              <Store/>
+            </Name>
+            <Name id="word" lineno="4" col_offset="14" end_lineno="4" end_col_offset="18">
+              <Load/>
+            </Name>
+            <body>
+              <If lineno="5" col_offset="8" end_lineno="6" end_col_offset="24">
+                <Compare lineno="5" col_offset="11" end_lineno="5" end_col_offset="33">
+                  <Name id="ch" lineno="5" col_offset="11" end_lineno="5" end_col_offset="13">
+                    <Load/>
+                  </Name>
+                  <ops>
+                    <NotIn/>
+                  </ops>
+                  <comparators>
+                    <Attribute attr="children" lineno="5" col_offset="21" end_lineno="5" end_col_offset="33">
+                      <Name id="cur" lineno="5" col_offset="21" end_lineno="5" end_col_offset="24">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Attribute>
+                  </comparators>
+                </Compare>
+                <body>
+                  <Return lineno="6" col_offset="12" end_lineno="6" end_col_offset="24">
+                    <Constant value="False" kind="None" lineno="6" col_offset="19" end_lineno="6" end_col_offset="24"/>
+                  </Return>
+                </body>
+                <orelse/>
+              </If>
+              <Assign type_comment="None" lineno="7" col_offset="8" end_lineno="7" end_col_offset="30">
+                <targets>
+                  <Name id="cur" lineno="7" col_offset="8" end_lineno="7" end_col_offset="11">
+                    <Store/>
+                  </Name>
+                </targets>
+                <Subscript lineno="7" col_offset="14" end_lineno="7" end_col_offset="30">
+                  <Attribute attr="children" lineno="7" col_offset="14" end_lineno="7" end_col_offset="26">
+                    <Name id="cur" lineno="7" col_offset="14" end_lineno="7" end_col_offset="17">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Attribute>
+                  <Name id="ch" lineno="7" col_offset="27" end_lineno="7" end_col_offset="29">
+                    <Load/>
+                  </Name>
+                  <Load/>
+                </Subscript>
+              </Assign>
+            </body>
+            <orelse/>
+          </For>
+          <Return lineno="9" col_offset="4" end_lineno="9" end_col_offset="40">
+            <BoolOp lineno="9" col_offset="11" end_lineno="9" end_col_offset="40">
+              <And/>
+              <values>
+                <Compare lineno="9" col_offset="11" end_lineno="9" end_col_offset="26">
+                  <Name id="cur" lineno="9" col_offset="11" end_lineno="9" end_col_offset="14">
+                    <Load/>
+                  </Name>
+                  <ops>
+                    <IsNot/>
+                  </ops>
+                  <comparators>
+                    <Constant value="None" kind="None" lineno="9" col_offset="22" end_lineno="9" end_col_offset="26"/>
+                  </comparators>
+                </Compare>
+                <Attribute attr="isEnd" lineno="9" col_offset="31" end_lineno="9" end_col_offset="40">
+                  <Name id="cur" lineno="9" col_offset="31" end_lineno="9" end_col_offset="34">
+                    <Load/>
+                  </Name>
+                  <Load/>
+                </Attribute>
+              </values>
+            </BoolOp>
+          </Return>
+        </body>
+        <decorator_list/>
+        <Name id="bool" lineno="2" col_offset="31" end_lineno="2" end_col_offset="35">
+          <Load/>
+        </Name>
+      </FunctionDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

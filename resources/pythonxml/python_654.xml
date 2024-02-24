@@ -1,0 +1,38 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="1" col_offset="0" end_lineno="1" end_col_offset="89">
+        <targets>
+          <Name id="df4" lineno="1" col_offset="0" end_lineno="1" end_col_offset="3">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="1" col_offset="6" end_lineno="1" end_col_offset="89">
+          <Attribute attr="read_excel" lineno="1" col_offset="6" end_lineno="1" end_col_offset="19">
+            <Name id="pd" lineno="1" col_offset="6" end_lineno="1" end_col_offset="8">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <Constant value="data/2022年股票数据.xlsx" kind="None" lineno="1" col_offset="20" end_lineno="1" end_col_offset="51"/>
+          </args>
+          <keywords>
+            <keyword arg="sheet_name" lineno="1" col_offset="53" end_lineno="1" end_col_offset="70">
+              <Constant value="AMZN" kind="None" lineno="1" col_offset="64" end_lineno="1" end_col_offset="70"/>
+            </keyword>
+            <keyword arg="index_col" lineno="1" col_offset="72" end_lineno="1" end_col_offset="88">
+              <Constant value="Date" kind="None" lineno="1" col_offset="82" end_lineno="1" end_col_offset="88"/>
+            </keyword>
+          </keywords>
+        </Call>
+      </Assign>
+      <Expr lineno="2" col_offset="0" end_lineno="2" end_col_offset="3">
+        <Name id="df4" lineno="2" col_offset="0" end_lineno="2" end_col_offset="3">
+          <Load/>
+        </Name>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

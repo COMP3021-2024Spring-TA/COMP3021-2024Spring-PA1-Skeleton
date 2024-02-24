@@ -1,0 +1,171 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="Solution" lineno="1" col_offset="0" end_lineno="9" end_col_offset="84">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="isSameTree" type_comment="None" lineno="2" col_offset="4" end_lineno="9" end_col_offset="84">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="2" col_offset="19" end_lineno="2" end_col_offset="23"/>
+                <arg arg="p" type_comment="None" lineno="2" col_offset="25" end_lineno="2" end_col_offset="36">
+                  <Name id="TreeNode" lineno="2" col_offset="28" end_lineno="2" end_col_offset="36">
+                    <Load/>
+                  </Name>
+                </arg>
+                <arg arg="q" type_comment="None" lineno="2" col_offset="38" end_lineno="2" end_col_offset="49">
+                  <Name id="TreeNode" lineno="2" col_offset="41" end_lineno="2" end_col_offset="49">
+                    <Load/>
+                  </Name>
+                </arg>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <If lineno="3" col_offset="8" end_lineno="4" end_col_offset="23">
+                <BoolOp lineno="3" col_offset="11" end_lineno="3" end_col_offset="26">
+                  <And/>
+                  <values>
+                    <UnaryOp lineno="3" col_offset="11" end_lineno="3" end_col_offset="16">
+                      <Not/>
+                      <Name id="p" lineno="3" col_offset="15" end_lineno="3" end_col_offset="16">
+                        <Load/>
+                      </Name>
+                    </UnaryOp>
+                    <UnaryOp lineno="3" col_offset="21" end_lineno="3" end_col_offset="26">
+                      <Not/>
+                      <Name id="q" lineno="3" col_offset="25" end_lineno="3" end_col_offset="26">
+                        <Load/>
+                      </Name>
+                    </UnaryOp>
+                  </values>
+                </BoolOp>
+                <body>
+                  <Return lineno="4" col_offset="12" end_lineno="4" end_col_offset="23">
+                    <Constant value="True" kind="None" lineno="4" col_offset="19" end_lineno="4" end_col_offset="23"/>
+                  </Return>
+                </body>
+                <orelse/>
+              </If>
+              <If lineno="5" col_offset="8" end_lineno="6" end_col_offset="24">
+                <BoolOp lineno="5" col_offset="11" end_lineno="5" end_col_offset="25">
+                  <Or/>
+                  <values>
+                    <UnaryOp lineno="5" col_offset="11" end_lineno="5" end_col_offset="16">
+                      <Not/>
+                      <Name id="p" lineno="5" col_offset="15" end_lineno="5" end_col_offset="16">
+                        <Load/>
+                      </Name>
+                    </UnaryOp>
+                    <UnaryOp lineno="5" col_offset="20" end_lineno="5" end_col_offset="25">
+                      <Not/>
+                      <Name id="q" lineno="5" col_offset="24" end_lineno="5" end_col_offset="25">
+                        <Load/>
+                      </Name>
+                    </UnaryOp>
+                  </values>
+                </BoolOp>
+                <body>
+                  <Return lineno="6" col_offset="12" end_lineno="6" end_col_offset="24">
+                    <Constant value="False" kind="None" lineno="6" col_offset="19" end_lineno="6" end_col_offset="24"/>
+                  </Return>
+                </body>
+                <orelse/>
+              </If>
+              <If lineno="7" col_offset="8" end_lineno="8" end_col_offset="24">
+                <Compare lineno="7" col_offset="11" end_lineno="7" end_col_offset="25">
+                  <Attribute attr="val" lineno="7" col_offset="11" end_lineno="7" end_col_offset="16">
+                    <Name id="p" lineno="7" col_offset="11" end_lineno="7" end_col_offset="12">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Attribute>
+                  <ops>
+                    <NotEq/>
+                  </ops>
+                  <comparators>
+                    <Attribute attr="val" lineno="7" col_offset="20" end_lineno="7" end_col_offset="25">
+                      <Name id="q" lineno="7" col_offset="20" end_lineno="7" end_col_offset="21">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Attribute>
+                  </comparators>
+                </Compare>
+                <body>
+                  <Return lineno="8" col_offset="12" end_lineno="8" end_col_offset="24">
+                    <Constant value="False" kind="None" lineno="8" col_offset="19" end_lineno="8" end_col_offset="24"/>
+                  </Return>
+                </body>
+                <orelse/>
+              </If>
+              <Return lineno="9" col_offset="8" end_lineno="9" end_col_offset="84">
+                <BoolOp lineno="9" col_offset="15" end_lineno="9" end_col_offset="84">
+                  <And/>
+                  <values>
+                    <Call lineno="9" col_offset="15" end_lineno="9" end_col_offset="46">
+                      <Attribute attr="isSameTree" lineno="9" col_offset="15" end_lineno="9" end_col_offset="30">
+                        <Name id="self" lineno="9" col_offset="15" end_lineno="9" end_col_offset="19">
+                          <Load/>
+                        </Name>
+                        <Load/>
+                      </Attribute>
+                      <args>
+                        <Attribute attr="left" lineno="9" col_offset="31" end_lineno="9" end_col_offset="37">
+                          <Name id="p" lineno="9" col_offset="31" end_lineno="9" end_col_offset="32">
+                            <Load/>
+                          </Name>
+                          <Load/>
+                        </Attribute>
+                        <Attribute attr="left" lineno="9" col_offset="39" end_lineno="9" end_col_offset="45">
+                          <Name id="q" lineno="9" col_offset="39" end_lineno="9" end_col_offset="40">
+                            <Load/>
+                          </Name>
+                          <Load/>
+                        </Attribute>
+                      </args>
+                      <keywords/>
+                    </Call>
+                    <Call lineno="9" col_offset="51" end_lineno="9" end_col_offset="84">
+                      <Attribute attr="isSameTree" lineno="9" col_offset="51" end_lineno="9" end_col_offset="66">
+                        <Name id="self" lineno="9" col_offset="51" end_lineno="9" end_col_offset="55">
+                          <Load/>
+                        </Name>
+                        <Load/>
+                      </Attribute>
+                      <args>
+                        <Attribute attr="right" lineno="9" col_offset="67" end_lineno="9" end_col_offset="74">
+                          <Name id="p" lineno="9" col_offset="67" end_lineno="9" end_col_offset="68">
+                            <Load/>
+                          </Name>
+                          <Load/>
+                        </Attribute>
+                        <Attribute attr="right" lineno="9" col_offset="76" end_lineno="9" end_col_offset="83">
+                          <Name id="q" lineno="9" col_offset="76" end_lineno="9" end_col_offset="77">
+                            <Load/>
+                          </Name>
+                          <Load/>
+                        </Attribute>
+                      </args>
+                      <keywords/>
+                    </Call>
+                  </values>
+                </BoolOp>
+              </Return>
+            </body>
+            <decorator_list/>
+            <Name id="bool" lineno="2" col_offset="54" end_lineno="2" end_col_offset="58">
+              <Load/>
+            </Name>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

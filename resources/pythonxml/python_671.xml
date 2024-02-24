@@ -1,0 +1,21 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="40">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="40">
+          <Attribute attr="query" lineno="1" col_offset="0" end_lineno="1" end_col_offset="12">
+            <Name id="emp_df" lineno="1" col_offset="0" end_lineno="1" end_col_offset="6">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <Constant value="sal &gt; 3500 and dno == 20" kind="None" lineno="1" col_offset="13" end_lineno="1" end_col_offset="39"/>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

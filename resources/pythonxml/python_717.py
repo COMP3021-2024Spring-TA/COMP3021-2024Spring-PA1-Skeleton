@@ -1,0 +1,1 @@
+np.unique(array5)

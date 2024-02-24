@@ -1,0 +1,1 @@
+result_df.drop(columns=['上月销售额', '环比'], inplace=True)

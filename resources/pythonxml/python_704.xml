@@ -1,0 +1,45 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="12">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="12">
+          <Name id="print" lineno="1" col_offset="0" end_lineno="1" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Call lineno="1" col_offset="6" end_lineno="1" end_col_offset="11">
+              <Name id="p1" lineno="1" col_offset="6" end_lineno="1" end_col_offset="8">
+                <Load/>
+              </Name>
+              <args>
+                <Constant value="3" kind="None" lineno="1" col_offset="9" end_lineno="1" end_col_offset="10"/>
+              </args>
+              <keywords/>
+            </Call>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="2" col_offset="0" end_lineno="2" end_col_offset="12">
+        <Call lineno="2" col_offset="0" end_lineno="2" end_col_offset="12">
+          <Name id="print" lineno="2" col_offset="0" end_lineno="2" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Call lineno="2" col_offset="6" end_lineno="2" end_col_offset="11">
+              <Name id="p2" lineno="2" col_offset="6" end_lineno="2" end_col_offset="8">
+                <Load/>
+              </Name>
+              <args>
+                <Constant value="3" kind="None" lineno="2" col_offset="9" end_lineno="2" end_col_offset="10"/>
+              </args>
+              <keywords/>
+            </Call>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

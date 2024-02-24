@@ -1,0 +1,110 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="1" col_offset="0" end_lineno="1" end_col_offset="43">
+        <targets>
+          <Name id="scores" lineno="1" col_offset="0" end_lineno="1" end_col_offset="6">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="1" col_offset="9" end_lineno="1" end_col_offset="43">
+          <Attribute attr="randint" lineno="1" col_offset="9" end_lineno="1" end_col_offset="26">
+            <Attribute attr="random" lineno="1" col_offset="9" end_lineno="1" end_col_offset="18">
+              <Name id="np" lineno="1" col_offset="9" end_lineno="1" end_col_offset="11">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+            <Load/>
+          </Attribute>
+          <args>
+            <Constant value="60" kind="None" lineno="1" col_offset="27" end_lineno="1" end_col_offset="29"/>
+            <Constant value="101" kind="None" lineno="1" col_offset="31" end_lineno="1" end_col_offset="34"/>
+            <Tuple lineno="1" col_offset="36" end_lineno="1" end_col_offset="42">
+              <elts>
+                <Constant value="5" kind="None" lineno="1" col_offset="37" end_lineno="1" end_col_offset="38"/>
+                <Constant value="3" kind="None" lineno="1" col_offset="40" end_lineno="1" end_col_offset="41"/>
+              </elts>
+              <Load/>
+            </Tuple>
+          </args>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Assign type_comment="None" lineno="2" col_offset="0" end_lineno="2" end_col_offset="40">
+        <targets>
+          <Name id="courses" lineno="2" col_offset="0" end_lineno="2" end_col_offset="7">
+            <Store/>
+          </Name>
+        </targets>
+        <List lineno="2" col_offset="10" end_lineno="2" end_col_offset="40">
+          <elts>
+            <Constant value="语文" kind="None" lineno="2" col_offset="11" end_lineno="2" end_col_offset="19"/>
+            <Constant value="数学" kind="None" lineno="2" col_offset="21" end_lineno="2" end_col_offset="29"/>
+            <Constant value="英语" kind="None" lineno="2" col_offset="31" end_lineno="2" end_col_offset="39"/>
+          </elts>
+          <Load/>
+        </List>
+      </Assign>
+      <Assign type_comment="None" lineno="3" col_offset="0" end_lineno="3" end_col_offset="31">
+        <targets>
+          <Name id="stu_ids" lineno="3" col_offset="0" end_lineno="3" end_col_offset="7">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="3" col_offset="10" end_lineno="3" end_col_offset="31">
+          <Attribute attr="arange" lineno="3" col_offset="10" end_lineno="3" end_col_offset="19">
+            <Name id="np" lineno="3" col_offset="10" end_lineno="3" end_col_offset="12">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <Constant value="1001" kind="None" lineno="3" col_offset="20" end_lineno="3" end_col_offset="24"/>
+            <Constant value="1006" kind="None" lineno="3" col_offset="26" end_lineno="3" end_col_offset="30"/>
+          </args>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Assign type_comment="None" lineno="4" col_offset="0" end_lineno="4" end_col_offset="63">
+        <targets>
+          <Name id="df1" lineno="4" col_offset="0" end_lineno="4" end_col_offset="3">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="4" col_offset="6" end_lineno="4" end_col_offset="63">
+          <Attribute attr="DataFrame" lineno="4" col_offset="6" end_lineno="4" end_col_offset="18">
+            <Name id="pd" lineno="4" col_offset="6" end_lineno="4" end_col_offset="8">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args/>
+          <keywords>
+            <keyword arg="data" lineno="4" col_offset="19" end_lineno="4" end_col_offset="30">
+              <Name id="scores" lineno="4" col_offset="24" end_lineno="4" end_col_offset="30">
+                <Load/>
+              </Name>
+            </keyword>
+            <keyword arg="columns" lineno="4" col_offset="32" end_lineno="4" end_col_offset="47">
+              <Name id="courses" lineno="4" col_offset="40" end_lineno="4" end_col_offset="47">
+                <Load/>
+              </Name>
+            </keyword>
+            <keyword arg="index" lineno="4" col_offset="49" end_lineno="4" end_col_offset="62">
+              <Name id="stu_ids" lineno="4" col_offset="55" end_lineno="4" end_col_offset="62">
+                <Load/>
+              </Name>
+            </keyword>
+          </keywords>
+        </Call>
+      </Assign>
+      <Expr lineno="5" col_offset="0" end_lineno="5" end_col_offset="3">
+        <Name id="df1" lineno="5" col_offset="0" end_lineno="5" end_col_offset="3">
+          <Load/>
+        </Name>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

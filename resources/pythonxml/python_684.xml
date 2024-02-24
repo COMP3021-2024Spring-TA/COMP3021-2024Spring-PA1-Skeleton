@@ -1,0 +1,64 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="1" col_offset="0" end_lineno="1" end_col_offset="41">
+        <targets>
+          <Name id="sales_data" lineno="1" col_offset="0" end_lineno="1" end_col_offset="10">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="1" col_offset="13" end_lineno="1" end_col_offset="41">
+          <Attribute attr="randint" lineno="1" col_offset="13" end_lineno="1" end_col_offset="30">
+            <Attribute attr="random" lineno="1" col_offset="13" end_lineno="1" end_col_offset="22">
+              <Name id="np" lineno="1" col_offset="13" end_lineno="1" end_col_offset="15">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+            <Load/>
+          </Attribute>
+          <args>
+            <Constant value="1" kind="None" lineno="1" col_offset="31" end_lineno="1" end_col_offset="32"/>
+            <Constant value="100" kind="None" lineno="1" col_offset="34" end_lineno="1" end_col_offset="37"/>
+            <Constant value="4" kind="None" lineno="1" col_offset="39" end_lineno="1" end_col_offset="40"/>
+          </args>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Assign type_comment="None" lineno="2" col_offset="0" end_lineno="2" end_col_offset="45">
+        <targets>
+          <Name id="ser" lineno="2" col_offset="0" end_lineno="2" end_col_offset="3">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="2" col_offset="6" end_lineno="2" end_col_offset="45">
+          <Attribute attr="Series" lineno="2" col_offset="6" end_lineno="2" end_col_offset="15">
+            <Name id="pd" lineno="2" col_offset="6" end_lineno="2" end_col_offset="8">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args/>
+          <keywords>
+            <keyword arg="data" lineno="2" col_offset="16" end_lineno="2" end_col_offset="31">
+              <Name id="sales_data" lineno="2" col_offset="21" end_lineno="2" end_col_offset="31">
+                <Load/>
+              </Name>
+            </keyword>
+            <keyword arg="index" lineno="2" col_offset="33" end_lineno="2" end_col_offset="44">
+              <Name id="index" lineno="2" col_offset="39" end_lineno="2" end_col_offset="44">
+                <Load/>
+              </Name>
+            </keyword>
+          </keywords>
+        </Call>
+      </Assign>
+      <Expr lineno="3" col_offset="0" end_lineno="3" end_col_offset="3">
+        <Name id="ser" lineno="3" col_offset="0" end_lineno="3" end_col_offset="3">
+          <Load/>
+        </Name>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

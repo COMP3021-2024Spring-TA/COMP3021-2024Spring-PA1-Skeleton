@@ -1,0 +1,6 @@
+print(ser2.dtype)                    
+print(ser2.hasnans)                  
+print(ser2.index)                    
+print(ser2.values)                   
+print(ser2.is_monotonic_increasing)  
+print(ser2.is_unique)                

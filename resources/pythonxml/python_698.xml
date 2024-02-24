@@ -1,0 +1,114 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="35">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="35">
+          <Attribute attr="figure" lineno="1" col_offset="0" end_lineno="1" end_col_offset="10">
+            <Name id="plt" lineno="1" col_offset="0" end_lineno="1" end_col_offset="3">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args/>
+          <keywords>
+            <keyword arg="figsize" lineno="1" col_offset="11" end_lineno="1" end_col_offset="25">
+              <Tuple lineno="1" col_offset="19" end_lineno="1" end_col_offset="25">
+                <elts>
+                  <Constant value="6" kind="None" lineno="1" col_offset="20" end_lineno="1" end_col_offset="21"/>
+                  <Constant value="4" kind="None" lineno="1" col_offset="23" end_lineno="1" end_col_offset="24"/>
+                </elts>
+                <Load/>
+              </Tuple>
+            </keyword>
+            <keyword arg="dpi" lineno="1" col_offset="27" end_lineno="1" end_col_offset="34">
+              <Constant value="120" kind="None" lineno="1" col_offset="31" end_lineno="1" end_col_offset="34"/>
+            </keyword>
+          </keywords>
+        </Call>
+      </Expr>
+      <Expr lineno="3" col_offset="0" end_lineno="3" end_col_offset="95">
+        <Call lineno="3" col_offset="0" end_lineno="3" end_col_offset="95">
+          <Attribute attr="hist" lineno="3" col_offset="0" end_lineno="3" end_col_offset="8">
+            <Name id="plt" lineno="3" col_offset="0" end_lineno="3" end_col_offset="3">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <Name id="heights" lineno="3" col_offset="9" end_lineno="3" end_col_offset="16">
+              <Load/>
+            </Name>
+          </args>
+          <keywords>
+            <keyword arg="bins" lineno="3" col_offset="18" end_lineno="3" end_col_offset="45">
+              <Call lineno="3" col_offset="23" end_lineno="3" end_col_offset="45">
+                <Attribute attr="arange" lineno="3" col_offset="23" end_lineno="3" end_col_offset="32">
+                  <Name id="np" lineno="3" col_offset="23" end_lineno="3" end_col_offset="25">
+                    <Load/>
+                  </Name>
+                  <Load/>
+                </Attribute>
+                <args>
+                  <Constant value="145" kind="None" lineno="3" col_offset="33" end_lineno="3" end_col_offset="36"/>
+                  <Constant value="196" kind="None" lineno="3" col_offset="38" end_lineno="3" end_col_offset="41"/>
+                  <Constant value="5" kind="None" lineno="3" col_offset="43" end_lineno="3" end_col_offset="44"/>
+                </args>
+                <keywords/>
+              </Call>
+            </keyword>
+            <keyword arg="color" lineno="3" col_offset="47" end_lineno="3" end_col_offset="63">
+              <Constant value="darkcyan" kind="None" lineno="3" col_offset="53" end_lineno="3" end_col_offset="63"/>
+            </keyword>
+            <keyword arg="density" lineno="3" col_offset="65" end_lineno="3" end_col_offset="77">
+              <Constant value="True" kind="None" lineno="3" col_offset="73" end_lineno="3" end_col_offset="77"/>
+            </keyword>
+            <keyword arg="cumulative" lineno="3" col_offset="79" end_lineno="3" end_col_offset="94">
+              <Constant value="True" kind="None" lineno="3" col_offset="90" end_lineno="3" end_col_offset="94"/>
+            </keyword>
+          </keywords>
+        </Call>
+      </Expr>
+      <Expr lineno="5" col_offset="0" end_lineno="5" end_col_offset="20">
+        <Call lineno="5" col_offset="0" end_lineno="5" end_col_offset="20">
+          <Attribute attr="xlabel" lineno="5" col_offset="0" end_lineno="5" end_col_offset="10">
+            <Name id="plt" lineno="5" col_offset="0" end_lineno="5" end_col_offset="3">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <Constant value="身高" kind="None" lineno="5" col_offset="11" end_lineno="5" end_col_offset="19"/>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="7" col_offset="0" end_lineno="7" end_col_offset="20">
+        <Call lineno="7" col_offset="0" end_lineno="7" end_col_offset="20">
+          <Attribute attr="ylabel" lineno="7" col_offset="0" end_lineno="7" end_col_offset="10">
+            <Name id="plt" lineno="7" col_offset="0" end_lineno="7" end_col_offset="3">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <Constant value="概率" kind="None" lineno="7" col_offset="11" end_lineno="7" end_col_offset="19"/>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="8" col_offset="0" end_lineno="8" end_col_offset="10">
+        <Call lineno="8" col_offset="0" end_lineno="8" end_col_offset="10">
+          <Attribute attr="show" lineno="8" col_offset="0" end_lineno="8" end_col_offset="8">
+            <Name id="plt" lineno="8" col_offset="0" end_lineno="8" end_col_offset="3">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args/>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

@@ -1,0 +1,170 @@
+<ast>
+  <Module>
+    <body>
+      <For type_comment="None" lineno="1" col_offset="0" end_lineno="4" end_col_offset="81">
+        <Name id="i" lineno="1" col_offset="4" end_lineno="1" end_col_offset="5">
+          <Store/>
+        </Name>
+        <Call lineno="1" col_offset="9" end_lineno="1" end_col_offset="32">
+          <Name id="range" lineno="1" col_offset="9" end_lineno="1" end_col_offset="14">
+            <Load/>
+          </Name>
+          <args>
+            <BinOp lineno="1" col_offset="15" end_lineno="1" end_col_offset="23">
+              <Name id="size" lineno="1" col_offset="15" end_lineno="1" end_col_offset="19">
+                <Load/>
+              </Name>
+              <Sub/>
+              <Constant value="1" kind="None" lineno="1" col_offset="22" end_lineno="1" end_col_offset="23"/>
+            </BinOp>
+            <UnaryOp lineno="1" col_offset="25" end_lineno="1" end_col_offset="27">
+              <USub/>
+              <Constant value="1" kind="None" lineno="1" col_offset="26" end_lineno="1" end_col_offset="27"/>
+            </UnaryOp>
+            <UnaryOp lineno="1" col_offset="29" end_lineno="1" end_col_offset="31">
+              <USub/>
+              <Constant value="1" kind="None" lineno="1" col_offset="30" end_lineno="1" end_col_offset="31"/>
+            </UnaryOp>
+          </args>
+          <keywords/>
+        </Call>
+        <body>
+          <For type_comment="None" lineno="2" col_offset="4" end_lineno="4" end_col_offset="81">
+            <Name id="j" lineno="2" col_offset="8" end_lineno="2" end_col_offset="9">
+              <Store/>
+            </Name>
+            <Call lineno="2" col_offset="13" end_lineno="2" end_col_offset="31">
+              <Name id="range" lineno="2" col_offset="13" end_lineno="2" end_col_offset="18">
+                <Load/>
+              </Name>
+              <args>
+                <BinOp lineno="2" col_offset="19" end_lineno="2" end_col_offset="24">
+                  <Name id="i" lineno="2" col_offset="19" end_lineno="2" end_col_offset="20">
+                    <Load/>
+                  </Name>
+                  <Add/>
+                  <Constant value="1" kind="None" lineno="2" col_offset="23" end_lineno="2" end_col_offset="24"/>
+                </BinOp>
+                <Name id="size" lineno="2" col_offset="26" end_lineno="2" end_col_offset="30">
+                  <Load/>
+                </Name>
+              </args>
+              <keywords/>
+            </Call>
+            <body>
+              <Assign type_comment="None" lineno="4" col_offset="8" end_lineno="4" end_col_offset="81">
+                <targets>
+                  <Subscript lineno="4" col_offset="8" end_lineno="4" end_col_offset="16">
+                    <Subscript lineno="4" col_offset="8" end_lineno="4" end_col_offset="13">
+                      <Name id="dp" lineno="4" col_offset="8" end_lineno="4" end_col_offset="10">
+                        <Load/>
+                      </Name>
+                      <Name id="i" lineno="4" col_offset="11" end_lineno="4" end_col_offset="12">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Subscript>
+                    <Name id="j" lineno="4" col_offset="14" end_lineno="4" end_col_offset="15">
+                      <Load/>
+                    </Name>
+                    <Store/>
+                  </Subscript>
+                </targets>
+                <BinOp lineno="4" col_offset="19" end_lineno="4" end_col_offset="81">
+                  <Call lineno="4" col_offset="19" end_lineno="4" end_col_offset="68">
+                    <Name id="max" lineno="4" col_offset="19" end_lineno="4" end_col_offset="22">
+                      <Load/>
+                    </Name>
+                    <args>
+                      <Subscript lineno="4" col_offset="23" end_lineno="4" end_col_offset="39">
+                        <Subscript lineno="4" col_offset="23" end_lineno="4" end_col_offset="32">
+                          <Name id="dp" lineno="4" col_offset="23" end_lineno="4" end_col_offset="25">
+                            <Load/>
+                          </Name>
+                          <BinOp lineno="4" col_offset="26" end_lineno="4" end_col_offset="31">
+                            <Name id="i" lineno="4" col_offset="26" end_lineno="4" end_col_offset="27">
+                              <Load/>
+                            </Name>
+                            <Add/>
+                            <Constant value="1" kind="None" lineno="4" col_offset="30" end_lineno="4" end_col_offset="31"/>
+                          </BinOp>
+                          <Load/>
+                        </Subscript>
+                        <BinOp lineno="4" col_offset="33" end_lineno="4" end_col_offset="38">
+                          <Name id="j" lineno="4" col_offset="33" end_lineno="4" end_col_offset="34">
+                            <Load/>
+                          </Name>
+                          <Sub/>
+                          <Constant value="1" kind="None" lineno="4" col_offset="37" end_lineno="4" end_col_offset="38"/>
+                        </BinOp>
+                        <Load/>
+                      </Subscript>
+                      <Subscript lineno="4" col_offset="41" end_lineno="4" end_col_offset="53">
+                        <Subscript lineno="4" col_offset="41" end_lineno="4" end_col_offset="50">
+                          <Name id="dp" lineno="4" col_offset="41" end_lineno="4" end_col_offset="43">
+                            <Load/>
+                          </Name>
+                          <BinOp lineno="4" col_offset="44" end_lineno="4" end_col_offset="49">
+                            <Name id="i" lineno="4" col_offset="44" end_lineno="4" end_col_offset="45">
+                              <Load/>
+                            </Name>
+                            <Add/>
+                            <Constant value="1" kind="None" lineno="4" col_offset="48" end_lineno="4" end_col_offset="49"/>
+                          </BinOp>
+                          <Load/>
+                        </Subscript>
+                        <Name id="j" lineno="4" col_offset="51" end_lineno="4" end_col_offset="52">
+                          <Load/>
+                        </Name>
+                        <Load/>
+                      </Subscript>
+                      <Subscript lineno="4" col_offset="55" end_lineno="4" end_col_offset="67">
+                        <Subscript lineno="4" col_offset="55" end_lineno="4" end_col_offset="60">
+                          <Name id="dp" lineno="4" col_offset="55" end_lineno="4" end_col_offset="57">
+                            <Load/>
+                          </Name>
+                          <Name id="i" lineno="4" col_offset="58" end_lineno="4" end_col_offset="59">
+                            <Load/>
+                          </Name>
+                          <Load/>
+                        </Subscript>
+                        <BinOp lineno="4" col_offset="61" end_lineno="4" end_col_offset="66">
+                          <Name id="j" lineno="4" col_offset="61" end_lineno="4" end_col_offset="62">
+                            <Load/>
+                          </Name>
+                          <Sub/>
+                          <Constant value="1" kind="None" lineno="4" col_offset="65" end_lineno="4" end_col_offset="66"/>
+                        </BinOp>
+                        <Load/>
+                      </Subscript>
+                    </args>
+                    <keywords/>
+                  </Call>
+                  <Add/>
+                  <Subscript lineno="4" col_offset="71" end_lineno="4" end_col_offset="81">
+                    <Subscript lineno="4" col_offset="71" end_lineno="4" end_col_offset="78">
+                      <Name id="cost" lineno="4" col_offset="71" end_lineno="4" end_col_offset="75">
+                        <Load/>
+                      </Name>
+                      <Name id="i" lineno="4" col_offset="76" end_lineno="4" end_col_offset="77">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Subscript>
+                    <Name id="j" lineno="4" col_offset="79" end_lineno="4" end_col_offset="80">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Subscript>
+                </BinOp>
+              </Assign>
+            </body>
+            <orelse/>
+          </For>
+        </body>
+        <orelse/>
+      </For>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

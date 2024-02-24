@@ -1,0 +1,19 @@
+<ast>
+  <Module>
+    <body>
+      <AugAssign lineno="1" col_offset="0" end_lineno="1" end_col_offset="10">
+        <Name id="ser1" lineno="1" col_offset="0" end_lineno="1" end_col_offset="4">
+          <Store/>
+        </Name>
+        <Add/>
+        <Constant value="10" kind="None" lineno="1" col_offset="8" end_lineno="1" end_col_offset="10"/>
+      </AugAssign>
+      <Expr lineno="2" col_offset="0" end_lineno="2" end_col_offset="4">
+        <Name id="ser1" lineno="2" col_offset="0" end_lineno="2" end_col_offset="4">
+          <Load/>
+        </Name>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

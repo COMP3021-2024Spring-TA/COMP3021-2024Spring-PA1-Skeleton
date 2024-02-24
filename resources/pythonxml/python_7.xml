@@ -1,0 +1,75 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="1" col_offset="0" end_lineno="1" end_col_offset="11">
+        <targets>
+          <Name id="fast" lineno="1" col_offset="0" end_lineno="1" end_col_offset="4">
+            <Store/>
+          </Name>
+        </targets>
+        <Name id="head" lineno="1" col_offset="7" end_lineno="1" end_col_offset="11">
+          <Load/>
+        </Name>
+      </Assign>
+      <Assign type_comment="None" lineno="2" col_offset="0" end_lineno="2" end_col_offset="11">
+        <targets>
+          <Name id="slow" lineno="2" col_offset="0" end_lineno="2" end_col_offset="4">
+            <Store/>
+          </Name>
+        </targets>
+        <Name id="head" lineno="2" col_offset="7" end_lineno="2" end_col_offset="11">
+          <Load/>
+        </Name>
+      </Assign>
+      <While lineno="4" col_offset="0" end_lineno="6" end_col_offset="25">
+        <BoolOp lineno="4" col_offset="6" end_lineno="4" end_col_offset="24">
+          <And/>
+          <values>
+            <Name id="fast" lineno="4" col_offset="6" end_lineno="4" end_col_offset="10">
+              <Load/>
+            </Name>
+            <Attribute attr="next" lineno="4" col_offset="15" end_lineno="4" end_col_offset="24">
+              <Name id="fast" lineno="4" col_offset="15" end_lineno="4" end_col_offset="19">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+          </values>
+        </BoolOp>
+        <body>
+          <Assign type_comment="None" lineno="5" col_offset="4" end_lineno="5" end_col_offset="20">
+            <targets>
+              <Name id="slow" lineno="5" col_offset="4" end_lineno="5" end_col_offset="8">
+                <Store/>
+              </Name>
+            </targets>
+            <Attribute attr="next" lineno="5" col_offset="11" end_lineno="5" end_col_offset="20">
+              <Name id="slow" lineno="5" col_offset="11" end_lineno="5" end_col_offset="15">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+          </Assign>
+          <Assign type_comment="None" lineno="6" col_offset="4" end_lineno="6" end_col_offset="25">
+            <targets>
+              <Name id="fast" lineno="6" col_offset="4" end_lineno="6" end_col_offset="8">
+                <Store/>
+              </Name>
+            </targets>
+            <Attribute attr="next" lineno="6" col_offset="11" end_lineno="6" end_col_offset="25">
+              <Attribute attr="next" lineno="6" col_offset="11" end_lineno="6" end_col_offset="20">
+                <Name id="fast" lineno="6" col_offset="11" end_lineno="6" end_col_offset="15">
+                  <Load/>
+                </Name>
+                <Load/>
+              </Attribute>
+              <Load/>
+            </Attribute>
+          </Assign>
+        </body>
+        <orelse/>
+      </While>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

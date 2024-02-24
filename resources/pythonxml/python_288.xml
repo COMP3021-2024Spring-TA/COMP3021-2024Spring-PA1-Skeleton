@@ -1,0 +1,45 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="Solution" lineno="1" col_offset="0" end_lineno="3" end_col_offset="19">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="stoneGame" type_comment="None" lineno="2" col_offset="4" end_lineno="3" end_col_offset="19">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="2" col_offset="18" end_lineno="2" end_col_offset="22"/>
+                <arg arg="piles" type_comment="None" lineno="2" col_offset="24" end_lineno="2" end_col_offset="40">
+                  <Subscript lineno="2" col_offset="31" end_lineno="2" end_col_offset="40">
+                    <Name id="List" lineno="2" col_offset="31" end_lineno="2" end_col_offset="35">
+                      <Load/>
+                    </Name>
+                    <Name id="int" lineno="2" col_offset="36" end_lineno="2" end_col_offset="39">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Subscript>
+                </arg>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Return lineno="3" col_offset="8" end_lineno="3" end_col_offset="19">
+                <Constant value="True" kind="None" lineno="3" col_offset="15" end_lineno="3" end_col_offset="19"/>
+              </Return>
+            </body>
+            <decorator_list/>
+            <Name id="bool" lineno="2" col_offset="45" end_lineno="2" end_col_offset="49">
+              <Load/>
+            </Name>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

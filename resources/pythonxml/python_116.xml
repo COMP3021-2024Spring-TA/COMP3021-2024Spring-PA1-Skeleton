@@ -1,0 +1,102 @@
+<ast>
+  <Module>
+    <body>
+      <FunctionDef name="find" returns="None" type_comment="None" lineno="1" col_offset="0" end_lineno="4" end_col_offset="21">
+        <arguments vararg="None" kwarg="None">
+          <posonlyargs/>
+          <args>
+            <arg arg="self" annotation="None" type_comment="None" lineno="1" col_offset="9" end_lineno="1" end_col_offset="13"/>
+            <arg arg="x" annotation="None" type_comment="None" lineno="1" col_offset="15" end_lineno="1" end_col_offset="16"/>
+          </args>
+          <kwonlyargs/>
+          <kw_defaults/>
+          <defaults/>
+        </arguments>
+        <body>
+          <If lineno="2" col_offset="4" end_lineno="3" end_col_offset="42">
+            <Compare lineno="2" col_offset="7" end_lineno="2" end_col_offset="22">
+              <Subscript lineno="2" col_offset="7" end_lineno="2" end_col_offset="17">
+                <Attribute attr="fa" lineno="2" col_offset="7" end_lineno="2" end_col_offset="14">
+                  <Name id="self" lineno="2" col_offset="7" end_lineno="2" end_col_offset="11">
+                    <Load/>
+                  </Name>
+                  <Load/>
+                </Attribute>
+                <Name id="x" lineno="2" col_offset="15" end_lineno="2" end_col_offset="16">
+                  <Load/>
+                </Name>
+                <Load/>
+              </Subscript>
+              <ops>
+                <NotEq/>
+              </ops>
+              <comparators>
+                <Name id="x" lineno="2" col_offset="21" end_lineno="2" end_col_offset="22">
+                  <Load/>
+                </Name>
+              </comparators>
+            </Compare>
+            <body>
+              <Assign type_comment="None" lineno="3" col_offset="8" end_lineno="3" end_col_offset="42">
+                <targets>
+                  <Subscript lineno="3" col_offset="8" end_lineno="3" end_col_offset="18">
+                    <Attribute attr="fa" lineno="3" col_offset="8" end_lineno="3" end_col_offset="15">
+                      <Name id="self" lineno="3" col_offset="8" end_lineno="3" end_col_offset="12">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Attribute>
+                    <Name id="x" lineno="3" col_offset="16" end_lineno="3" end_col_offset="17">
+                      <Load/>
+                    </Name>
+                    <Store/>
+                  </Subscript>
+                </targets>
+                <Call lineno="3" col_offset="21" end_lineno="3" end_col_offset="42">
+                  <Attribute attr="find" lineno="3" col_offset="21" end_lineno="3" end_col_offset="30">
+                    <Name id="self" lineno="3" col_offset="21" end_lineno="3" end_col_offset="25">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Attribute>
+                  <args>
+                    <Subscript lineno="3" col_offset="31" end_lineno="3" end_col_offset="41">
+                      <Attribute attr="fa" lineno="3" col_offset="31" end_lineno="3" end_col_offset="38">
+                        <Name id="self" lineno="3" col_offset="31" end_lineno="3" end_col_offset="35">
+                          <Load/>
+                        </Name>
+                        <Load/>
+                      </Attribute>
+                      <Name id="x" lineno="3" col_offset="39" end_lineno="3" end_col_offset="40">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Subscript>
+                  </args>
+                  <keywords/>
+                </Call>
+              </Assign>
+            </body>
+            <orelse/>
+          </If>
+          <Return lineno="4" col_offset="4" end_lineno="4" end_col_offset="21">
+            <Subscript lineno="4" col_offset="11" end_lineno="4" end_col_offset="21">
+              <Attribute attr="fa" lineno="4" col_offset="11" end_lineno="4" end_col_offset="18">
+                <Name id="self" lineno="4" col_offset="11" end_lineno="4" end_col_offset="15">
+                  <Load/>
+                </Name>
+                <Load/>
+              </Attribute>
+              <Name id="x" lineno="4" col_offset="19" end_lineno="4" end_col_offset="20">
+                <Load/>
+              </Name>
+              <Load/>
+            </Subscript>
+          </Return>
+        </body>
+        <decorator_list/>
+      </FunctionDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

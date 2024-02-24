@@ -1,0 +1,104 @@
+<ast>
+  <Module>
+    <body>
+      <FunctionDef name="monotoneIncreasingStack" returns="None" type_comment="None" lineno="1" col_offset="0" end_lineno="6" end_col_offset="25">
+        <arguments vararg="None" kwarg="None">
+          <posonlyargs/>
+          <args>
+            <arg arg="nums" annotation="None" type_comment="None" lineno="1" col_offset="28" end_lineno="1" end_col_offset="32"/>
+          </args>
+          <kwonlyargs/>
+          <kw_defaults/>
+          <defaults/>
+        </arguments>
+        <body>
+          <Assign type_comment="None" lineno="2" col_offset="4" end_lineno="2" end_col_offset="14">
+            <targets>
+              <Name id="stack" lineno="2" col_offset="4" end_lineno="2" end_col_offset="9">
+                <Store/>
+              </Name>
+            </targets>
+            <List lineno="2" col_offset="12" end_lineno="2" end_col_offset="14">
+              <elts/>
+              <Load/>
+            </List>
+          </Assign>
+          <For type_comment="None" lineno="3" col_offset="4" end_lineno="6" end_col_offset="25">
+            <Name id="num" lineno="3" col_offset="8" end_lineno="3" end_col_offset="11">
+              <Store/>
+            </Name>
+            <Name id="nums" lineno="3" col_offset="15" end_lineno="3" end_col_offset="19">
+              <Load/>
+            </Name>
+            <body>
+              <While lineno="4" col_offset="8" end_lineno="5" end_col_offset="23">
+                <BoolOp lineno="4" col_offset="14" end_lineno="4" end_col_offset="40">
+                  <And/>
+                  <values>
+                    <Name id="stack" lineno="4" col_offset="14" end_lineno="4" end_col_offset="19">
+                      <Load/>
+                    </Name>
+                    <Compare lineno="4" col_offset="24" end_lineno="4" end_col_offset="40">
+                      <Name id="num" lineno="4" col_offset="24" end_lineno="4" end_col_offset="27">
+                        <Load/>
+                      </Name>
+                      <ops>
+                        <GtE/>
+                      </ops>
+                      <comparators>
+                        <Subscript lineno="4" col_offset="31" end_lineno="4" end_col_offset="40">
+                          <Name id="stack" lineno="4" col_offset="31" end_lineno="4" end_col_offset="36">
+                            <Load/>
+                          </Name>
+                          <UnaryOp lineno="4" col_offset="37" end_lineno="4" end_col_offset="39">
+                            <USub/>
+                            <Constant value="1" kind="None" lineno="4" col_offset="38" end_lineno="4" end_col_offset="39"/>
+                          </UnaryOp>
+                          <Load/>
+                        </Subscript>
+                      </comparators>
+                    </Compare>
+                  </values>
+                </BoolOp>
+                <body>
+                  <Expr lineno="5" col_offset="12" end_lineno="5" end_col_offset="23">
+                    <Call lineno="5" col_offset="12" end_lineno="5" end_col_offset="23">
+                      <Attribute attr="pop" lineno="5" col_offset="12" end_lineno="5" end_col_offset="21">
+                        <Name id="stack" lineno="5" col_offset="12" end_lineno="5" end_col_offset="17">
+                          <Load/>
+                        </Name>
+                        <Load/>
+                      </Attribute>
+                      <args/>
+                      <keywords/>
+                    </Call>
+                  </Expr>
+                </body>
+                <orelse/>
+              </While>
+              <Expr lineno="6" col_offset="8" end_lineno="6" end_col_offset="25">
+                <Call lineno="6" col_offset="8" end_lineno="6" end_col_offset="25">
+                  <Attribute attr="append" lineno="6" col_offset="8" end_lineno="6" end_col_offset="20">
+                    <Name id="stack" lineno="6" col_offset="8" end_lineno="6" end_col_offset="13">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Attribute>
+                  <args>
+                    <Name id="num" lineno="6" col_offset="21" end_lineno="6" end_col_offset="24">
+                      <Load/>
+                    </Name>
+                  </args>
+                  <keywords/>
+                </Call>
+              </Expr>
+            </body>
+            <orelse/>
+          </For>
+        </body>
+        <decorator_list/>
+      </FunctionDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

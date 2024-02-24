@@ -1,0 +1,26 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="17">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="17">
+          <Attribute attr="corrcoef" lineno="1" col_offset="0" end_lineno="1" end_col_offset="11">
+            <Name id="np" lineno="1" col_offset="0" end_lineno="1" end_col_offset="2">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <Name id="x" lineno="1" col_offset="12" end_lineno="1" end_col_offset="13">
+              <Load/>
+            </Name>
+            <Name id="y" lineno="1" col_offset="15" end_lineno="1" end_col_offset="16">
+              <Load/>
+            </Name>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

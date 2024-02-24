@@ -1,0 +1,262 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="TwoSum" lineno="1" col_offset="0" end_lineno="32" end_col_offset="20">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="__init__" returns="None" type_comment="None" lineno="3" col_offset="4" end_lineno="7" end_col_offset="32">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="3" col_offset="17" end_lineno="3" end_col_offset="21"/>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Expr lineno="4" col_offset="8" end_lineno="6" end_col_offset="11">
+                <Constant value="&#10;        Initialize your data structure here.&#10;        " kind="None" lineno="4" col_offset="8" end_lineno="6" end_col_offset="11"/>
+              </Expr>
+              <Assign type_comment="None" lineno="7" col_offset="8" end_lineno="7" end_col_offset="32">
+                <targets>
+                  <Attribute attr="num_counts" lineno="7" col_offset="8" end_lineno="7" end_col_offset="23">
+                    <Name id="self" lineno="7" col_offset="8" end_lineno="7" end_col_offset="12">
+                      <Load/>
+                    </Name>
+                    <Store/>
+                  </Attribute>
+                </targets>
+                <Call lineno="7" col_offset="26" end_lineno="7" end_col_offset="32">
+                  <Name id="dict" lineno="7" col_offset="26" end_lineno="7" end_col_offset="30">
+                    <Load/>
+                  </Name>
+                  <args/>
+                  <keywords/>
+                </Call>
+              </Assign>
+            </body>
+            <decorator_list/>
+          </FunctionDef>
+          <FunctionDef name="add" type_comment="None" lineno="10" col_offset="4" end_lineno="17" end_col_offset="39">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="10" col_offset="12" end_lineno="10" end_col_offset="16"/>
+                <arg arg="number" type_comment="None" lineno="10" col_offset="18" end_lineno="10" end_col_offset="29">
+                  <Name id="int" lineno="10" col_offset="26" end_lineno="10" end_col_offset="29">
+                    <Load/>
+                  </Name>
+                </arg>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Expr lineno="11" col_offset="8" end_lineno="13" end_col_offset="11">
+                <Constant value="&#10;        Add the number to an internal data structure..&#10;        " kind="None" lineno="11" col_offset="8" end_lineno="13" end_col_offset="11"/>
+              </Expr>
+              <If lineno="14" col_offset="8" end_lineno="17" end_col_offset="39">
+                <Compare lineno="14" col_offset="11" end_lineno="14" end_col_offset="36">
+                  <Name id="number" lineno="14" col_offset="11" end_lineno="14" end_col_offset="17">
+                    <Load/>
+                  </Name>
+                  <ops>
+                    <In/>
+                  </ops>
+                  <comparators>
+                    <Attribute attr="num_counts" lineno="14" col_offset="21" end_lineno="14" end_col_offset="36">
+                      <Name id="self" lineno="14" col_offset="21" end_lineno="14" end_col_offset="25">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Attribute>
+                  </comparators>
+                </Compare>
+                <body>
+                  <AugAssign lineno="15" col_offset="12" end_lineno="15" end_col_offset="40">
+                    <Subscript lineno="15" col_offset="12" end_lineno="15" end_col_offset="35">
+                      <Attribute attr="num_counts" lineno="15" col_offset="12" end_lineno="15" end_col_offset="27">
+                        <Name id="self" lineno="15" col_offset="12" end_lineno="15" end_col_offset="16">
+                          <Load/>
+                        </Name>
+                        <Load/>
+                      </Attribute>
+                      <Name id="number" lineno="15" col_offset="28" end_lineno="15" end_col_offset="34">
+                        <Load/>
+                      </Name>
+                      <Store/>
+                    </Subscript>
+                    <Add/>
+                    <Constant value="1" kind="None" lineno="15" col_offset="39" end_lineno="15" end_col_offset="40"/>
+                  </AugAssign>
+                </body>
+                <orelse>
+                  <Assign type_comment="None" lineno="17" col_offset="12" end_lineno="17" end_col_offset="39">
+                    <targets>
+                      <Subscript lineno="17" col_offset="12" end_lineno="17" end_col_offset="35">
+                        <Attribute attr="num_counts" lineno="17" col_offset="12" end_lineno="17" end_col_offset="27">
+                          <Name id="self" lineno="17" col_offset="12" end_lineno="17" end_col_offset="16">
+                            <Load/>
+                          </Name>
+                          <Load/>
+                        </Attribute>
+                        <Name id="number" lineno="17" col_offset="28" end_lineno="17" end_col_offset="34">
+                          <Load/>
+                        </Name>
+                        <Store/>
+                      </Subscript>
+                    </targets>
+                    <Constant value="1" kind="None" lineno="17" col_offset="38" end_lineno="17" end_col_offset="39"/>
+                  </Assign>
+                </orelse>
+              </If>
+            </body>
+            <decorator_list/>
+            <Constant value="None" kind="None" lineno="10" col_offset="34" end_lineno="10" end_col_offset="38"/>
+          </FunctionDef>
+          <FunctionDef name="find" type_comment="None" lineno="20" col_offset="4" end_lineno="32" end_col_offset="20">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="20" col_offset="13" end_lineno="20" end_col_offset="17"/>
+                <arg arg="value" type_comment="None" lineno="20" col_offset="19" end_lineno="20" end_col_offset="29">
+                  <Name id="int" lineno="20" col_offset="26" end_lineno="20" end_col_offset="29">
+                    <Load/>
+                  </Name>
+                </arg>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Expr lineno="21" col_offset="8" end_lineno="23" end_col_offset="11">
+                <Constant value="&#10;        Find if there exists any pair of numbers which sum is equal to the value.&#10;        " kind="None" lineno="21" col_offset="8" end_lineno="23" end_col_offset="11"/>
+              </Expr>
+              <For type_comment="None" lineno="24" col_offset="8" end_lineno="31" end_col_offset="31">
+                <Name id="number" lineno="24" col_offset="12" end_lineno="24" end_col_offset="18">
+                  <Store/>
+                </Name>
+                <Call lineno="24" col_offset="22" end_lineno="24" end_col_offset="44">
+                  <Attribute attr="keys" lineno="24" col_offset="22" end_lineno="24" end_col_offset="42">
+                    <Attribute attr="num_counts" lineno="24" col_offset="22" end_lineno="24" end_col_offset="37">
+                      <Name id="self" lineno="24" col_offset="22" end_lineno="24" end_col_offset="26">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Attribute>
+                    <Load/>
+                  </Attribute>
+                  <args/>
+                  <keywords/>
+                </Call>
+                <body>
+                  <Assign type_comment="None" lineno="25" col_offset="12" end_lineno="25" end_col_offset="36">
+                    <targets>
+                      <Name id="number2" lineno="25" col_offset="12" end_lineno="25" end_col_offset="19">
+                        <Store/>
+                      </Name>
+                    </targets>
+                    <BinOp lineno="25" col_offset="22" end_lineno="25" end_col_offset="36">
+                      <Name id="value" lineno="25" col_offset="22" end_lineno="25" end_col_offset="27">
+                        <Load/>
+                      </Name>
+                      <Sub/>
+                      <Name id="number" lineno="25" col_offset="30" end_lineno="25" end_col_offset="36">
+                        <Load/>
+                      </Name>
+                    </BinOp>
+                  </Assign>
+                  <If lineno="26" col_offset="12" end_lineno="31" end_col_offset="31">
+                    <Compare lineno="26" col_offset="15" end_lineno="26" end_col_offset="32">
+                      <Name id="number" lineno="26" col_offset="15" end_lineno="26" end_col_offset="21">
+                        <Load/>
+                      </Name>
+                      <ops>
+                        <Eq/>
+                      </ops>
+                      <comparators>
+                        <Name id="number2" lineno="26" col_offset="25" end_lineno="26" end_col_offset="32">
+                          <Load/>
+                        </Name>
+                      </comparators>
+                    </Compare>
+                    <body>
+                      <If lineno="27" col_offset="16" end_lineno="28" end_col_offset="31">
+                        <Compare lineno="27" col_offset="19" end_lineno="27" end_col_offset="46">
+                          <Subscript lineno="27" col_offset="19" end_lineno="27" end_col_offset="42">
+                            <Attribute attr="num_counts" lineno="27" col_offset="19" end_lineno="27" end_col_offset="34">
+                              <Name id="self" lineno="27" col_offset="19" end_lineno="27" end_col_offset="23">
+                                <Load/>
+                              </Name>
+                              <Load/>
+                            </Attribute>
+                            <Name id="number" lineno="27" col_offset="35" end_lineno="27" end_col_offset="41">
+                              <Load/>
+                            </Name>
+                            <Load/>
+                          </Subscript>
+                          <ops>
+                            <Gt/>
+                          </ops>
+                          <comparators>
+                            <Constant value="1" kind="None" lineno="27" col_offset="45" end_lineno="27" end_col_offset="46"/>
+                          </comparators>
+                        </Compare>
+                        <body>
+                          <Return lineno="28" col_offset="20" end_lineno="28" end_col_offset="31">
+                            <Constant value="True" kind="None" lineno="28" col_offset="27" end_lineno="28" end_col_offset="31"/>
+                          </Return>
+                        </body>
+                        <orelse/>
+                      </If>
+                    </body>
+                    <orelse>
+                      <If lineno="30" col_offset="16" end_lineno="31" end_col_offset="31">
+                        <Compare lineno="30" col_offset="19" end_lineno="30" end_col_offset="45">
+                          <Name id="number2" lineno="30" col_offset="19" end_lineno="30" end_col_offset="26">
+                            <Load/>
+                          </Name>
+                          <ops>
+                            <In/>
+                          </ops>
+                          <comparators>
+                            <Attribute attr="num_counts" lineno="30" col_offset="30" end_lineno="30" end_col_offset="45">
+                              <Name id="self" lineno="30" col_offset="30" end_lineno="30" end_col_offset="34">
+                                <Load/>
+                              </Name>
+                              <Load/>
+                            </Attribute>
+                          </comparators>
+                        </Compare>
+                        <body>
+                          <Return lineno="31" col_offset="20" end_lineno="31" end_col_offset="31">
+                            <Constant value="True" kind="None" lineno="31" col_offset="27" end_lineno="31" end_col_offset="31"/>
+                          </Return>
+                        </body>
+                        <orelse/>
+                      </If>
+                    </orelse>
+                  </If>
+                </body>
+                <orelse/>
+              </For>
+              <Return lineno="32" col_offset="8" end_lineno="32" end_col_offset="20">
+                <Constant value="False" kind="None" lineno="32" col_offset="15" end_lineno="32" end_col_offset="20"/>
+              </Return>
+            </body>
+            <decorator_list/>
+            <Name id="bool" lineno="20" col_offset="34" end_lineno="20" end_col_offset="38">
+              <Load/>
+            </Name>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

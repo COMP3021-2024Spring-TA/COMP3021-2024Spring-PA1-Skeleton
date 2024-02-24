@@ -1,0 +1,168 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="Solution" lineno="1" col_offset="0" end_lineno="9" end_col_offset="21">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="moveZeroes" type_comment="None" lineno="2" col_offset="4" end_lineno="9" end_col_offset="21">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="2" col_offset="19" end_lineno="2" end_col_offset="23"/>
+                <arg arg="nums" type_comment="None" lineno="2" col_offset="25" end_lineno="2" end_col_offset="40">
+                  <Subscript lineno="2" col_offset="31" end_lineno="2" end_col_offset="40">
+                    <Name id="List" lineno="2" col_offset="31" end_lineno="2" end_col_offset="35">
+                      <Load/>
+                    </Name>
+                    <Name id="int" lineno="2" col_offset="36" end_lineno="2" end_col_offset="39">
+                      <Load/>
+                    </Name>
+                    <Load/>
+                  </Subscript>
+                </arg>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Assign type_comment="None" lineno="3" col_offset="8" end_lineno="3" end_col_offset="16">
+                <targets>
+                  <Name id="slow" lineno="3" col_offset="8" end_lineno="3" end_col_offset="12">
+                    <Store/>
+                  </Name>
+                </targets>
+                <Constant value="0" kind="None" lineno="3" col_offset="15" end_lineno="3" end_col_offset="16"/>
+              </Assign>
+              <Assign type_comment="None" lineno="4" col_offset="8" end_lineno="4" end_col_offset="16">
+                <targets>
+                  <Name id="fast" lineno="4" col_offset="8" end_lineno="4" end_col_offset="12">
+                    <Store/>
+                  </Name>
+                </targets>
+                <Constant value="0" kind="None" lineno="4" col_offset="15" end_lineno="4" end_col_offset="16"/>
+              </Assign>
+              <While lineno="5" col_offset="8" end_lineno="9" end_col_offset="21">
+                <Compare lineno="5" col_offset="14" end_lineno="5" end_col_offset="30">
+                  <Name id="fast" lineno="5" col_offset="14" end_lineno="5" end_col_offset="18">
+                    <Load/>
+                  </Name>
+                  <ops>
+                    <Lt/>
+                  </ops>
+                  <comparators>
+                    <Call lineno="5" col_offset="21" end_lineno="5" end_col_offset="30">
+                      <Name id="len" lineno="5" col_offset="21" end_lineno="5" end_col_offset="24">
+                        <Load/>
+                      </Name>
+                      <args>
+                        <Name id="nums" lineno="5" col_offset="25" end_lineno="5" end_col_offset="29">
+                          <Load/>
+                        </Name>
+                      </args>
+                      <keywords/>
+                    </Call>
+                  </comparators>
+                </Compare>
+                <body>
+                  <If lineno="6" col_offset="12" end_lineno="8" end_col_offset="25">
+                    <Compare lineno="6" col_offset="15" end_lineno="6" end_col_offset="30">
+                      <Subscript lineno="6" col_offset="15" end_lineno="6" end_col_offset="25">
+                        <Name id="nums" lineno="6" col_offset="15" end_lineno="6" end_col_offset="19">
+                          <Load/>
+                        </Name>
+                        <Name id="fast" lineno="6" col_offset="20" end_lineno="6" end_col_offset="24">
+                          <Load/>
+                        </Name>
+                        <Load/>
+                      </Subscript>
+                      <ops>
+                        <NotEq/>
+                      </ops>
+                      <comparators>
+                        <Constant value="0" kind="None" lineno="6" col_offset="29" end_lineno="6" end_col_offset="30"/>
+                      </comparators>
+                    </Compare>
+                    <body>
+                      <Assign type_comment="None" lineno="7" col_offset="16" end_lineno="7" end_col_offset="63">
+                        <targets>
+                          <Tuple lineno="7" col_offset="16" end_lineno="7" end_col_offset="38">
+                            <elts>
+                              <Subscript lineno="7" col_offset="16" end_lineno="7" end_col_offset="26">
+                                <Name id="nums" lineno="7" col_offset="16" end_lineno="7" end_col_offset="20">
+                                  <Load/>
+                                </Name>
+                                <Name id="slow" lineno="7" col_offset="21" end_lineno="7" end_col_offset="25">
+                                  <Load/>
+                                </Name>
+                                <Store/>
+                              </Subscript>
+                              <Subscript lineno="7" col_offset="28" end_lineno="7" end_col_offset="38">
+                                <Name id="nums" lineno="7" col_offset="28" end_lineno="7" end_col_offset="32">
+                                  <Load/>
+                                </Name>
+                                <Name id="fast" lineno="7" col_offset="33" end_lineno="7" end_col_offset="37">
+                                  <Load/>
+                                </Name>
+                                <Store/>
+                              </Subscript>
+                            </elts>
+                            <Store/>
+                          </Tuple>
+                        </targets>
+                        <Tuple lineno="7" col_offset="41" end_lineno="7" end_col_offset="63">
+                          <elts>
+                            <Subscript lineno="7" col_offset="41" end_lineno="7" end_col_offset="51">
+                              <Name id="nums" lineno="7" col_offset="41" end_lineno="7" end_col_offset="45">
+                                <Load/>
+                              </Name>
+                              <Name id="fast" lineno="7" col_offset="46" end_lineno="7" end_col_offset="50">
+                                <Load/>
+                              </Name>
+                              <Load/>
+                            </Subscript>
+                            <Subscript lineno="7" col_offset="53" end_lineno="7" end_col_offset="63">
+                              <Name id="nums" lineno="7" col_offset="53" end_lineno="7" end_col_offset="57">
+                                <Load/>
+                              </Name>
+                              <Name id="slow" lineno="7" col_offset="58" end_lineno="7" end_col_offset="62">
+                                <Load/>
+                              </Name>
+                              <Load/>
+                            </Subscript>
+                          </elts>
+                          <Load/>
+                        </Tuple>
+                      </Assign>
+                      <AugAssign lineno="8" col_offset="16" end_lineno="8" end_col_offset="25">
+                        <Name id="slow" lineno="8" col_offset="16" end_lineno="8" end_col_offset="20">
+                          <Store/>
+                        </Name>
+                        <Add/>
+                        <Constant value="1" kind="None" lineno="8" col_offset="24" end_lineno="8" end_col_offset="25"/>
+                      </AugAssign>
+                    </body>
+                    <orelse/>
+                  </If>
+                  <AugAssign lineno="9" col_offset="12" end_lineno="9" end_col_offset="21">
+                    <Name id="fast" lineno="9" col_offset="12" end_lineno="9" end_col_offset="16">
+                      <Store/>
+                    </Name>
+                    <Add/>
+                    <Constant value="1" kind="None" lineno="9" col_offset="20" end_lineno="9" end_col_offset="21"/>
+                  </AugAssign>
+                </body>
+                <orelse/>
+              </While>
+            </body>
+            <decorator_list/>
+            <Constant value="None" kind="None" lineno="2" col_offset="45" end_lineno="2" end_col_offset="49"/>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

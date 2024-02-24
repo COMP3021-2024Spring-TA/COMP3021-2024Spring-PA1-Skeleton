@@ -1,0 +1,21 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="19">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="19">
+          <Attribute attr="contains" lineno="1" col_offset="0" end_lineno="1" end_col_offset="14">
+            <Name id="index" lineno="1" col_offset="0" end_lineno="1" end_col_offset="5">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <Constant value="1.5" kind="None" lineno="1" col_offset="15" end_lineno="1" end_col_offset="18"/>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

@@ -1,0 +1,46 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="48">
+        <Subscript lineno="1" col_offset="0" end_lineno="1" end_col_offset="48">
+          <Name id="emp_df" lineno="1" col_offset="0" end_lineno="1" end_col_offset="6">
+            <Load/>
+          </Name>
+          <BinOp lineno="1" col_offset="7" end_lineno="1" end_col_offset="47">
+            <Compare lineno="1" col_offset="8" end_lineno="1" end_col_offset="25">
+              <Attribute attr="sal" lineno="1" col_offset="8" end_lineno="1" end_col_offset="18">
+                <Name id="emp_df" lineno="1" col_offset="8" end_lineno="1" end_col_offset="14">
+                  <Load/>
+                </Name>
+                <Load/>
+              </Attribute>
+              <ops>
+                <Gt/>
+              </ops>
+              <comparators>
+                <Constant value="3500" kind="None" lineno="1" col_offset="21" end_lineno="1" end_col_offset="25"/>
+              </comparators>
+            </Compare>
+            <BitAnd/>
+            <Compare lineno="1" col_offset="30" end_lineno="1" end_col_offset="46">
+              <Attribute attr="dno" lineno="1" col_offset="30" end_lineno="1" end_col_offset="40">
+                <Name id="emp_df" lineno="1" col_offset="30" end_lineno="1" end_col_offset="36">
+                  <Load/>
+                </Name>
+                <Load/>
+              </Attribute>
+              <ops>
+                <Eq/>
+              </ops>
+              <comparators>
+                <Constant value="20" kind="None" lineno="1" col_offset="44" end_lineno="1" end_col_offset="46"/>
+              </comparators>
+            </Compare>
+          </BinOp>
+          <Load/>
+        </Subscript>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

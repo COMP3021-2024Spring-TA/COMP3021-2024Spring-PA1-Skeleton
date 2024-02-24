@@ -1,0 +1,103 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="17">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="17">
+          <Name id="print" lineno="1" col_offset="0" end_lineno="1" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Attribute attr="dtype" lineno="1" col_offset="6" end_lineno="1" end_col_offset="16">
+              <Name id="ser2" lineno="1" col_offset="6" end_lineno="1" end_col_offset="10">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="2" col_offset="0" end_lineno="2" end_col_offset="19">
+        <Call lineno="2" col_offset="0" end_lineno="2" end_col_offset="19">
+          <Name id="print" lineno="2" col_offset="0" end_lineno="2" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Attribute attr="hasnans" lineno="2" col_offset="6" end_lineno="2" end_col_offset="18">
+              <Name id="ser2" lineno="2" col_offset="6" end_lineno="2" end_col_offset="10">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="3" col_offset="0" end_lineno="3" end_col_offset="17">
+        <Call lineno="3" col_offset="0" end_lineno="3" end_col_offset="17">
+          <Name id="print" lineno="3" col_offset="0" end_lineno="3" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Attribute attr="index" lineno="3" col_offset="6" end_lineno="3" end_col_offset="16">
+              <Name id="ser2" lineno="3" col_offset="6" end_lineno="3" end_col_offset="10">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="4" col_offset="0" end_lineno="4" end_col_offset="18">
+        <Call lineno="4" col_offset="0" end_lineno="4" end_col_offset="18">
+          <Name id="print" lineno="4" col_offset="0" end_lineno="4" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Attribute attr="values" lineno="4" col_offset="6" end_lineno="4" end_col_offset="17">
+              <Name id="ser2" lineno="4" col_offset="6" end_lineno="4" end_col_offset="10">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="5" col_offset="0" end_lineno="5" end_col_offset="35">
+        <Call lineno="5" col_offset="0" end_lineno="5" end_col_offset="35">
+          <Name id="print" lineno="5" col_offset="0" end_lineno="5" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Attribute attr="is_monotonic_increasing" lineno="5" col_offset="6" end_lineno="5" end_col_offset="34">
+              <Name id="ser2" lineno="5" col_offset="6" end_lineno="5" end_col_offset="10">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="6" col_offset="0" end_lineno="6" end_col_offset="21">
+        <Call lineno="6" col_offset="0" end_lineno="6" end_col_offset="21">
+          <Name id="print" lineno="6" col_offset="0" end_lineno="6" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Attribute attr="is_unique" lineno="6" col_offset="6" end_lineno="6" end_col_offset="20">
+              <Name id="ser2" lineno="6" col_offset="6" end_lineno="6" end_col_offset="10">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

@@ -1,0 +1,38 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="1" col_offset="0" end_lineno="1" end_col_offset="65">
+        <targets>
+          <Subscript lineno="1" col_offset="0" end_lineno="1" end_col_offset="28">
+            <Name id="result_df" lineno="1" col_offset="0" end_lineno="1" end_col_offset="9">
+              <Load/>
+            </Name>
+            <Constant value="上月销售额" kind="None" lineno="1" col_offset="10" end_lineno="1" end_col_offset="27"/>
+            <Store/>
+          </Subscript>
+        </targets>
+        <Call lineno="1" col_offset="31" end_lineno="1" end_col_offset="65">
+          <Attribute attr="shift" lineno="1" col_offset="31" end_lineno="1" end_col_offset="62">
+            <Attribute attr="本月销售额" lineno="1" col_offset="31" end_lineno="1" end_col_offset="56">
+              <Name id="result_df" lineno="1" col_offset="31" end_lineno="1" end_col_offset="40">
+                <Load/>
+              </Name>
+              <Load/>
+            </Attribute>
+            <Load/>
+          </Attribute>
+          <args>
+            <Constant value="1" kind="None" lineno="1" col_offset="63" end_lineno="1" end_col_offset="64"/>
+          </args>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Expr lineno="2" col_offset="0" end_lineno="2" end_col_offset="9">
+        <Name id="result_df" lineno="2" col_offset="0" end_lineno="2" end_col_offset="9">
+          <Load/>
+        </Name>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

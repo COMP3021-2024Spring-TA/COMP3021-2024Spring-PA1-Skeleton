@@ -1,0 +1,53 @@
+<ast>
+  <Module>
+    <body>
+      <Assign type_comment="None" lineno="1" col_offset="0" end_lineno="1" end_col_offset="27">
+        <targets>
+          <Name id="arr" lineno="1" col_offset="0" end_lineno="1" end_col_offset="3">
+            <Store/>
+          </Name>
+        </targets>
+        <List lineno="1" col_offset="6" end_lineno="1" end_col_offset="27">
+          <elts>
+            <Constant value="0" kind="None" lineno="1" col_offset="7" end_lineno="1" end_col_offset="8"/>
+            <Constant value="5" kind="None" lineno="1" col_offset="10" end_lineno="1" end_col_offset="11"/>
+            <Constant value="2" kind="None" lineno="1" col_offset="13" end_lineno="1" end_col_offset="14"/>
+            <Constant value="3" kind="None" lineno="1" col_offset="16" end_lineno="1" end_col_offset="17"/>
+            <Constant value="7" kind="None" lineno="1" col_offset="19" end_lineno="1" end_col_offset="20"/>
+            <Constant value="1" kind="None" lineno="1" col_offset="22" end_lineno="1" end_col_offset="23"/>
+            <Constant value="6" kind="None" lineno="1" col_offset="25" end_lineno="1" end_col_offset="26"/>
+          </elts>
+          <Load/>
+        </List>
+      </Assign>
+      <Expr lineno="2" col_offset="0" end_lineno="2" end_col_offset="13">
+        <Call lineno="2" col_offset="0" end_lineno="2" end_col_offset="13">
+          <Attribute attr="remove" lineno="2" col_offset="0" end_lineno="2" end_col_offset="10">
+            <Name id="arr" lineno="2" col_offset="0" end_lineno="2" end_col_offset="3">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args>
+            <Constant value="5" kind="None" lineno="2" col_offset="11" end_lineno="2" end_col_offset="12"/>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="3" col_offset="0" end_lineno="3" end_col_offset="10">
+        <Call lineno="3" col_offset="0" end_lineno="3" end_col_offset="10">
+          <Name id="print" lineno="3" col_offset="0" end_lineno="3" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Name id="arr" lineno="3" col_offset="6" end_lineno="3" end_col_offset="9">
+              <Load/>
+            </Name>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

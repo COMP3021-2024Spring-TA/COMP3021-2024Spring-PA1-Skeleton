@@ -1,0 +1,189 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="Solution" lineno="1" col_offset="0" end_lineno="8" end_col_offset="35">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="isBoomerang" type_comment="None" lineno="2" col_offset="4" end_lineno="8" end_col_offset="35">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="2" col_offset="20" end_lineno="2" end_col_offset="24"/>
+                <arg arg="points" type_comment="None" lineno="2" col_offset="26" end_lineno="2" end_col_offset="49">
+                  <Subscript lineno="2" col_offset="34" end_lineno="2" end_col_offset="49">
+                    <Name id="List" lineno="2" col_offset="34" end_lineno="2" end_col_offset="38">
+                      <Load/>
+                    </Name>
+                    <Subscript lineno="2" col_offset="39" end_lineno="2" end_col_offset="48">
+                      <Name id="List" lineno="2" col_offset="39" end_lineno="2" end_col_offset="43">
+                        <Load/>
+                      </Name>
+                      <Name id="int" lineno="2" col_offset="44" end_lineno="2" end_col_offset="47">
+                        <Load/>
+                      </Name>
+                      <Load/>
+                    </Subscript>
+                    <Load/>
+                  </Subscript>
+                </arg>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Assign type_comment="None" lineno="3" col_offset="8" end_lineno="3" end_col_offset="26">
+                <targets>
+                  <Tuple lineno="3" col_offset="8" end_lineno="3" end_col_offset="14">
+                    <elts>
+                      <Name id="x1" lineno="3" col_offset="8" end_lineno="3" end_col_offset="10">
+                        <Store/>
+                      </Name>
+                      <Name id="y1" lineno="3" col_offset="12" end_lineno="3" end_col_offset="14">
+                        <Store/>
+                      </Name>
+                    </elts>
+                    <Store/>
+                  </Tuple>
+                </targets>
+                <Subscript lineno="3" col_offset="17" end_lineno="3" end_col_offset="26">
+                  <Name id="points" lineno="3" col_offset="17" end_lineno="3" end_col_offset="23">
+                    <Load/>
+                  </Name>
+                  <Constant value="0" kind="None" lineno="3" col_offset="24" end_lineno="3" end_col_offset="25"/>
+                  <Load/>
+                </Subscript>
+              </Assign>
+              <Assign type_comment="None" lineno="4" col_offset="8" end_lineno="4" end_col_offset="26">
+                <targets>
+                  <Tuple lineno="4" col_offset="8" end_lineno="4" end_col_offset="14">
+                    <elts>
+                      <Name id="x2" lineno="4" col_offset="8" end_lineno="4" end_col_offset="10">
+                        <Store/>
+                      </Name>
+                      <Name id="y2" lineno="4" col_offset="12" end_lineno="4" end_col_offset="14">
+                        <Store/>
+                      </Name>
+                    </elts>
+                    <Store/>
+                  </Tuple>
+                </targets>
+                <Subscript lineno="4" col_offset="17" end_lineno="4" end_col_offset="26">
+                  <Name id="points" lineno="4" col_offset="17" end_lineno="4" end_col_offset="23">
+                    <Load/>
+                  </Name>
+                  <Constant value="1" kind="None" lineno="4" col_offset="24" end_lineno="4" end_col_offset="25"/>
+                  <Load/>
+                </Subscript>
+              </Assign>
+              <Assign type_comment="None" lineno="5" col_offset="8" end_lineno="5" end_col_offset="26">
+                <targets>
+                  <Tuple lineno="5" col_offset="8" end_lineno="5" end_col_offset="14">
+                    <elts>
+                      <Name id="x3" lineno="5" col_offset="8" end_lineno="5" end_col_offset="10">
+                        <Store/>
+                      </Name>
+                      <Name id="y3" lineno="5" col_offset="12" end_lineno="5" end_col_offset="14">
+                        <Store/>
+                      </Name>
+                    </elts>
+                    <Store/>
+                  </Tuple>
+                </targets>
+                <Subscript lineno="5" col_offset="17" end_lineno="5" end_col_offset="26">
+                  <Name id="points" lineno="5" col_offset="17" end_lineno="5" end_col_offset="23">
+                    <Load/>
+                  </Name>
+                  <Constant value="2" kind="None" lineno="5" col_offset="24" end_lineno="5" end_col_offset="25"/>
+                  <Load/>
+                </Subscript>
+              </Assign>
+              <Assign type_comment="None" lineno="6" col_offset="8" end_lineno="6" end_col_offset="38">
+                <targets>
+                  <Name id="cross1" lineno="6" col_offset="8" end_lineno="6" end_col_offset="14">
+                    <Store/>
+                  </Name>
+                </targets>
+                <BinOp lineno="6" col_offset="17" end_lineno="6" end_col_offset="38">
+                  <BinOp lineno="6" col_offset="18" end_lineno="6" end_col_offset="25">
+                    <Name id="x2" lineno="6" col_offset="18" end_lineno="6" end_col_offset="20">
+                      <Load/>
+                    </Name>
+                    <Sub/>
+                    <Name id="x1" lineno="6" col_offset="23" end_lineno="6" end_col_offset="25">
+                      <Load/>
+                    </Name>
+                  </BinOp>
+                  <Mult/>
+                  <BinOp lineno="6" col_offset="30" end_lineno="6" end_col_offset="37">
+                    <Name id="y3" lineno="6" col_offset="30" end_lineno="6" end_col_offset="32">
+                      <Load/>
+                    </Name>
+                    <Sub/>
+                    <Name id="y2" lineno="6" col_offset="35" end_lineno="6" end_col_offset="37">
+                      <Load/>
+                    </Name>
+                  </BinOp>
+                </BinOp>
+              </Assign>
+              <Assign type_comment="None" lineno="7" col_offset="8" end_lineno="7" end_col_offset="38">
+                <targets>
+                  <Name id="cross2" lineno="7" col_offset="8" end_lineno="7" end_col_offset="14">
+                    <Store/>
+                  </Name>
+                </targets>
+                <BinOp lineno="7" col_offset="17" end_lineno="7" end_col_offset="38">
+                  <BinOp lineno="7" col_offset="18" end_lineno="7" end_col_offset="25">
+                    <Name id="x3" lineno="7" col_offset="18" end_lineno="7" end_col_offset="20">
+                      <Load/>
+                    </Name>
+                    <Sub/>
+                    <Name id="x2" lineno="7" col_offset="23" end_lineno="7" end_col_offset="25">
+                      <Load/>
+                    </Name>
+                  </BinOp>
+                  <Mult/>
+                  <BinOp lineno="7" col_offset="30" end_lineno="7" end_col_offset="37">
+                    <Name id="y2" lineno="7" col_offset="30" end_lineno="7" end_col_offset="32">
+                      <Load/>
+                    </Name>
+                    <Sub/>
+                    <Name id="y1" lineno="7" col_offset="35" end_lineno="7" end_col_offset="37">
+                      <Load/>
+                    </Name>
+                  </BinOp>
+                </BinOp>
+              </Assign>
+              <Return lineno="8" col_offset="8" end_lineno="8" end_col_offset="35">
+                <Compare lineno="8" col_offset="15" end_lineno="8" end_col_offset="35">
+                  <BinOp lineno="8" col_offset="15" end_lineno="8" end_col_offset="30">
+                    <Name id="cross1" lineno="8" col_offset="15" end_lineno="8" end_col_offset="21">
+                      <Load/>
+                    </Name>
+                    <Sub/>
+                    <Name id="cross2" lineno="8" col_offset="24" end_lineno="8" end_col_offset="30">
+                      <Load/>
+                    </Name>
+                  </BinOp>
+                  <ops>
+                    <NotEq/>
+                  </ops>
+                  <comparators>
+                    <Constant value="0" kind="None" lineno="8" col_offset="34" end_lineno="8" end_col_offset="35"/>
+                  </comparators>
+                </Compare>
+              </Return>
+            </body>
+            <decorator_list/>
+            <Name id="bool" lineno="2" col_offset="54" end_lineno="2" end_col_offset="58">
+              <Load/>
+            </Name>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

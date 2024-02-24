@@ -1,0 +1,1 @@
+np.corrcoef(x, y)

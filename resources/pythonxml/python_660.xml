@@ -1,0 +1,16 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="15">
+        <Subscript lineno="1" col_offset="0" end_lineno="1" end_col_offset="15">
+          <Name id="emp_df" lineno="1" col_offset="0" end_lineno="1" end_col_offset="6">
+            <Load/>
+          </Name>
+          <Constant value="ename" kind="None" lineno="1" col_offset="7" end_lineno="1" end_col_offset="14"/>
+          <Load/>
+        </Subscript>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

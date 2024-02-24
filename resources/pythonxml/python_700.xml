@@ -1,0 +1,61 @@
+<ast>
+  <Module>
+    <body>
+      <Expr lineno="1" col_offset="0" end_lineno="1" end_col_offset="22">
+        <Call lineno="1" col_offset="0" end_lineno="1" end_col_offset="22">
+          <Name id="print" lineno="1" col_offset="0" end_lineno="1" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Call lineno="1" col_offset="6" end_lineno="1" end_col_offset="21">
+              <Attribute attr="cross" lineno="1" col_offset="6" end_lineno="1" end_col_offset="14">
+                <Name id="np" lineno="1" col_offset="6" end_lineno="1" end_col_offset="8">
+                  <Load/>
+                </Name>
+                <Load/>
+              </Attribute>
+              <args>
+                <Name id="u" lineno="1" col_offset="15" end_lineno="1" end_col_offset="16">
+                  <Load/>
+                </Name>
+                <Name id="m1" lineno="1" col_offset="18" end_lineno="1" end_col_offset="20">
+                  <Load/>
+                </Name>
+              </args>
+              <keywords/>
+            </Call>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="2" col_offset="0" end_lineno="2" end_col_offset="22">
+        <Call lineno="2" col_offset="0" end_lineno="2" end_col_offset="22">
+          <Name id="print" lineno="2" col_offset="0" end_lineno="2" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Call lineno="2" col_offset="6" end_lineno="2" end_col_offset="21">
+              <Attribute attr="cross" lineno="2" col_offset="6" end_lineno="2" end_col_offset="14">
+                <Name id="np" lineno="2" col_offset="6" end_lineno="2" end_col_offset="8">
+                  <Load/>
+                </Name>
+                <Load/>
+              </Attribute>
+              <args>
+                <Name id="m1" lineno="2" col_offset="15" end_lineno="2" end_col_offset="17">
+                  <Load/>
+                </Name>
+                <Name id="u" lineno="2" col_offset="19" end_lineno="2" end_col_offset="20">
+                  <Load/>
+                </Name>
+              </args>
+              <keywords/>
+            </Call>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>

@@ -1,0 +1,91 @@
+<ast>
+  <Module>
+    <body>
+      <ClassDef name="Vehicle" lineno="5" col_offset="0" end_lineno="11" end_col_offset="30">
+        <bases/>
+        <keywords/>
+        <body>
+          <FunctionDef name="type" returns="None" type_comment="None" lineno="9" col_offset="4" end_lineno="11" end_col_offset="30">
+            <arguments vararg="None" kwarg="None">
+              <posonlyargs/>
+              <args>
+                <arg arg="self" annotation="None" type_comment="None" lineno="9" col_offset="13" end_lineno="9" end_col_offset="17"/>
+              </args>
+              <kwonlyargs/>
+              <kw_defaults/>
+              <defaults/>
+            </arguments>
+            <body>
+              <Expr lineno="10" col_offset="8" end_lineno="10" end_col_offset="19">
+                <Call lineno="10" col_offset="8" end_lineno="10" end_col_offset="19">
+                  <Name id="print" lineno="10" col_offset="8" end_lineno="10" end_col_offset="13">
+                    <Load/>
+                  </Name>
+                  <args>
+                    <Name id="self" lineno="10" col_offset="14" end_lineno="10" end_col_offset="18">
+                      <Load/>
+                    </Name>
+                  </args>
+                  <keywords/>
+                </Call>
+              </Expr>
+              <Expr lineno="11" col_offset="8" end_lineno="11" end_col_offset="30">
+                <Call lineno="11" col_offset="8" end_lineno="11" end_col_offset="30">
+                  <Name id="print" lineno="11" col_offset="8" end_lineno="11" end_col_offset="13">
+                    <Load/>
+                  </Name>
+                  <args>
+                    <Constant value="I have a type" kind="None" lineno="11" col_offset="14" end_lineno="11" end_col_offset="29"/>
+                  </args>
+                  <keywords/>
+                </Call>
+              </Expr>
+            </body>
+            <decorator_list/>
+          </FunctionDef>
+        </body>
+        <decorator_list/>
+      </ClassDef>
+      <Assign type_comment="None" lineno="13" col_offset="0" end_lineno="13" end_col_offset="15">
+        <targets>
+          <Name id="car" lineno="13" col_offset="0" end_lineno="13" end_col_offset="3">
+            <Store/>
+          </Name>
+        </targets>
+        <Call lineno="13" col_offset="6" end_lineno="13" end_col_offset="15">
+          <Name id="Vehicle" lineno="13" col_offset="6" end_lineno="13" end_col_offset="13">
+            <Load/>
+          </Name>
+          <args/>
+          <keywords/>
+        </Call>
+      </Assign>
+      <Expr lineno="14" col_offset="0" end_lineno="14" end_col_offset="10">
+        <Call lineno="14" col_offset="0" end_lineno="14" end_col_offset="10">
+          <Name id="print" lineno="14" col_offset="0" end_lineno="14" end_col_offset="5">
+            <Load/>
+          </Name>
+          <args>
+            <Name id="car" lineno="14" col_offset="6" end_lineno="14" end_col_offset="9">
+              <Load/>
+            </Name>
+          </args>
+          <keywords/>
+        </Call>
+      </Expr>
+      <Expr lineno="15" col_offset="0" end_lineno="15" end_col_offset="10">
+        <Call lineno="15" col_offset="0" end_lineno="15" end_col_offset="10">
+          <Attribute attr="type" lineno="15" col_offset="0" end_lineno="15" end_col_offset="8">
+            <Name id="car" lineno="15" col_offset="0" end_lineno="15" end_col_offset="3">
+              <Load/>
+            </Name>
+            <Load/>
+          </Attribute>
+          <args/>
+          <keywords/>
+        </Call>
+      </Expr>
+    </body>
+    <type_ignores/>
+  </Module>
+</ast>
