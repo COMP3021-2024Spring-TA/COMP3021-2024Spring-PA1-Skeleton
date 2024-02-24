@@ -1,6 +1,7 @@
 # COMP3021 Spring 2024 Java Programming Assignment 1 (PA1)
 
-Please make sure you always pull the latest version of the PA skeleton!
+> [!NOTE]
+ Please make sure you always pull the latest version of the PA skeleton!
 
 ## Python AST Management System
 
