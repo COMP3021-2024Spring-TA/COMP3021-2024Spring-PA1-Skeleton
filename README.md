@@ -36,7 +36,7 @@ def add(a, b):
 
 The AST of the Python code is shown below. Each AST node has a defined structure, consisting of **node type**, **attributes**, and **child nodes**. 
 
-<img src="./AST_Example.png" alt="example" style="zoom:15%;" />
+<img src="./AST_Example.png" alt="example" style="zoom:10%;" />
 
 For instance, `FunctionDef` is the node type, and its attribute `name` is `add`. Such node has three child nodes, which are the arguments and body of function `add`, i.e., `arguments`, `Assign`, and `Return`. Note that the node attributes are optional and vary based on the node type. For instance, the attributes of node type `Name` are `id` and `ctx`, which represent the corresponding variable name and whether the variable is read or written. We can notice that the nodes in green essentially represent the addition operation of two variables `a` and `b` in the second line of Python code.
 
@@ -237,7 +237,7 @@ Module -> FunctionDef (name: add)                           =>  def add(...):
 
 The code generating process involves handling different node types and their attributes. Each node type has specific attributes that need to be considered. Noticed that Python code is sensitive to indentation, which determines the scope of statements within a block. Please carefully handle the indentation and follow the rules to ensure the reconstructed code is legal and readable.  
 
-Hints: you can use the four fields `lineno`, `colOffset`, `endLineNo` and `endColOffset` to help you find the position of each AST element.
+**Hints.** you can use the four fields `lineno`, `colOffset`, `endLineNo` and `endColOffset` to help you find the position of each AST element.
 
 ### ASTManager and ASTManagerEngine
 
@@ -289,14 +289,10 @@ Note that we are using automatic scripts to process your submission on test case
 
 **We will grade your submission based on the latest committed version before the deadline.** Please make sure all the amendments are made before the deadline and do not make changes after the deadline.
 
-We have pre-configured a gradle task to check style for you. You can run `./gradlew checkstyleMain` to check style.
-
-Before submission, please make sure that: 
+We have pre-configured a gradle task to check style for you. You can run `./gradlew checkstyleMain` to check style. Before submission, please make sure that: 
 
 1. Your code can be complied with successfully. Please try to compile your code with `./gradlew build` before submission. You will not get any marks for public/hidden test cases if your code cannot be successfully compiled.
-
 2. Your implementation can pass the public test cases we provided in `src/test` (We will provide test cases one week later).
-
 3. Your implementation should not yield too many errors when running `./gradlew checkstyleMain`.
 
 ### Academic Integrity
