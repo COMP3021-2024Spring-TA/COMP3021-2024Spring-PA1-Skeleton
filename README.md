@@ -1,5 +1,7 @@
 # COMP3021 Spring 2024 Java Programming Assignment 1 (PA1)
 
+Please make sure you always pull the latest version of the PA skeleton!
+
 ## Python AST Management System
 
 **[AST (Abstract Syntax Tree)](https://en.wikipedia.org/wiki/Abstract_syntax_tree)** is a tree representation that represents the syntactic structure of source code. It is widely used in compilers and interpreters to reason about relationships between program elements. In this project, you are required to implement your own management system, named **ASTManager**, for parsing and analyzing Python ASTs.
