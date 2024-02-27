@@ -1,7 +1,11 @@
 # COMP3021 Spring 2024 Java Programming Assignment 1 (PA1)
 
-> [!NOTE]
- Please make sure you always pull the latest version of the PA skeleton!
+:warning: Please make sure you always pull the **latest** version of the PA skeleton!
+
+:heavy_exclamation_mark: **News** and **Skeleton Clarification**: 
+1. To avoid ambiguity, when printing or getting the name of FunctionDefStmt node, we use the format **astID_FuncName_FuncLineNo** to name a function uniquely. For instance, the `horspool` function in #26 AST is started from line 2, so its name is `26_horspool_2`.
+2. When printing or getting the name of func field of CallExpr node, we use the format `astID_FuncName_CallLineNo` to name the invoked function. For instance, `horspool` in #26 AST invokes `generateBadCharTable` in line 5, so the invoked function is named as `26_generateBadCharTable_5`.
+
 
 ## Python AST Management System
 
