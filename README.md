@@ -108,7 +108,7 @@ Note that we have simplified the input ASTs, thus not all stmt declared in AST g
   -  `body: ArrayList<ASTStmt>`: function body, which is a list of statements
   -  `decoratorList: ArrayList<ASTExpr>`: a list of decorators
   -  `returns: ASTExpr`: return annotation. `returns` is optional, please initialize it carefully.
-- The class `Assign` has 2 fields, i.e., `targets: ArrayList<ASTExpr>`, `value: ASTExpr`.
+- The class `AssignStmt` has 2 fields, i.e., `targets: ArrayList<ASTExpr>`, `value: ASTExpr`.
 
 Similarly, all fields of these classes should be private. You need to implement essential methods of these 11 classes, including constructors. To convenience your implementation, we have provided the skeleton of these 11 classes. For a more detailed explanation of fields and methods, you can refer to the class files under the directory `src/main/java/hk.ust.comp3021/stmt`.
 
@@ -158,11 +158,11 @@ To support AST parsing, managing, and analyzing, we provide three classes as fol
 mod = Module(stmt* body, type_ignore* type_ignores)
 ```
 
-According to the AST grammar of Module, the class `ModuleMod` has two fields, i.e., lists of body statements `body: ArrayList<Stmt>` and unique ID of current AST `astID: int`.
+According to the AST grammar of Module, the class `ASTModule` has two fields, i.e., lists of body statements `body: ArrayList<Stmt>` and unique ID of current AST `astID: int`.
 
 Each AST corresponds to a Python source file. The `astID` is also used to find the path to the XML file and corresponding Python code. For instance, given `astID` as 1, the XML file and Python file are `resources/pythonxml/python_1.xml` and `resources/pythonxml/python_1.py`, respectively.
 
-All fields of `ASTModule` should be private. You should implement its constructors and all methods we marked as `TODO`. Besides, you may need to define more methods according to your needs during the development, such as `getter` or `setter` to access private fields from other classes.
+All fields of `ASTModule` should be private. You should implement all methods we marked as `TODO`. Besides, you may need to define more methods according to your needs during the development, such as `getter` or `setter` to access private fields from other classes.
 
 #### ASTParser
 
@@ -201,7 +201,7 @@ When you parse the file, you can assume that all the XML files in our test cases
 
 #### XMLNode
 
-Considering that creating the AST during XML file parsing is too complicated. We choose to first parse the XML tree structure into `XMLNode` and later construct the AST from XML tree.
+Considering that creating the AST during XML file parsing is too complicated, we choose to first parse the XML tree structure into `XMLNode` and later construct the AST from XML tree.
 
 `XMLNode` is a general class for all XML elements, and it contains four fields:
 
@@ -240,15 +240,11 @@ Module -> FunctionDef (name: add)                           =>  def add(...):
 
 The code generating process involves handling different node types and their attributes. Each node type has specific attributes that need to be considered. Noticed that Python code is sensitive to indentation, which determines the scope of statements within a block. Please carefully handle the indentation and follow the rules to ensure the reconstructed code is legal and readable.  
 
-**Hints.** you can use the four fields `lineno`, `colOffset`, `endLineNo` and `endColOffset` to help you find the position of each AST element.
+**Hints.** You can use the four fields `lineno`, `colOffset`, `endLineNo` and `endColOffset` to help you find the position of each AST element.
 
 ### ASTManager and ASTManagerEngine
 
-The class `ASTManager` is the main class of our system, which wraps an `ASTManagerEngine` inside. We provide the major workflow of `ASTManager` shown below in the skeleton:
-
-1. Initially, the system loads all the XML files in the default XML files directory, which depends on the `ASTParser` you implemented. 
-2. Later, all the ASTs should be stored in the Tables you designed instead of managed in Memory.
-3. Finally, method `userInterface` processes the following analysis commands from the console and invokes corresponding handlers.
+The class `ASTManager` is the main class of our system, which wraps an `ASTManagerEngine` inside. The method `userInterface` of `ASTManagerEngine` processes the following analysis commands from the console and invokes corresponding handlers.
    - Given AST ID, parse AST from XML files
    - Print all functions with # arguments greater than user-specified N
    - Find the most commonly used operators in all ASTs
