@@ -2,9 +2,10 @@
 
 :warning: Please make sure you always pull the **latest** version of the PA skeleton!
 
-:heavy_exclamation_mark: **News** and **Skeleton Clarification**: 
-1. To avoid ambiguity, when printing or getting the name of FunctionDefStmt node, we use the format **astID_FuncName_FuncLineNo** to name a function uniquely. For instance, the `horspool` function in #26 AST is started from line 2, so its name is `26_horspool_2`.
-2. When printing or getting the name of func field of CallExpr node, we use the format `astID_FuncName_CallLineNo` to name the invoked function. For instance, `horspool` in #26 AST invokes `generateBadCharTable` in line 5, so the invoked function is named as `26_generateBadCharTable_5`.
+:heavy_exclamation_mark: **Updates** and **Skeleton Clarification**: 
+1. Test cases and how to test your codes are updated.
+2. To avoid ambiguity, when printing or getting the name of FunctionDefStmt node, we use the format **astID_FuncName_FuncLineNo** to name a function uniquely. For instance, the `horspool` function in #26 AST is started from line 2, so its name is `26_horspool_2`.
+3. When printing or getting the name of func field of CallExpr node, we use the format `astID_FuncName_CallLineNo` to name the invoked function. For instance, `horspool` in #26 AST invokes `generateBadCharTable` in line 5, so the invoked function is named as `26_generateBadCharTable_5`.
 
 
 ## Python AST Management System
@@ -107,11 +108,11 @@ stmt = FunctionDef(identifier name, arguments args,
 Note that we have simplified the input ASTs, thus not all stmt declared in AST grammar need to be implemented.  We outline the fields of two of them as examples.
 
 - The class `FunctionDefStmt` has 5 fields.
-  -  `name: String`: function name 
-  -  `args: ASTArguments`: function arguments
-  -  `body: ArrayList<ASTStmt>`: function body, which is a list of statements
-  -  `decoratorList: ArrayList<ASTExpr>`: a list of decorators
-  -  `returns: ASTExpr`: return annotation. `returns` is optional, please initialize it carefully.
+  -  `name: String`: function name, e.g., `name` for function example shown above is `add`.
+  -  `args: ASTArguments`: function arguments, which corresponds to the `arguments` node in AST example above.
+  -  `body: ArrayList<ASTStmt>`: function body. `*` means `body` contains a list of statements. As shown in the above `add` function, its body is composed of two statements.
+  -  `decoratorList: ArrayList<ASTExpr>`: a list of decorators. For `add` function, the ArrayList `decoratorList` has zero elements.
+  -  `returns: ASTExpr`: return annotation. `?` means `returns` are optional. For instance, the `returns` field for function `add` is `null`. Please initialize it carefully when buidling AST.
 - The class `AssignStmt` has 2 fields, i.e., `targets: ArrayList<ASTExpr>`, `value: ASTExpr`.
 
 Similarly, all fields of these classes should be private. You need to implement essential methods of these 11 classes, including constructors. To convenience your implementation, we have provided the skeleton of these 11 classes. For a more detailed explanation of fields and methods, you can refer to the class files under the directory `src/main/java/hk.ust.comp3021/stmt`.
@@ -214,7 +215,19 @@ Considering that creating the AST during XML file parsing is too complicated, we
 - `children: List<XMLNode>`: children XML nodes
 - `parent: XMLNode`: the parent XML node
 
-We have implemented the `XMLNode` class for you. Please carefully consider the mapping between XMLNode and the corresponding AST node when creating AST from XML tree.
+When handling XML file, we explain how to get these four fields by taking the above `BinOp` node as an example:
+
+- The tagName is `BinOp`
+- The attributes are four key-value pairs 
+  - lineno: 2
+  - col_offset: 8
+  - end_lineno: 2
+  - end_col_offset: 13
+- The `BinOp` node has three children whose tag name is Name, Add and Name, respectively.
+- The parent of `BinOp` is not shown in the XML snippet. But the `parent` of `Add` node is `BinOp`.
+
+If an XML element is self-closing, such as `<Add/>`, it indicates the node has no attribute and children. We have implemented the `XMLNode` class for you. Please carefully consider the mapping between XMLNode and the corresponding AST node when creating AST from the XML tree. You can search for tagName among given XML files to learn the mapping.
+
 
 ### Bouns Task
 
@@ -276,6 +289,27 @@ You need to follow the comments on the methods to be implemented in the provided
 
 We use the JUnit test to verify the functionalities of all methods you implement. Please do not modify the type signatures of these functions.
 
+### How to TEST
+
+Public test cases are released in `src/test/java/hk.ust.comp3021/ASTManagerEngineTest.java`. Please try to test your code with `./gradlew test` before submission to ensure your implementation can pass all public test cases.
+
+We use JUnit test to validate the correctness of individual methods that you need to implement. The mapping between public test cases and methods to be tested are shown below.
+
+| Test Case      | Target Method |
+| ----------- | ----------- |
+| `testParse2XMLNode`        | `parser.parse2XMLNode`    |
+| `testPrintedInformation`   | `engine.findFuncWithArgGtN`  |
+| `testCalculateOp2Nums` | `engine.calculateOp2Nums` |
+| `testMostCommonUsedOp` | `engine.mostCommonUsedOp` |
+| `testCalculateNode2Num` | `engine.calculateNode2Nums` |
+| `testCalledFuncOnXML1` | `engine.calculateCalledFunc` |
+| `testProcessNodeFreq` | `engine.processNodeFreq` |
+| `testSortHashMapByValue` | `engine.sortHashMapByValue` |
+| `testBonusPrintByPos` | `module.printByPos` (For Bonus Task Only) |
+
+You can fix the problem of your implementation based on the failed test cases. We would not provide test cases for 
+
+
 ### Submission Policy
 
 Please submit your code on Canvas before the deadline **March 23, 2024, 23:59:59.** You should submit a single text file specified as follows:
@@ -295,7 +329,7 @@ Note that we are using automatic scripts to process your submission on test case
 We have pre-configured a gradle task to check style for you. You can run `./gradlew checkstyleMain` to check style. Before submission, please make sure that: 
 
 1. Your code can be complied with successfully. Please try to compile your code with `./gradlew build` before submission. You will not get any marks for public/hidden test cases if your code cannot be successfully compiled.
-2. Your implementation can pass the public test cases we provided in `src/test` (We will provide test cases one week later).
+2. Your implementation can pass the public test cases we provided in `src/test`.
 3. Your implementation should not yield too many errors when running `./gradlew checkstyleMain`.
 
 ### Academic Integrity

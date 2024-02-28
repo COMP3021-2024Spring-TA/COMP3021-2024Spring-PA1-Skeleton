@@ -154,7 +154,7 @@ public class ASTManagerEngine {
             ASTModule module = id2ASTModules.get(key);
             for (FunctionDefStmt func : module.getAllFunctions()) {
                 if (func.getParamNum() >= paramN) {
-                    System.out.println(module.getASTID() + "_" + func.getName());
+                    System.out.println(module.getASTID() + "_" + func.getName() + "_" + func.getLineNo());
                 }
             }
         }
