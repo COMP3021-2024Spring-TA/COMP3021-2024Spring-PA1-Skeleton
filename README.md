@@ -3,9 +3,10 @@
 :warning: Please make sure you always pull the **latest** version of the PA skeleton!
 
 :heavy_exclamation_mark: **Updates** and **Skeleton Clarification**: 
-1. Test cases and how to test your codes are updated.
-2. To avoid ambiguity, when printing or getting the name of FunctionDefStmt node, we use the format **astID_FuncName_FuncLineNo** to name a function uniquely. For instance, the `horspool` function in #26 AST is started from line 2, so its name is `26_horspool_2`.
-3. When printing or getting the name of func field of CallExpr node, we use the format `astID_FuncName_CallLineNo` to name the invoked function. For instance, `horspool` in #26 AST invokes `generateBadCharTable` in line 5, so the invoked function is named as `26_generateBadCharTable_5`.
+1. `countChildren` abstract method also takes the current node into consideration. You'd better understand its functionality as counting the node of subtree with current node as root node. That is, if a node has no child, the numChild should return 1. Thus, for the sort query task, please also take the FunctionDefStmt root node into consideration as well.
+2. Test cases and how to test your codes are updated.
+3. To avoid ambiguity, when printing or getting the name of FunctionDefStmt node, we use the format **astID_FuncName_FuncLineNo** to name a function uniquely. For instance, the `horspool` function in #26 AST is started from line 2, so its name is `26_horspool_2`.
+4. When printing or getting the name of func field of CallExpr node, we use the format `astID_FuncName_CallLineNo` to name the invoked function. For instance, `horspool` in #26 AST invokes `generateBadCharTable` in line 5, so the invoked function is named as `26_generateBadCharTable_5`.
 
 
 ## Python AST Management System
