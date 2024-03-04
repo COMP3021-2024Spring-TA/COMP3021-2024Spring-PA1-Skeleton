@@ -27,14 +27,14 @@ public abstract class ASTElement {
         if (node.hasAttribute("lineno")) {
             this.lineno = Integer.parseInt(node.getAttribute("lineno"));
         }
-        if (node.hasAttribute("colOffset")) {
-            this.colOffset = Integer.parseInt(node.getAttribute("colOffset"));
+        if (node.hasAttribute("col_offset")) {
+            this.colOffset = Integer.parseInt(node.getAttribute("col_offset"));
         }
-        if (node.hasAttribute("endLineno")) {
-            this.endLineno = Integer.parseInt(node.getAttribute("endLineno"));
+        if (node.hasAttribute("end_lineno")) {
+            this.endLineno = Integer.parseInt(node.getAttribute("end_lineno"));
         }
-        if (node.hasAttribute("endColOffset")) {
-            this.endColOffset = Integer.parseInt(node.getAttribute("endColOffset"));
+        if (node.hasAttribute("end_col_offset")) {
+            this.endColOffset = Integer.parseInt(node.getAttribute("end_col_offset"));
         }
     }
 

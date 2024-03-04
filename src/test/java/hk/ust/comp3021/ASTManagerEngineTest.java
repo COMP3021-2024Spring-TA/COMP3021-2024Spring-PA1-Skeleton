@@ -205,18 +205,18 @@ public class ASTManagerEngineTest {
                 "    def bubbleSort(self, head: ListNode):\n" +
                 "        node_i = head\n" +
                 "        tail = None\n" +
-                "        \n" +
+                "\n" +
                 "        while node_i:\n" +
                 "            node_j = head\n" +
                 "            while node_j and node_j.next != tail:\n" +
                 "                if node_j.val > node_j.next.val:\n" +
-                "                    \n" +
+                "\n" +
                 "                    node_j.val, node_j.next.val = node_j.next.val, node_j.val\n" +
                 "                node_j = node_j.next\n" +
-                "            \n" +
+                "\n" +
                 "            tail = node_j\n" +
                 "            node_i = node_i.next\n" +
-                "            \n" +
+                "\n" +
                 "        return head\n" +
                 "\n" +
                 "    def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:\n" +
