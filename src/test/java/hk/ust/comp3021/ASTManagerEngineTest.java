@@ -44,7 +44,7 @@ public class ASTManagerEngineTest {
                 "227_diagonalBinarySearch_2",
                 "227_rowBinarySearch_13",
                 "227_colBinarySearch_27");
-        assertEquals(expectedOutput, Set.of(printedOutput.trim().split("\n")));
+        assertEquals(expectedOutput, Set.of(printedOutput.trim().split("\\r?\\n")));
     }
 
     @Tag(TestKind.PUBLIC)
